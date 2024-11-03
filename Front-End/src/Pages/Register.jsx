@@ -1,9 +1,9 @@
 import { useState, useRef } from "react";
 import { validation } from "../utils/validationForm";
-import "../componentes/Module.ResgisterLogin.css"
+import "./styles/Module.ResgisterLogin.css"
 import { REGISTER_ENDPOINT } from "../config";
 import { Link } from "react-router-dom";
-import logo from "../utils/LOGO.png";
+import logo from "../img/LOGO.png";
 
 function Register() {
 	const emailRef = useRef(null);

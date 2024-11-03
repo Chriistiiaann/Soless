@@ -1,10 +1,10 @@
 import { useRef, useState } from "react";
 import { validation } from "../utils/validationForm";
 import { jwtDecode } from "jwt-decode";
-import "../componentes/Module.ResgisterLogin.css"
+import "./styles/Module.ResgisterLogin.css"
 import { LOGIN_ENDPOINT } from "../config"
 import { Link, useNavigate } from "react-router-dom";
-import logo from "../utils/LOGO.png"
+import logo from "../img/LOGO.png";
 
 
 function Login() {

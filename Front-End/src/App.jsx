@@ -1,7 +1,10 @@
 import Login from "./Pages/Login"
 import Register from "./Pages/Register"
 import Home from "./Pages/Home"
-import {Link, Route, Routes } from "react-router-dom";
+
+import { Route, Routes } from "react-router-dom";
+import "./global.css"
+
 
 function App() {
     return(
