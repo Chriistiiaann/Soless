@@ -36,6 +36,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SolessBackEndFix.Controllers.ProductController",
+    "Method": "GetProductsAsync",
+    "RelativePath": "api/Product",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SolessBackend.Controllers.UserController",
     "Method": "GetUsersAsync",
     "RelativePath": "api/User",

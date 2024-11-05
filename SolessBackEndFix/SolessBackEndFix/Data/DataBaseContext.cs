@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SolessBackend.Models;
+using SolessBackEndFix.Models;
 
 namespace SolessBackend.Data
 {
@@ -8,6 +9,7 @@ namespace SolessBackend.Data
         private const string DATABASE_PATH = "ecommerce.db";
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

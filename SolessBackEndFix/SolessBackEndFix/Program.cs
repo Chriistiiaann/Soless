@@ -7,6 +7,8 @@ using SolessBackend.DataMappers;
 using SolessBackend.Interfaces;
 using SolessBackend.Models;
 using SolessBackend.Repositories;
+using SolessBackEndFix.Interfaces;
+using SolessBackEndFix.Repositories;
 using Swashbuckle.AspNetCore.Filters;
 using System.Security.Claims;
 using System.Text;
@@ -26,7 +28,7 @@ namespace SolessBackend
                 {
                     builder.AllowAnyOrigin()    // Permite cualquier origen (incluyendo todos los puertos de localhost)
                            .AllowAnyHeader()    // Permite cualquier encabezado
-                           .AllowAnyMethod();   // Permite cualquier método (GET, POST, etc.)
+                           .AllowAnyMethod();   // Permite cualquier mï¿½todo (GET, POST, etc.)
                 });
             });
 
@@ -36,6 +38,9 @@ namespace SolessBackend
             builder.Services.AddScoped<UserMapper>();
             builder.Services.AddTransient<IPasswordHasher, PasswordHasher>();
             builder.Services.AddScoped<DataBaseContext>();
+            builder.Services.AddScoped<IProductRepository, ProductRepository>();
+            builder.Services.AddScoped<ProductMapper>();
+
 
             // Swagger configuration
             builder.Services.AddEndpointsApiExplorer();
@@ -63,7 +68,7 @@ namespace SolessBackend
                 string key = Environment.GetEnvironmentVariable("JWT_KEY");
                 if (string.IsNullOrEmpty(key))
                 {
-                    throw new Exception("JWT_KEY variable de entorno no está configurada.");
+                    throw new Exception("JWT_KEY variable de entorno no estï¿½ configurada.");
                 }
 
                 options.TokenValidationParameters = new TokenValidationParameters
@@ -84,14 +89,14 @@ namespace SolessBackend
                 dbcontext.Database.EnsureCreated();
             }
 
-            // Habilitar Swagger y CORS para desarrollo o producción
+            // Habilitar Swagger y CORS para desarrollo o producciï¿½n
             if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
 
-            app.UseCors("AllowAllOrigins"); // Aplica la política de CORS
+            app.UseCors("AllowAllOrigins"); // Aplica la polï¿½tica de CORS
 
             app.UseHttpsRedirection();
             app.UseAuthentication();
