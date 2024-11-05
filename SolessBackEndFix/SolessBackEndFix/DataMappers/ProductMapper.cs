@@ -12,12 +12,14 @@ namespace SolessBackend.DataMappers
             return new ProductDTO
             {
                 Id = product.Id,
-                Name = product.Name,
-                Price = product.Price,
+                Brand = product.Brand,
+                Model = product.Model,
+                Original_Price = product.Original_Price,
+                Discount_Price = product.Discount_Price,
                 Stock = product.Stock,
-                Img = product.Img,
-                Review = product.Review,
-                Description = product.Description
+                Img_Name = product.Img_Name,
+                Description = product.Description,
+                Composition = product.Composition
             };
         }
 
@@ -31,12 +33,14 @@ namespace SolessBackend.DataMappers
             return new Product
             {
                 Id = productsDTO.Id,
-                Name = productsDTO.Name,
-                Price = productsDTO.Price,
+                Brand = productsDTO.Brand,
+                Model = productsDTO.Model,
+                Original_Price = productsDTO.Original_Price,
+                Discount_Price = productsDTO.Discount_Price,
                 Stock = productsDTO.Stock,
-                Img = productsDTO.Img,
-                Review = productsDTO.Review,
-                Description = productsDTO.Description
+                Img_Name = productsDTO.Img_Name,
+                Description = productsDTO.Description,
+                Composition = productsDTO.Composition
             };
         }
 

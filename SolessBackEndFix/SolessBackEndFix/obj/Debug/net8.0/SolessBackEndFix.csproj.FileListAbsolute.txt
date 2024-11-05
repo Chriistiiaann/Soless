@@ -431,3 +431,5 @@ C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\obj\
 C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\obj\Debug\net8.0\SolessBackEndFix.pdb
 C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\obj\Debug\net8.0\SolessBackEndFix.genruntimeconfig.cache
 C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\obj\Debug\net8.0\ref\SolessBackEndFix.dll
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\ejemplo.png
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\SolessBackEndFix.staticwebassets.runtime.json

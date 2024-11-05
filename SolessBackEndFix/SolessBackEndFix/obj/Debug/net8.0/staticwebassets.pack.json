@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix\\SolessBackEndFix\\wwwroot\\ejemplo.png",
+      "PackagePath": "staticwebassets\\ejemplo.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SolessBackEndFix.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SolessBackEndFix.props",
+      "PackagePath": "build\\SolessBackEndFix.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SolessBackEndFix.props",
+      "PackagePath": "buildMultiTargeting\\SolessBackEndFix.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SolessBackEndFix.props",
+      "PackagePath": "buildTransitive\\SolessBackEndFix.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

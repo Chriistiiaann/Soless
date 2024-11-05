@@ -42,7 +42,7 @@ namespace SolessBackEndFix.Controllers
                 // Comprobar si la lista de usuarios es nula o está vacía
                 if (product == null || !product.Any())
                 {
-                    return NotFound("No users found.");
+                    return NotFound("No products found.");
                 }
 
                 // Creación del user DTO por cada User en la base de datos
@@ -71,10 +71,10 @@ namespace SolessBackEndFix.Controllers
             }
 
             // Verificar si el usuario ya existe
-            var existingProduct = await _productRepository.GetProductByName(productToAdd.Name);
+            var existingProduct = await _productRepository.GetProductByModel(productToAdd.Model);
             if (existingProduct != null)
             {
-                return Conflict("A user with this email already exists.");
+                return Conflict("A Product with this name already exists.");
             }
 
             try

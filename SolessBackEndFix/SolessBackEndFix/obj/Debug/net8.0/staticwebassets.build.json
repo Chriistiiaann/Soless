@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "wxaH/iZPY/qMFf0+NA77+Sh9Kp1S9Lt7AVUstuhKsos=",
+  "Hash": "UXFY2q8ziP1BTqc6yLdBGoIi40mSaEcTxMahizTWmG8=",
   "Source": "SolessBackEndFix",
   "BasePath": "_content/SolessBackEndFix",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "SolessBackEndFix\\wwwroot",
+      "Source": "SolessBackEndFix",
+      "ContentRoot": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix\\SolessBackEndFix\\wwwroot\\",
+      "BasePath": "_content/SolessBackEndFix",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix\\SolessBackEndFix\\wwwroot\\ejemplo.png",
+      "SourceId": "SolessBackEndFix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix\\SolessBackEndFix\\wwwroot\\",
+      "BasePath": "_content/SolessBackEndFix",
+      "RelativePath": "ejemplo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Always",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ejemplo.png"
+    }
+  ]
 }

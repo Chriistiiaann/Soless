@@ -34,9 +34,9 @@ namespace SolessBackEndFix.Repositories
             return await _context.Products.FirstOrDefaultAsync(u => u.Id == id);
         }
 
-        public async Task<Product> GetProductByName(string name)
+        public async Task<Product> GetProductByModel(string model)
         {
-            return await _context.Products.FirstOrDefaultAsync(u => u.Name == name);
+            return await _context.Products.FirstOrDefaultAsync(u => u.Model == model);
         }
     }
 }

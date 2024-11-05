@@ -46,6 +46,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SolessBackEndFix.Controllers.ProductController",
+    "Method": "AddProductAsync",
+    "RelativePath": "api/Product/AddProduct",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productToAdd",
+        "Type": "SolessBackEndFix.Models.Product",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SolessBackend.Controllers.UserController",
     "Method": "GetUsersAsync",
     "RelativePath": "api/User",
