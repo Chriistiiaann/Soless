@@ -53,7 +53,7 @@
     "img_Name": "zapatillas SB Dunk Low Verdy Visty.jpg",
     "description": "Con un diseño vibrante y distintivo, las SB Dunk Low Verdy Visty presentan una mezcla de colores llamativos y materiales premium que capturan el estilo único de la colaboración con Verdy. La parte superior combina paneles de gamuza y cuero en tonos negros, blancos y rojos, con detalles gráficos y el icónico logo de Verdy en los laterales. La puntera perforada mejora la transpirabilidad, mientras que el cuello acolchado proporciona comodidad durante todo el día. Cierre con cordones en contraste, suela de goma antideslizante para un excelente agarre, y plantilla con estampado personalizado que añade un toque especial. Estas zapatillas son ideales para los amantes del streetwear y de las colaboraciones exclusivas, fusionando la esencia del skate con el arte urbano.",
     "composition": "Exterior: Ante de becerro 100%, Otros tejidos 100%, Piel de becerro 100%\nForro: Otros tejidos 100%\nSuela: Goma 100%"
-  }
+  },
   {
     "id": 0,
     "brand": "Fendi",
@@ -67,6 +67,28 @@
   },
   {
     "id": 0,
+    "brand": "Adidas Yeezy",
+    "model": "zapatillas Yeezy Boost 350 V2 Zebra - 2018/2019 Release",
+    "original_Price": 609,
+    "discount_Price": 609,
+    "stock": 22,
+    "img_Name": "zapatillas Yeezy Boost 350 V2 Zebra - 2018-2019 Release.jpg",
+    "description": "Blanco puro y negro, estas zapatillas presentan un diseño distintivo y llamativo que captura la esencia de la colaboración entre Adidas y Kanye West. La parte superior está confeccionada en tejido Primeknit de alta calidad, con el icónico patrón de rayas que imita el pelaje de una cebra. Detalles como la banda lateral transparente en la parte media del pie, que muestra el texto SPLY-350 en rojo, añaden un toque de carácter. Cierre con cordones en la parte delantera, puntera redondeada y suela Boost que proporciona una amortiguación excepcional y comodidad durante todo el día. Forro interior suave y plantilla acolchada para una sensación premium en cada paso. Estas zapatillas son ideales para quienes buscan un estilo urbano único y una comodidad insuperable, y vienen con su certificado de autenticidad, presentadas en su caja original.",
+    "composition": "Exterior: Cuero 100%\nForro: Lona 100%\nSuela: Goma 100%"
+  },
+  {
+    "id": 0,
+    "brand": "Converse",
+    "model": "zapatillas Chuck 70 Hi de Converse x Isabel Marant",
+    "original_Price": 152,
+    "discount_Price": 152,
+    "stock": 37,
+    "img_Name": "zapatillas Chuck 70 Hi de Converse x Isabel Marant.jpg",
+    "description": "Nos hemos asociado con Good On You, una agencia independiente que clasifica el desempeño de las marcas en relación con su impacto en el planeta, las personas y los animales, con una calificación multicriterio simplificada a una escala de cinco puntos. Para obtener nuestra etiqueta conscious, las marcas más grandes deben obtener una puntuación mínima de cuatro sobre cinco («Bueno»), mientras que las marcas más pequeñas deben obtener una puntuación mínima de tres sobre cinco («Es un inicio»). Este artículo proviene de una marca calificada como tres de cinco («Es un inicio») por Good on You. Por favor, ten en cuenta que esta es una valoración a nivel de marca y no garantiza que este producto esté elaborado con materiales responsables.",
+    "composition": "Exterior: Cuero 100%\nForro: Lona 100%\nSuela: Goma 100%"
+  },
+  {
+    "id": 0,
     "brand": "Jordan",
     "model": "zapatillas Air Jordan 4 Retro 'Military Black'",
     "original_Price": 424,
@@ -75,17 +97,6 @@
     "img_Name": "zapatillas Air Jordan 4 Retro Military Black.jpg",
     "description": "Este artículo proviene de una marca calificada como tres de cinco («Es un inicio») por Good on You. Por favor, ten en cuenta que esta es una valoración a nivel de marca y no garantiza que este producto esté elaborado con materiales responsables. Descubre más sobre qué hace que un producto sea conscious en nuestra página de Criterios conscious.",
     "composition": "Exterior: Cuero 100%\nForro: nylon 100%\nSuela: Goma 100%"
-  },
-  {
-    "id": 0,
-    "brand": "Nike",
-    "model": "zapatillas 1 de Nike x Cactus Plant Flea Market",
-    "original_Price": 965,
-    "discount_Price": 965,
-    "stock": 15,
-    "img_Name": "zapatillas 1 de Nike x Cactus Plant Flea Market.jpg",
-    "description": "Verde, puntera redonda, detalle de pelo artificial, cierre con cordones en la parte delantera, logo bordado en la lengüeta, lengüeta en la parte posterior, plantilla con logo y suela de goma. Estos estilos son suministrados por un marketplace de zapatillas premium, el cual ofrece el calzado más codiciado y difícil de encontrar de todo el mundo.",
-    "composition": "Exterior: Otros tejidos 100%\nSuela: Goma 100%\nForro: Otros tejidos 100%"
   },
   {
     "id": 0,
@@ -175,7 +186,7 @@
     "description": "Nos hemos asociado con Good On You, una agencia independiente que clasifica el desempeño de las marcas en relación con su impacto en el planeta, las personas y los animales, con una calificación multicriterio simplificada a una escala de cinco puntos. Para obtener nuestra etiqueta conscious, las marcas más grandes deben obtener una puntuación mínima de cuatro sobre cinco («Bueno»), mientras que las marcas más pequeñas deben obtener una puntuación mínima de tres sobre cinco («Es un inicio»). Este artículo proviene de una marca calificada como tres de cinco («Es un inicio») por Good on You. Por favor, ten en cuenta que esta es una valoración a nivel de marca y no garantiza que este producto esté elaborado con materiales responsables.",
     "composition": "Exterior: poliéster 100%, Algodón 100%\nSuela: Goma 100%\nForro: Otros tejidos 100%"
   },
-  [
+  
     {
       "id": 0,
       "brand": "Adidas",
@@ -330,4 +341,7 @@
       "description": "Parche del logo en la lengüeta, cierre con cordones en la parte delantera, detalle del logo Swoosh, puntera redonda y suela dentada de goma. Estos estilos son suministrados por un marketplace de zapatillas premium, el cual ofrece el calzado más codiciado y difícil de encontrar de todo el mundo.",
       "composition": "Exterior: Cuero 100%, ante 100%, nylon 100%, poliéster 100%\nForro: poliéster 100%\nSuela: Goma 100%"
     }
-  ]
+  
+]
+
+  
