@@ -4,11 +4,12 @@ using SolessBackend.Models;
 using SolessBackEndFix.Interfaces;
 using SolessBackEndFix.Models;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace SolessBackEndFix.Repositories
 {
-    public class ProductRepository : IProductRepository // Implementación explícita de la interfaz
+    public class ProductRepository : IProductRepository
     {
         private readonly DataBaseContext _context;
 
@@ -17,10 +18,21 @@ namespace SolessBackEndFix.Repositories
             _context = context;
         }
 
-        //Obtenemos todos los productos de nuestro catálogo
+        //Devuelve todos los productos sin paginación
         public async Task<ICollection<Product>> GetProductsAsync()
         {
             return await _context.Products.OrderBy(u => u.Id).ToListAsync();
+        }
+
+        //Devuelve productos según el offset y el límite
+        public async Task<ICollection<Product>> GetProductsAsync(int offset, int limit)
+        {
+            // Aplica la paginación a la consulta
+            return await _context.Products
+                .OrderBy(u => u.Id)
+                .Skip(offset)         // Salta el número de elementos determinado por el offset
+                .Take(limit)          // Toma el número de elementos determinado por el límite
+                .ToListAsync();
         }
 
         public async Task AddProductAsync(Product product)
@@ -37,6 +49,11 @@ namespace SolessBackEndFix.Repositories
         public async Task<Product> GetProductByModel(string model)
         {
             return await _context.Products.FirstOrDefaultAsync(u => u.Model == model);
+        }
+
+        public async Task<int> GetTotalProductCountAsync()
+        {
+            return await _context.Products.CountAsync();
         }
     }
 }

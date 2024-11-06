@@ -431,5 +431,35 @@ C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\obj\
 C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\obj\Debug\net8.0\SolessBackEndFix.pdb
 C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\obj\Debug\net8.0\SolessBackEndFix.genruntimeconfig.cache
 C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\obj\Debug\net8.0\ref\SolessBackEndFix.dll
-C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\ejemplo.png
 C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\SolessBackEndFix.staticwebassets.runtime.json
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\sandalias con logo en relieve de BALENCIAGA x Crocs.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\sandalias mules Classic Clog de MCM x Crocs.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas 1 de Nike x Cactus Plant Flea Market.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas Air Force 1 '07 PRM 3.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas Air Jordan 4 Retro FK sneakers.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas Air Jordan 4 Retro Military Black.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas Air Max 1 Sketch Schematic sneakers.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas altas Converse x Off-White Chuck 70.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas bajas Match con cordones.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas Ballstar con parche de estrella.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas Campus con cordones de adidas x Bad Bunny.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas Chuck 70 Hi de Converse x Isabel Marant.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas Forum Low CL The Simpsons - Living Room.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas MA-1.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas Match sneakers.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas Match.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas Out Of Office For Walking.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas SB Dunk Low de Nike x Grateful Dead.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas SB Dunk Low Verdy Visty.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas SB Dunk Travis Scott Special Box.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas Skel-Top sneakers.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas Slim Out Of Office.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas Super-Star V2.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas Super-Star.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas The 10 Air Jordan 1 de Nike x Off-White.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas The Ball.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas x Bad Bunny x Lionel Messi Gazelle Indoor Cardboard sneakers.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas Yeezy 500 Utility Black.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas YEEZY Boost 350 V2 Bone.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\wwwroot\images\zapatillas Yeezy Boost 350 V2 Zebra - 2018-2019 Release.jpg
+C:\Users\chrro\OneDrive\Escritorio\Soless\SolessBackEndFix\SolessBackEndFix\bin\Debug\net8.0\F23.StringSimilarity.dll

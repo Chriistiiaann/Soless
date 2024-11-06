@@ -1,3 +1,4 @@
+using Examples.WebApi.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
@@ -40,7 +41,7 @@ namespace SolessBackend
             builder.Services.AddScoped<DataBaseContext>();
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
             builder.Services.AddScoped<ProductMapper>();
-
+            builder.Services.AddScoped<SmartSearchService>();
 
             // Swagger configuration
             builder.Services.AddEndpointsApiExplorer();

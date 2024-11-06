@@ -1,0 +1,57 @@
+[
+  {
+    "id": 0,
+    "brand": "Golden Goose",
+    "model": "zapatillas Super-Star",
+    "original_Price": 480,
+    "discount_Price": 0,
+    "stock": 12,
+    "img_Name": "zapatillas Super-Star.jpg",
+    "description": "Blanco natural, gris suave, cuero de becerro, acabado envejecido, paneles de gamuza en contraste, icónica estrella lateral en relieve, logotipo estampado en el costado, lengüeta con detalle de logo, cierre frontal con cordones, puntera redondeada y perforada para una mayor transpirabilidad, talón con logotipo en contraste, plantilla de piel con marca estampada, forro de algodón suave, y suela plana de goma duradera. Este modelo incluye certificado de autenticidad y viene presentado en una bolsa protectora para su almacenamiento.",
+    "composition": "Exterior: Piel de búfalo 100%\nForro: Algodón 100%, Piel de becerro 100%\nSuela: Goma 100%"
+  },
+  {
+    "id": 0,
+    "brand": "Nike",
+    "model": "zapatillas SB Dunk Travis Scott Special Box",
+    "original_Price": 2682,
+    "discount_Price": 2400,
+    "stock": 15,
+    "img_Name": "zapatillas SB Dunk Travis Scott Special Box.jpg",
+    "description": "Puntera redonda, suela plana de goma, cierre con cordones en la parte delantera y plantilla con logo. Estos estilos son suministrados por un marketplace de zapatillas premium, el cual ofrece el calzado más codiciado y difícil de encontrar de todo el mundo.",
+    "composition": "Exterior: Cuero 100%, poliéster 100%\nForro: poliéster 100%\nSuela: Goma 100%"
+  },
+  {
+    "id": 0,
+    "brand": "Amiri",
+    "model": "zapatillas MA-1",
+    "original_Price": 766,
+    "discount_Price": 766,
+    "stock": 23,
+    "img_Name": "zapatillas MA-1.jpg",
+    "description": "Con diseño inspirado en la clásica chaqueta bomber, estos zapatos presentan una combinación de materiales en nylon duradero y detalles en cuero, disponibles en tonos verde militar y negro. El interior en color naranja añade un contraste distintivo, mientras que una cremallera lateral facilita el calce y refuerza su estilo utilitario. La suela de goma antideslizante y la plantilla acolchada ofrecen confort y estabilidad. Con el logo en el talón, este zapato une elegancia y funcionalidad para un look urbano refinado.",
+    "composition": "Exterior: Piel de becerro 100%, Ante de becerro 100%, Otros tejidos 100%\nForro: Otros tejidos 100%\nSuela: Goma 100%"
+  },
+  {
+    "id": 0,
+    "brand": "Off-White",
+    "model": "zapatillas Slim Out Of Office",
+    "original_Price": 450,
+    "discount_Price": 420,
+    "stock": 12,
+    "img_Name": "zapatillas Slim Out Of Office.jpg",
+    "description": "Zapatillas Slim Out Of Office en tonos blanco y gris suave, confeccionadas en cuero de alta calidad con paneles en gamuza para un toque elegante y moderno. Diseño estilizado y aerodinámico, ideal para el uso diario, con el icónico logo de flecha en relieve en el lateral. Cierre con cordones en la parte frontal, puntera redondeada y perforada para mayor transpirabilidad, y cuello acolchado para un ajuste cómodo. Plantilla de piel con logotipo estampado y forro interior suave para una sensación premium. Suela de goma ligera y flexible que proporciona un excelente agarre en cada paso. Perfectas para un look casual y sofisticado, estas zapatillas son el complemento ideal para cualquier guardarropa.",
+    "composition": "Exterior: Cuero 53%, Poliéster reciclado 47%\nForro: Poliéster reciclado 82%, poliéster 18%\nSuela: Goma 100%"
+  },
+  {
+    "id": 0,
+    "brand": "Nike",
+    "model": "zapatillas SB Dunk Low Verdy Visty",
+    "original_Price": 652,
+    "discount_Price": 630,
+    "stock": 30,
+    "img_Name": "zapatillas SB Dunk Low Verdy Visty.jpg",
+    "description": "Con un diseño vibrante y distintivo, las SB Dunk Low Verdy Visty presentan una mezcla de colores llamativos y materiales premium que capturan el estilo único de la colaboración con Verdy. La parte superior combina paneles de gamuza y cuero en tonos negros, blancos y rojos, con detalles gráficos y el icónico logo de Verdy en los laterales. La puntera perforada mejora la transpirabilidad, mientras que el cuello acolchado proporciona comodidad durante todo el día. Cierre con cordones en contraste, suela de goma antideslizante para un excelente agarre, y plantilla con estampado personalizado que añade un toque especial. Estas zapatillas son ideales para los amantes del streetwear y de las colaboraciones exclusivas, fusionando la esencia del skate con el arte urbano.",
+    "composition": "Exterior: Ante de becerro 100%, Otros tejidos 100%, Piel de becerro 100%\nForro: Otros tejidos 100%\nSuela: Goma 100%"
+  }
+]
