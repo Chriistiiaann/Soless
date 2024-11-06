@@ -19,7 +19,7 @@ namespace SolessBackEndFix.Controllers
             _productRepository = productRepository;
             _mapper = productMapper;
         }
-        [HttpGet]
+        [HttpPost("ListOfProducts")]
         public async Task<IActionResult> GetProductsAsync(int page = 1, int limit = 10)
         {
             
@@ -97,5 +97,48 @@ namespace SolessBackEndFix.Controllers
 
             return Ok(new { message = "Producto registrado con éxito" });
         }
+
+        [HttpPost("AddProducts")]
+        public async Task<IActionResult> AddProductsAsync([FromBody] List<Product> productsToAdd)
+        {
+            if (productsToAdd == null || productsToAdd.Count == 0)
+            {
+                return BadRequest("Product data is required.");
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var conflictingModels = new List<string>();
+
+            // Verificar si alguno de los productos ya existe
+            foreach (var product in productsToAdd)
+            {
+                var existingProduct = await _productRepository.GetProductByModel(product.Model);
+                if (existingProduct != null)
+                {
+                    conflictingModels.Add(product.Model);
+                }
+            }
+
+            if (conflictingModels.Count > 0)
+            {
+                return Conflict(new { message = "Some products already exist with the following models:", conflictingModels });
+            }
+
+            try
+            {
+                await _productRepository.AddProductsAsync(productsToAdd);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal server error: " + ex.Message);
+            }
+
+            return Ok(new { message = "Products registered successfully" });
+        }
+
     }
 }

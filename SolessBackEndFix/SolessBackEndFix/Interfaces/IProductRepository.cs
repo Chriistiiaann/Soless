@@ -10,6 +10,7 @@ namespace SolessBackEndFix.Interfaces
         Task<ICollection<Product>> GetProductsAsync(int offset, int limit);
         Task<Product> GetProductByIdAsync(long id);
         Task AddProductAsync(Product product);
+        Task AddProductsAsync(IEnumerable<Product> products);
         Task<Product> GetProductByModel(string model);
         Task<int> GetTotalProductCountAsync();
     }

@@ -17,7 +17,7 @@ namespace Examples.WebApi.Controllers
         }
 
         // Acción para realizar la búsqueda de productos
-        [HttpGet]
+        [HttpPost("Search")]
         public IEnumerable<Product> Search([FromQuery] string query)
         {
             // Usamos el servicio inyectado para realizar la búsqueda y devolver los productos

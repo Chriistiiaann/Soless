@@ -40,7 +40,11 @@ namespace SolessBackEndFix.Repositories
             _context.Products.Add(product);
             await _context.SaveChangesAsync();
         }
-
+        public async Task AddProductsAsync(IEnumerable<Product> products)
+        {
+            _context.Products.AddRange(products);
+            await _context.SaveChangesAsync();
+        }
         public async Task<Product> GetProductByIdAsync(long id)
         {
             return await _context.Products.FirstOrDefaultAsync(u => u.Id == id);

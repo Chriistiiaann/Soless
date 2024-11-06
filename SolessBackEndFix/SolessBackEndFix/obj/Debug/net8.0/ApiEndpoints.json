@@ -37,9 +37,41 @@
   },
   {
     "ContainingType": "SolessBackEndFix.Controllers.ProductController",
+    "Method": "AddProductAsync",
+    "RelativePath": "api/Product/AddProduct",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productToAdd",
+        "Type": "SolessBackEndFix.Models.Product",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SolessBackEndFix.Controllers.ProductController",
+    "Method": "AddProductsAsync",
+    "RelativePath": "api/Product/AddProducts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productsToAdd",
+        "Type": "System.Collections.Generic.List\u00601[[SolessBackEndFix.Models.Product, SolessBackEndFix, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SolessBackEndFix.Controllers.ProductController",
     "Method": "GetProductsAsync",
-    "RelativePath": "api/Product",
-    "HttpMethod": "GET",
+    "RelativePath": "api/Product/ListOfProducts",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -57,26 +89,10 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "SolessBackEndFix.Controllers.ProductController",
-    "Method": "AddProductAsync",
-    "RelativePath": "api/Product/AddProduct",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "productToAdd",
-        "Type": "SolessBackEndFix.Models.Product",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Examples.WebApi.Controllers.SmartSearchController",
     "Method": "Search",
-    "RelativePath": "api/SmartSearch",
-    "HttpMethod": "GET",
+    "RelativePath": "api/SmartSearch/Search",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
