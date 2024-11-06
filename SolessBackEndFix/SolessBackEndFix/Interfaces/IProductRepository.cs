@@ -13,5 +13,9 @@ namespace SolessBackEndFix.Interfaces
         Task AddProductsAsync(IEnumerable<Product> products);
         Task<Product> GetProductByModel(string model);
         Task<int> GetTotalProductCountAsync();
+        Task<ICollection<Product>> AscPriceProduct();
+        Task<ICollection<Product>> DescPriceProduct();
+        Task <ICollection<Product>> AtoZProductAsync();
+        Task<ICollection<Product>> ZtoAProductAsync();
     }
 }

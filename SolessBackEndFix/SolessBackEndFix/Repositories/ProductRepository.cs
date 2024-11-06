@@ -59,5 +59,27 @@ namespace SolessBackEndFix.Repositories
         {
             return await _context.Products.CountAsync();
         }
+
+        public async Task<ICollection<Product>> AscPriceProduct()
+        {
+            var productos = await _context.Products.ToListAsync();
+            return productos.OrderBy(p => p.Original_Price).ToList();
+        }
+
+        public async Task<ICollection<Product>> DescPriceProduct()
+        {
+            var productos = await _context.Products.ToListAsync();
+            return productos.OrderByDescending(p => p.Original_Price).ToList();
+        }
+
+        public Task<ICollection<Product>> AtoZProductAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ICollection<Product>> ZtoAProductAsync()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -22,7 +22,7 @@ namespace SolessBackEndFix.Controllers
         [HttpPost("ListOfProducts")]
         public async Task<IActionResult> GetProductsAsync(int page = 1, int limit = 10)
         {
-            
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -138,6 +138,20 @@ namespace SolessBackEndFix.Controllers
             }
 
             return Ok(new { message = "Products registered successfully" });
+        }
+
+        [HttpGet("desc-price")]
+        public async Task<IActionResult> GetProductsByAscPrice()
+        {
+            var productos = await _productRepository.AscPriceProduct();
+            return Ok(productos);
+        }
+
+        [HttpGet("asc-price")]
+        public async Task<IActionResult> GetProductsByDescPrice()
+        {
+            var productos = await _productRepository.DescPriceProduct();
+            return Ok(productos);
         }
 
     }

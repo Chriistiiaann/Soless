@@ -69,6 +69,26 @@
   },
   {
     "ContainingType": "SolessBackEndFix.Controllers.ProductController",
+    "Method": "GetProductsByDescPrice",
+    "RelativePath": "api/Product/asc-price",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SolessBackEndFix.Controllers.ProductController",
+    "Method": "GetProductsByAscPrice",
+    "RelativePath": "api/Product/desc-price",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SolessBackEndFix.Controllers.ProductController",
     "Method": "GetProductsAsync",
     "RelativePath": "api/Product/ListOfProducts",
     "HttpMethod": "POST",
@@ -100,19 +120,29 @@
         "Name": "query",
         "Type": "System.String",
         "IsRequired": false
+      },
+      {
+        "Name": "sortField",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "sortOrder",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[SolessBackEndFix.Models.Product, SolessBackEndFix, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "SolessBackend.Controllers.UserController",
