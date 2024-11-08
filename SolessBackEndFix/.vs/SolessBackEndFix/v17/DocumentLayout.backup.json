@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix\\solessbackendfix\\dto\\searchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\dto\\searchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix\\solessbackendfix\\controllers\\smartsearchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\controllers\\smartsearchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix\\solessbackendfix\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix\\solessbackendfix\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,19 +39,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SearchDTO.cs",
+              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix\\SolessBackEndFix\\DTO\\SearchDTO.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\DTO\\SearchDTO.cs",
+              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix\\SolessBackEndFix\\DTO\\SearchDTO.cs",
+              "RelativeToolTip": "SolessBackEndFix\\DTO\\SearchDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T11:36:29.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix\\SolessBackEndFix\\DTO\\UserDTO.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\DTO\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix\\SolessBackEndFix\\DTO\\UserDTO.cs",
+              "RelativeToolTip": "SolessBackEndFix\\DTO\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T11:33:05.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "SmartSearchController.cs",
               "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix\\SolessBackEndFix\\Controllers\\SmartSearchController.cs",
               "RelativeDocumentMoniker": "SolessBackEndFix\\Controllers\\SmartSearchController.cs",
               "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix\\SolessBackEndFix\\Controllers\\SmartSearchController.cs",
               "RelativeToolTip": "SolessBackEndFix\\Controllers\\SmartSearchController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAEwEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T16:38:06.289Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix\\SolessBackEndFix\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "SolessBackEndFix\\Controllers\\ProductController.cs",
@@ -51,12 +84,11 @@
               "RelativeToolTip": "SolessBackEndFix\\Controllers\\ProductController.cs",
               "ViewState": "AgIAAIsAAAAAAAAAAAAqwJsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T16:30:10.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T16:30:10.771Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ProductRepository.cs",
               "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix\\SolessBackEndFix\\Repositories\\ProductRepository.cs",
               "RelativeDocumentMoniker": "SolessBackEndFix\\Repositories\\ProductRepository.cs",
@@ -64,12 +96,11 @@
               "RelativeToolTip": "SolessBackEndFix\\Repositories\\ProductRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T16:28:55.867Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T16:28:55.867Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "IProductRepository.cs",
               "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix\\SolessBackEndFix\\Interfaces\\IProductRepository.cs",
               "RelativeDocumentMoniker": "SolessBackEndFix\\Interfaces\\IProductRepository.cs",
@@ -77,8 +108,7 @@
               "RelativeToolTip": "SolessBackEndFix\\Interfaces\\IProductRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T16:20:14.853Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T16:20:14.853Z"
             }
           ]
         }

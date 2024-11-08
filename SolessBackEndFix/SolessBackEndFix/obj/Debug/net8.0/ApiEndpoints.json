@@ -117,29 +117,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "query",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "sortField",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "sortOrder",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "page",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "limit",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "request",
+        "Type": "SolessBackEndFix.DTO.Search",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
