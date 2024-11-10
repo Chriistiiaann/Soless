@@ -5,7 +5,7 @@ import './styles/Module.Barra-busqueda.css';
 import { useShoesContext } from "../context_providers/ShoesProvider";
 import { usePaginationContext } from "../context_providers/PaginationProvider";
 import { useItemsPerPageContext } from "../context_providers/ItemsPerPageProvider";
-// import { useFilterContext } from "../context_providers/FilterProvider";
+import { useFilterContext } from "../context_providers/FilterProvider";
 import { GET_SHOES_ENDPOINT } from "../config";
 
 const BarraBusqueda = () => {
@@ -14,11 +14,9 @@ const BarraBusqueda = () => {
   const shoes = useShoesContext();
   const pagination = usePaginationContext();
   const itemsPerPage = useItemsPerPageContext();
+  const filter = useFilterContext();
 
   // Estados -------------------------------------------------------------------
-  const [searchTerm, setSearchTerm] = useState("");
-  const [sortField, setSortField] = useState("price");
-  const [sortOrder, setSortOrder] = useState("asc");
 
   // Funciones -------------------------------------------------------------------
 
@@ -54,15 +52,15 @@ const BarraBusqueda = () => {
   }
   
   function manageSearch(event) {
-    setSearchTerm(event.target.value);
+    filter.setSearchTerm(event.target.value);
   }
 
   function manageField(event) {
-    setSortField(event.target.value);
+    filter.setSortField(event.target.value);
   }
 
   function manageOrder(event) {
-    setSortOrder(event.target.value);
+    filter.setSortOrder(event.target.value);
   }
 
   // useEffect -------------------------------------------------------------------
@@ -72,17 +70,17 @@ const BarraBusqueda = () => {
   useEffect(() => {
     if (!isFirstLoad) {
       const objetoBackend = {
-        query: searchTerm,
-        sortField: sortField,
-        sortOrder: sortOrder,
+        query: filter.searchTerm,
+        sortField: filter.sortField,
+        sortOrder: filter.sortOrder,
         page: pagination.pagination.currentPage || 1,
-        limit: itemsPerPage.itemsPerPage // Corregido aquí
+        limit: itemsPerPage.itemsPerPage 
       };
       connectToApi(GET_SHOES_ENDPOINT, objetoBackend);
     } else {
       setIsFirstLoad(false);
     }
-  }, [searchTerm, sortField, sortOrder]); // Corregido aquí
+  }, [filter.searchTerm, filter.sortField, filter.sortOrder]);
 
   return (
     <form className="search-form">
@@ -90,7 +88,7 @@ const BarraBusqueda = () => {
         <input
           type="text"
           placeholder="Buscar..."
-          value={searchTerm} // Agregado aquí
+          value={filter.searchTerm}
           onChange={manageSearch}
           className="input-busqueda"
         />

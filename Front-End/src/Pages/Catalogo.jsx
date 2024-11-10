@@ -12,6 +12,7 @@ import { useEffect } from "react";
 import { useShoesContext } from "../context_providers/ShoesProvider";
 import { usePaginationContext } from "../context_providers/PaginationProvider";
 import { useItemsPerPageContext } from "../context_providers/ItemsPerPageProvider";
+import { useFilterContext } from "../context_providers/FilterProvider";
 
 // EndPoints -------------------------------------------------------------------
 import { GET_SHOES_ENDPOINT } from "../config";
@@ -27,6 +28,7 @@ function Catalogo(){
     const shoes = useShoesContext();
     const pagination = usePaginationContext();
     const itemsPerPage = useItemsPerPageContext();
+    const filter = useFilterContext();
 
     // Función para conectar con la API -------------------------------------------------------------------
 
@@ -65,9 +67,9 @@ function Catalogo(){
 
     useEffect(() => {
         const objetoBackend = {
-            "query": "",
-            "sortField": "",
-            "sortOrder": "",
+            "query": filter.searchTerm,
+            "sortField": filter.sortField,
+            "sortOrder": filter.sortOrder,
             "page": pagination.pagination.currentPage || 1,
             "limit": itemsPerPage.itemsPerPage // Corregido aquí
         };
@@ -92,10 +94,10 @@ function Catalogo(){
     const handlePageClick = (event) => {
         const selectedPage = event.selected + 1; // +1 porque las páginas de ReactPaginate comienzan en 0
 
-        pagination.setPagination((prev) => ({
-            ...prev,
+        pagination.setPagination({
+            ...pagination.pagination,
             currentPage: selectedPage,
-        }));
+        });
     };
 
     // Manejar el cambio de numero de items por página -------------------------------------------------------------------
@@ -107,10 +109,10 @@ function Catalogo(){
         itemsPerPage.setItemsPerPage(newItemsPerPage);
 
         // Reiniciar la paginación a la primera página
-        pagination.setPagination((prev) => ({
-            ...prev,
+        pagination.setPagination({
+            ...pagination.pagination,
             currentPage: 1,
-        }));
+        });
     };
         
 
