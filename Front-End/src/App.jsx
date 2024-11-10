@@ -1,18 +1,21 @@
 import Login from "./Pages/Login"
 import Register from "./Pages/Register"
 import Home from "./Pages/Home"
-import { Route, Routes } from "react-router-dom";
+import Catalogo from "./Pages/Catalogo"
+import BigLayout from "./Pages/BigLayout"
+import { Route, Routes } from 'react-router-dom';
 import "./global.css"
 
 function App() {
     return(
-        <>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/Login" element={<Login />} />
-                <Route path="/Register" element={<Register />} />
-            </Routes>
-        </>
+                <Routes>
+                    <Route path="/" element={<BigLayout />}>
+                        <Route index element={<Home />} />
+                        <Route path="/Catalogo" element={<Catalogo />} />
+                    </Route>
+                    <Route path="/Login" element={<Login />} />
+                    <Route path="/Register" element={<Register />} />
+                </Routes>
     )
 }
 

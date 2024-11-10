@@ -21,7 +21,7 @@ function Section({ title, children, offer }) {
 
 Section.propTypes = {
     title: PropTypes.string.isRequired,
-    children: PropTypes.node.isRequired,
+    children: PropTypes.array.isRequired,
     offer: PropTypes.bool
 };
 
