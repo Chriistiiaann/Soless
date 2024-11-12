@@ -1,0 +1,103 @@
+
+.about-us-content {
+    margin: 0 auto;
+    padding: 20px;
+    color: var(--text-color);
+}
+
+.about-us-description {
+    margin-bottom: 40px;
+}
+
+.title_developers {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.title_developers h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.title_developers .logo {
+    width: 60px;
+}
+
+.list-developers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.mv {
+    display: flex;
+    flex-direction: column; 
+    gap: 40px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mision, .vision {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 0 auto; 
+}
+
+.mision h2 {
+    text-align: left; 
+    font-family: var(--font-family-title);
+    margin-bottom: 10px;
+}
+
+.vision h2 {
+    text-align: right; 
+    font-family: var(--font-family-title);
+    margin-bottom: 10px;
+}
+
+.mision p, .vision p {
+    text-align: justify; 
+}
+
+.valores {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.valores h2 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.valor-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.valor-item h3 {
+    font-size: 1.3em;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.valor-item p {
+    font-size: 1em;
+    text-align: justify;
+    line-height: 1.6;
+}
+

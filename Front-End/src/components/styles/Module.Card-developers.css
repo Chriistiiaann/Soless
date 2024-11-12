@@ -1,0 +1,51 @@
+.card-developer {
+    width: 250px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra para resaltar la tarjeta */
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease; /* Animación para el hover */
+}
+
+.card-developer:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.img-container {
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; 
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover; /* Ajusta la imagen para que llene el contenedor sin distorsionarse */
+}
+
+.developer-info {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.product-info h3 {
+    font-size: 1em;
+    color: #333;
+    margin: 0;
+    font-weight: 500;
+}
+
+.description {
+    font-size: 0.9em;
+    margin-top: 8px;
+    line-height: 1.4;
+    text-align: justify; /* Justificación del texto para mejor legibilidad */
+}
