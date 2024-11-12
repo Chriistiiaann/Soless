@@ -9,11 +9,11 @@
 
 .about-us-title {
     text-align: left;
-    font-size: 4em;
+    font-size: 7em;
     font-weight: bold;
     color: var(--text-color);
     margin: 20px 0;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     padding: 0 5%;
@@ -27,18 +27,26 @@
 .about-us-description {
     margin: auto;
     padding: 0 40px 50px;
-    font-size: 1.2em;
+    font-size: 2em;
     letter-spacing: 0.1em;
-    max-width: 90vw;
+    max-width: 60vw;
     text-align: justify;
     line-height: 2;
-    
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .developers-section {
     background-color: var(--secondary-color);
     width: 100%;
     padding: 20px;
+}
+
+.developers-container{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 70vw;
 }
 
 .title_developers {
@@ -75,7 +83,7 @@
     justify-content: center;
     gap: 40px; 
     margin: 40px auto;
-    width: 70%;
+    width: 60%;
 }
 
 .mision, .vision {
@@ -126,7 +134,7 @@
     border-radius: 15px;
     background-color: var(--background-color);
     box-shadow: -5px 5px 0px 2px var(--shadow-color);
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
 }
 

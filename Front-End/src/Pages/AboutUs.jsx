@@ -20,20 +20,22 @@ function AboutUs (){
                     <h2>{inf_pagAboutUs.title}</h2>
                     <img src={inf_pagAboutUs.img_logo} alt="Logo" className="logo"/>
                 </div>
-                <div className="list-developers">
-                    {developers.map((dev, index) => (
-                        <Card key={index} image={dev.image} name={dev.name} description={dev.description} /> // Renderiza cada desarrollador en un Card
-                    ))}
+                <div className="developers-container">
+                    <div className="list-developers">
+                        {developers.map((dev, index) => (
+                            <Card key={index} image={dev.image} name={dev.name} description={dev.description} /> // Renderiza cada desarrollador en un Card
+                        ))}
+                    </div>
                 </div>
             </div>
             
             <div className="mv">
                 <div className="mision">
-                    <h2>Mision</h2>
+                    <h2>Misión</h2>
                     <p>{inf_pagAboutUs.mision}</p>
                 </div>
                 <div className="vision">
-                    <h2>Vision</h2>
+                    <h2>Visión</h2>
                     <p>{inf_pagAboutUs.vision}</p>
                 </div>
             </div>
