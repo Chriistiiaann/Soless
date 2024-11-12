@@ -3,7 +3,7 @@ import logo from '../img/logoSoless.png';
 import usuarioIcon from '../img/usuario.png';
 import carritoIcon from '../img/carrito.png';
 import NavBar from './NavBar';
-
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -17,24 +17,24 @@ function Header() {
             className="logo" 
           />
         </div>
-        <a href="#Inicio" className="titulo-link">
+        <Link to="/" className="titulo-link">
           <h1 className="titulo">SOLESS</h1>
-        </a>
+        </Link>
         <div className="iconos">
-          <a href="/Login" aria-label="Usuario">
+          <Link to="/Login" aria-label="Usuario">
             <img 
               src={usuarioIcon} 
               alt="Usuario" 
               className="icono" 
             />
-          </a>
-          <a href="#Carrito" aria-label="Carrito">
+          </Link>
+          <Link to="" aria-label="Carrito">
             <img 
               src={carritoIcon} 
               alt="Carrito" 
               className="icono" 
             />
-          </a>
+          </Link>
         </div>
       </div>
       {<NavBar />}
