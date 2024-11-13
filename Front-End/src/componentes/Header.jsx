@@ -37,7 +37,7 @@ function Header() {
           </a>
         </div>
       </div>
-      <nav className="nav">
+      <nav className="nav"> /**Crear componente navigation.jsx */
         <a href="#Productos">Productos</a>
         <a href="#Proximamente">Próximamente...</a>
         <a href="#SobreNosotros">Sobre Nosotros</a>

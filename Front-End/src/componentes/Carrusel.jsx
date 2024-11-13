@@ -7,7 +7,7 @@ import foto3 from '../img/foto3.jpg';
 import flechaIzquierda from '../img/flecha-izquierda.jpg';
 import flechaDerecha from '../img/flecha-derecha.jpg';
 import './Module.Carrusel.css';
-
+/**HACERLO REHUSABLE */
 const Carrusel = () => {
   const imagenes = [foto2, foto1,foto3];
   const [indiceActual, setIndiceActual] = useState(0);

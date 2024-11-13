@@ -26,7 +26,7 @@
 .logo-container {
   display: flex;
   align-items: center;
-  margin-right: 50px;
+  margin-right: 50px; /* QUITAR*/
 }
 
 .logo {
