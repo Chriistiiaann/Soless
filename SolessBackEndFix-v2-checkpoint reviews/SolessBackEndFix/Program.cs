@@ -44,6 +44,8 @@ namespace SolessBackend
             builder.Services.AddScoped<ProductMapper>();
             builder.Services.AddScoped<IReviewRepository, ReviewRepository>();  // Agregar el repositorio de Review
             builder.Services.AddScoped<ReviewMapper>();  // Agregar el mapper de Review si tienes uno
+            builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+            builder.Services.AddScoped <OrderMapper>();
             builder.Services.AddScoped<SmartSearchService>();
 
             // Swagger configuration
