@@ -3,6 +3,7 @@ using SolessBackEndFix.DataMappers;
 using SolessBackEndFix.DTO;
 using SolessBackEndFix.Interfaces;
 using SolessBackEndFix.Models;
+using SolessBackEndFix.Repositories;
 
 namespace SolessBackEndFix.Controllers
 {
@@ -12,11 +13,13 @@ namespace SolessBackEndFix.Controllers
     {
         private readonly IReviewRepository _reviewRepository;
         private readonly ReviewMapper _reviewMapper;
+        private readonly IOrderRepository _orderRepository; // Agregar la dependencia para acceder al repositorio de órdenes
 
-        public ReviewController(IReviewRepository reviewRepository, ReviewMapper reviewMapper)
+        public ReviewController(IReviewRepository reviewRepository, ReviewMapper reviewMapper, IOrderRepository orderRepository)
         {
             _reviewRepository = reviewRepository;
             _reviewMapper = reviewMapper;
+            _orderRepository = orderRepository;
         }
 
         // GET: api/Review
@@ -64,6 +67,15 @@ namespace SolessBackEndFix.Controllers
         [HttpPost]
         public async Task<ActionResult> AddReview([FromBody] ReviewDTO reviewDto)
         {
+            // Verificar si el usuario ha comprado el producto antes de permitir la reseña
+            var hasPurchased = await _orderRepository.HasUserPurchasedProductAsync(reviewDto.UserId, reviewDto.ProductId);
+
+            if (!hasPurchased)
+            {
+                return BadRequest("You must purchase the product before leaving a review.");
+            }
+
+            // Si el usuario ha comprado el producto, procedemos a agregar la reseña
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);

@@ -15,5 +15,6 @@ namespace SolessBackEndFix.Models
         public string? Description { get; set; }
         public string? Composition {  get; set; }
         public ICollection<Review> Reviews { get; set; }
+        public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
     }
 }
