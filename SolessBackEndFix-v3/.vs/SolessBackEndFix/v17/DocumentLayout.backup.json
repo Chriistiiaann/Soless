@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix-v3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v3\\solessbackendfix\\repositories\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\repositories\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v3\\solessbackendfix\\models\\cartproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\models\\cartproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v3\\solessbackendfix\\dto\\cartproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\dto\\cartproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v3\\solessbackendfix\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v3\\solessbackendfix\\dto\\cartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\dto\\cartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v3\\solessbackendfix\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v3\\solessbackendfix\\interfaces\\icartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\interfaces\\icartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v3\\solessbackendfix\\datamappers\\cartmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\datamappers\\cartmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CartMapper.cs",
+              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix-v3\\SolessBackEndFix\\DataMappers\\CartMapper.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\DataMappers\\CartMapper.cs",
+              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix-v3\\SolessBackEndFix\\DataMappers\\CartMapper.cs",
+              "RelativeToolTip": "SolessBackEndFix\\DataMappers\\CartMapper.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwA8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T16:10:13.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix-v3\\SolessBackEndFix\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix-v3\\SolessBackEndFix\\Models\\Cart.cs",
+              "RelativeToolTip": "SolessBackEndFix\\Models\\Cart.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T14:50:22.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CartProductDTO.cs",
+              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix-v3\\SolessBackEndFix\\DTO\\CartProductDTO.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\DTO\\CartProductDTO.cs",
+              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix-v3\\SolessBackEndFix\\DTO\\CartProductDTO.cs",
+              "RelativeToolTip": "SolessBackEndFix\\DTO\\CartProductDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T14:39:17.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CartProduct.cs",
+              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix-v3\\SolessBackEndFix\\Models\\CartProduct.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\Models\\CartProduct.cs",
+              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix-v3\\SolessBackEndFix\\Models\\CartProduct.cs",
+              "RelativeToolTip": "SolessBackEndFix\\Models\\CartProduct.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T14:49:31.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CartRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix-v3\\SolessBackEndFix\\Repositories\\CartRepository.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\Repositories\\CartRepository.cs",
+              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix-v3\\SolessBackEndFix\\Repositories\\CartRepository.cs",
+              "RelativeToolTip": "SolessBackEndFix\\Repositories\\CartRepository.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAQwGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T15:09:45.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ICartRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix-v3\\SolessBackEndFix\\Interfaces\\ICartRepository.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\Interfaces\\ICartRepository.cs",
+              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix-v3\\SolessBackEndFix\\Interfaces\\ICartRepository.cs",
+              "RelativeToolTip": "SolessBackEndFix\\Interfaces\\ICartRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T15:04:22.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix-v3\\SolessBackEndFix\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix-v3\\SolessBackEndFix\\Controllers\\CartController.cs",
+              "RelativeToolTip": "SolessBackEndFix\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAowKcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T14:30:52.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CartDTO.cs",
+              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix-v3\\SolessBackEndFix\\DTO\\CartDTO.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\DTO\\CartDTO.cs",
+              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackEndFix-v3\\SolessBackEndFix\\DTO\\CartDTO.cs",
+              "RelativeToolTip": "SolessBackEndFix\\DTO\\CartDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T14:31:09.156Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
