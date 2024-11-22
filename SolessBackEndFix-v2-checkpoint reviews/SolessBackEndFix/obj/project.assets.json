@@ -3298,11 +3298,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\Versiones backend\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\SolessBackEndFix.csproj",
+      "projectUniqueName": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\SolessBackEndFix.csproj",
       "projectName": "SolessBackEndFix",
-      "projectPath": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\Versiones backend\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\SolessBackEndFix.csproj",
+      "projectPath": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\SolessBackEndFix.csproj",
       "packagesPath": "C:\\Users\\Kylian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\Versiones backend\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\obj\\",
+      "outputPath": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kylian\\AppData\\Roaming\\NuGet\\NuGet.Config",

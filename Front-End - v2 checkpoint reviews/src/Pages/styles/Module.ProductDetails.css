@@ -1,0 +1,188 @@
+.containerDetails {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Dos columnas para imagen + producto */
+  grid-template-rows: auto auto 1fr; /* Tres filas: contenido + reseñas */
+  gap: 30px;
+  padding: 20px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.imageDetails {
+  position: relative;
+}
+
+.imageDetails img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 120px; /* Añadido para que el botón no se solape */
+}
+
+.product p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.product h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 1rem;
+  margin: 10px 0 30px 0;
+}
+
+.composition {
+  white-space: pre-line;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+.buttons .add {
+  padding: 10px 20px;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.counter-group {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  gap: 10px;
+}
+
+.counter-group button {
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  background-color: var(--button-color-primary);
+  border: 1px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.counter-group input {
+  width: 50px; /* Tamaño más pequeño */
+  padding: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+  border: 1px;
+  border-color: var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.counter-group button:hover {
+  background-color: var(--button-color-primary-hover);
+}
+
+/* Sección de reseñas */
+.reviews-section {
+  grid-column: span 2; /* La sección de reseñas ocupa ambas columnas */
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Inicialmente el formulario a la izquierda y las reseñas a la derecha */
+  gap: 30px;
+  padding-top: 30px;
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+/* Si no hay formulario visible, las reseñas ocuparán toda la columna */
+.reviews-section.no-form {
+  grid-template-columns: 1fr; /* Las reseñas ocupan toda la sección */
+}
+
+.reviews-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  grid-column: span 2; /* El título ocupa todo el ancho */
+}
+
+/* Lista de reseñas */
+.reviews-list {
+  grid-column: 2; /* Las reseñas se colocan en la segunda columna (derecha) cuando el formulario está visible */
+  overflow-y: auto; /* Si hay muchas reseñas, permite el scroll */
+}
+
+/* Formulario de reseña */
+.add-review {
+  grid-column: 1; /* El formulario de reseña se coloca en la primera columna (izquierda) cuando el formulario está visible */
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: var(--border-radius);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del formulario */
+.add-review form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espaciado entre campos */
+}
+
+.add-review label {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.add-review select,
+.add-review textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+.add-review button {
+  padding: 10px 20px;
+  background-color: var(--button-color-primary);
+  color: var(--text-color);
+  font-size: 1rem;
+  border: var(--border-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  align-self: flex-start; 
+}
+
+.add-review button:hover {
+  background-color: var(--button-color-primary-hover);
+}
+
+/* Estilo de las reseñas */
+.review {
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.review p {
+  margin: 5px 0;
+}
+
+.review strong {
+  font-weight: bold;
+}
+
+.review .rating {
+  color: gold;
+}

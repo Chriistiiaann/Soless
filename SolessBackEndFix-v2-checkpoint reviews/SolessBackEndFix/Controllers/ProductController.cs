@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SolessBackend.DataMappers;
 using SolessBackEndFix.DTO;
 using SolessBackEndFix.Interfaces;
@@ -154,5 +155,20 @@ namespace SolessBackEndFix.Controllers
             return Ok(productos);
         }
 
+        [HttpGet("id")]
+        public async Task<IActionResult> GetProductById([FromQuery]long id)
+        {
+            // Llama al método para obtener el producto
+            var product = await _productRepository.GetProductByIdAsync(id);
+
+            if (product == null)
+            {
+                // Si no se encuentra el producto, devuelve un 404
+                return NotFound(new { message = "Producto no encontrado" });
+            }
+
+            // Devuelve el producto
+            return Ok(product);
+        }
     }
 }

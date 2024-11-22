@@ -1,0 +1,28 @@
+.product-quantity {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    width: fit-content;
+    text-align: center;
+}
+
+.product-quantity-button{
+    color: var(--text-color);
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.product-quantity-button:hover {
+    background-color: var(--button-color-secondary-hover);
+}
+
+.product-quantity-input {
+    width: 40px;
+    padding: 5px;
+    text-align: center;
+}

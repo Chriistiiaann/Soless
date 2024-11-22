@@ -9,6 +9,5 @@ namespace SolessBackend.DTO
         public string? Email { get; set; }
         public string? Role { get; set; }
         public string? Address { get; set; }
-        public ICollection<Review> Reviews { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SolessBackend.Data;
+using SolessBackEndFix.DTO;
 using SolessBackEndFix.Interfaces;
 using SolessBackEndFix.Models;
 
@@ -27,12 +28,22 @@ namespace SolessBackEndFix.Repositories
                 .FirstOrDefaultAsync(r => r.Id == id);
         }
 
-        public async Task<ICollection<Review>> GetReviewsByProductIdAsync(long productId)
+        public async Task<IEnumerable<ReviewDTO>> GetReviewsByProductIdAsync(long productId)
         {
-            return await _context.Reviews
+            var reviews = await _context.Reviews
                 .Where(r => r.ProductId == productId)
-                .Include(r => r.User)
+                .Select(r => new ReviewDTO
+                {
+                    ProductId = r.ProductId,
+                    UserId = r.UserId,
+                    UserName = _context.Users.Where(u => u.Id == r.UserId).Select(u => u.Name).FirstOrDefault(),
+                    Content = r.Content,
+                    Rating = r.Rating,
+                    CreatedAt = r.CreatedAt
+                })
                 .ToListAsync();
+
+            return reviews;
         }
 
         public async Task<ICollection<Review>> GetReviewsByUserIdAsync(long userId)

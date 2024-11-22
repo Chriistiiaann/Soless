@@ -19,8 +19,7 @@ namespace SolessBackend.DataMappers
                 Stock = product.Stock,
                 Img_Name = product.Img_Name,
                 Description = product.Description,
-                Composition = product.Composition,
-                Reviews = product.Reviews
+                Composition = product.Composition
             };
         }
 
@@ -41,8 +40,7 @@ namespace SolessBackend.DataMappers
                 Stock = productsDTO.Stock,
                 Img_Name = productsDTO.Img_Name,
                 Description = productsDTO.Description,
-                Composition = productsDTO.Composition,
-                Reviews = productsDTO.Reviews
+                Composition = productsDTO.Composition
             };
         }
 

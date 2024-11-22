@@ -1,30 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\Versiones backend\\SolessBackEndFix-v2-checkpoint reviews\\",
+  "WorkspaceRootPath": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBackEndFix-v2-checkpoint reviews\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\kylian\\onedrive\\escritorio\\versiones backend\\solessbackendfix-v2-checkpoint reviews\\solessbackendfix\\dto\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\dto\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\kylian\\onedrive\\escritorio\\versiones backend\\solessbackendfix-v2-checkpoint reviews\\solessbackendfix\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\kylian\\onedrive\\documentos\\github\\solessnewteam\\solessbackendfix-v2-checkpoint reviews\\solessbackendfix\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\kylian\\onedrive\\escritorio\\versiones backend\\solessbackendfix-v2-checkpoint reviews\\solessbackendfix\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\kylian\\onedrive\\documentos\\github\\solessnewteam\\solessbackendfix-v2-checkpoint reviews\\solessbackendfix\\repositories\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\repositories\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\kylian\\onedrive\\escritorio\\versiones backend\\solessbackendfix-v2-checkpoint reviews\\solessbackendfix\\interfaces\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\interfaces\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\kylian\\onedrive\\documentos\\github\\solessnewteam\\solessbackendfix-v2-checkpoint reviews\\solessbackendfix\\interfaces\\ireviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\interfaces\\ireviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\kylian\\onedrive\\escritorio\\versiones backend\\solessbackendfix-v2-checkpoint reviews\\solessbackendfix\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\kylian\\onedrive\\documentos\\github\\solessnewteam\\solessbackendfix-v2-checkpoint reviews\\solessbackendfix\\datamappers\\reviewmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\datamappers\\reviewmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\kylian\\onedrive\\escritorio\\versiones backend\\solessbackendfix-v2-checkpoint reviews\\solessbackendfix\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\kylian\\onedrive\\documentos\\github\\solessnewteam\\solessbackendfix-v2-checkpoint reviews\\solessbackendfix\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\kylian\\onedrive\\documentos\\github\\solessnewteam\\solessbackendfix-v2-checkpoint reviews\\solessbackendfix\\dto\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\dto\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +34,79 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ReviewDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\Versiones backend\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\DTO\\ReviewDTO.cs",
-              "RelativeDocumentMoniker": "SolessBackEndFix\\DTO\\ReviewDTO.cs",
-              "ToolTip": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\Versiones backend\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\DTO\\ReviewDTO.cs",
-              "RelativeToolTip": "SolessBackEndFix\\DTO\\ReviewDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ReviewMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\DataMappers\\ReviewMapper.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\DataMappers\\ReviewMapper.cs",
+              "ToolTip": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\DataMappers\\ReviewMapper.cs",
+              "RelativeToolTip": "SolessBackEndFix\\DataMappers\\ReviewMapper.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwA4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T12:52:51.002Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ReviewController.cs",
-              "DocumentMoniker": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\Versiones backend\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\Controllers\\ReviewController.cs",
-              "RelativeDocumentMoniker": "SolessBackEndFix\\Controllers\\ReviewController.cs",
-              "ToolTip": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\Versiones backend\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\Controllers\\ReviewController.cs",
-              "RelativeToolTip": "SolessBackEndFix\\Controllers\\ReviewController.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAIwFAAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T12:52:25.882Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\Versiones backend\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "SolessBackEndFix\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\Versiones backend\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "SolessBackEndFix\\Controllers\\OrderController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T12:36:50.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T21:33:19.621Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "OrderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\Versiones backend\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\Repositories\\OrderRepository.cs",
-              "RelativeDocumentMoniker": "SolessBackEndFix\\Repositories\\OrderRepository.cs",
-              "ToolTip": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\Versiones backend\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\Repositories\\OrderRepository.cs",
-              "RelativeToolTip": "SolessBackEndFix\\Repositories\\OrderRepository.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCYAAABZAAAAAAAAAA==",
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\Models\\Review.cs",
+              "ToolTip": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\Models\\Review.cs",
+              "RelativeToolTip": "SolessBackEndFix\\Models\\Review.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA+wBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T12:36:31.451Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T21:27:40.086Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IOrderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\Versiones backend\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\Interfaces\\IOrderRepository.cs",
-              "RelativeDocumentMoniker": "SolessBackEndFix\\Interfaces\\IOrderRepository.cs",
-              "ToolTip": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\Versiones backend\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\Interfaces\\IOrderRepository.cs",
-              "RelativeToolTip": "SolessBackEndFix\\Interfaces\\IOrderRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABNAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "IReviewRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\Interfaces\\IReviewRepository.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\Interfaces\\IReviewRepository.cs",
+              "ToolTip": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\Interfaces\\IReviewRepository.cs",
+              "RelativeToolTip": "SolessBackEndFix\\Interfaces\\IReviewRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAoAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T12:36:22.678Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T21:17:30.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReviewRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\Repositories\\ReviewRepository.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\Repositories\\ReviewRepository.cs",
+              "ToolTip": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\Repositories\\ReviewRepository.cs",
+              "RelativeToolTip": "SolessBackEndFix\\Repositories\\ReviewRepository.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAmwB4AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T21:17:55.729Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\Versiones backend\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\Program.cs",
-              "RelativeDocumentMoniker": "SolessBackEndFix\\Program.cs",
-              "ToolTip": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\Versiones backend\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\Program.cs",
-              "RelativeToolTip": "SolessBackEndFix\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAC0AAAA3AAAAAAAAAA==",
+              "Title": "ReviewDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\DTO\\ReviewDTO.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\DTO\\ReviewDTO.cs",
+              "ToolTip": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\DTO\\ReviewDTO.cs",
+              "RelativeToolTip": "SolessBackEndFix\\DTO\\ReviewDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T12:32:39.802Z",
+              "WhenOpened": "2024-11-15T17:07:57.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReviewController.cs",
+              "DocumentMoniker": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\Controllers\\ReviewController.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\Controllers\\ReviewController.cs",
+              "ToolTip": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBackEndFix-v2-checkpoint reviews\\SolessBackEndFix\\Controllers\\ReviewController.cs",
+              "RelativeToolTip": "SolessBackEndFix\\Controllers\\ReviewController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T16:24:52.591Z",
               "EditorCaption": ""
             }
           ]

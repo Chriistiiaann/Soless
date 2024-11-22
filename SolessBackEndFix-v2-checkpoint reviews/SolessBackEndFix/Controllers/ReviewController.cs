@@ -50,8 +50,12 @@ namespace SolessBackEndFix.Controllers
         public async Task<ActionResult<IEnumerable<ReviewDTO>>> GetReviewsByProductId(long productId)
         {
             var reviews = await _reviewRepository.GetReviewsByProductIdAsync(productId);
-            var reviewsDto = _reviewMapper.ReviewsToDTO(reviews);
-            return Ok(reviewsDto);
+
+            if (reviews == null || !reviews.Any())
+            {
+                return NotFound(); 
+            }
+            return Ok(reviews);  
         }
 
         // GET: api/Review/User/{userId}

@@ -13,8 +13,7 @@ namespace SolessBackend.DataMappers
                 Name = user.Name,
                 Email = user.Email,
                 Role = user.Role,
-                Address = user.Address,
-                Reviews = user.Reviews
+                Address = user.Address
             };
         }
 
@@ -31,8 +30,7 @@ namespace SolessBackend.DataMappers
                 Name = usersDTO.Name,
                 Email = usersDTO.Email,
                 Role = usersDTO.Role,
-                Address = usersDTO.Address,
-                Reviews = usersDTO.Reviews
+                Address = usersDTO.Address
             };
         }
 

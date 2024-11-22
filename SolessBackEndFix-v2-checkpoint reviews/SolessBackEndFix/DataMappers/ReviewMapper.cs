@@ -12,8 +12,10 @@ namespace SolessBackEndFix.DataMappers
             {
                 ProductId = review.ProductId,
                 UserId = review.UserId,
+                UserName = review.User?.Name,
                 Content = review.Content,
-                Rating = review.Rating
+                Rating = review.Rating,
+                CreatedAt = review.CreatedAt
             };
         }
 

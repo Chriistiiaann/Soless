@@ -1,5 +1,6 @@
 ﻿using SolessBackend.Models;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SolessBackEndFix.Models
 {
@@ -8,9 +9,11 @@ namespace SolessBackEndFix.Models
         [Key]
         public long Id { get; set; }
 
+        [ForeignKey("Product")]
         public long ProductId { get; set; }  // Relación con el producto
         public Product Product { get; set; }  // Navegación a la clase Product
 
+        [ForeignKey("User")]
         public long UserId { get; set; }  // Relación con el usuario
         public User User { get; set; }  // Navegación a la clase User
 
