@@ -119,6 +119,7 @@ namespace SolessBackend.Controllers
             {
                 var userToAdd = new User
                 {
+                    Id = userToAddDTO.Id,
                     Name = userToAddDTO.Name,
                     Email = userToAddDTO.Email,
                     Password = userToAddDTO.Password,
@@ -126,8 +127,8 @@ namespace SolessBackend.Controllers
                     Address = userToAddDTO.Address
                 };
 
-                var passwordHasher = new PasswordHasher<User>();
-                userToAdd.Password = passwordHasher.HashPassword(userToAdd, userToAdd.Password);
+                var passwordHasher = new PasswordHasher(); 
+                userToAdd.Password = passwordHasher.Hash(userToAdd.Password);
 
                 await _userRepository.AddUserAsync(userToAdd);
 

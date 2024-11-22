@@ -16,17 +16,17 @@ public class CartRepository : ICartRepository
     {
         _context = context;
     }
-    
+
     public async Task SaveChangesAsync()
     {
-        await _context.SaveChangesAsync(); 
+        await _context.SaveChangesAsync();
     }
 
     public async Task<Cart> GetCartByIdAsync(long cartId)
     {
         return await _context.Carts
-            .Include(c => c.CartProducts)  
-            .ThenInclude(cp => cp.Product) 
+            .Include(c => c.CartProducts)
+            .ThenInclude(cp => cp.Product)
             .FirstOrDefaultAsync(c => c.Id == cartId);
     }
 
@@ -37,11 +37,11 @@ public class CartRepository : ICartRepository
         {
             CartId = cartProduct.CartId,
             ProductId = cartProduct.ProductId,
-            Quantity = cartProduct.Quantity ?? 0 
+            Quantity = cartProduct.Quantity ?? 0
         };
 
         var cart = await _context.Carts
-            .Include(c => c.CartProducts)  
+            .Include(c => c.CartProducts)
             .FirstOrDefaultAsync(c => c.Id == cartProductDTO.CartId);
 
         if (cart == null)
@@ -71,18 +71,18 @@ public class CartRepository : ICartRepository
             {
                 throw new Exception("No hay suficiente stock disponible para esta cantidad.");
             }
-            existingProduct.Quantity += cartProductDTO.Quantity;  
+            existingProduct.Quantity += cartProductDTO.Quantity;
         }
         else
         {
             var newCartProduct = new CartProduct
             {
-                CartId = cart.Id, 
+                CartId = cart.Id,
                 ProductId = cartProductDTO.ProductId,
                 Quantity = cartProductDTO.Quantity
             };
 
-            cart.CartProducts.Add(newCartProduct); 
+            cart.CartProducts.Add(newCartProduct);
         }
         await _context.SaveChangesAsync();
     }
@@ -104,21 +104,26 @@ public class CartRepository : ICartRepository
         return "Producto eliminado correctamente del carrito.";
     }
 
-    public async Task<IActionResult> UpdateProductAsync(CartProductDTO cartProductDTO)
+    public async Task UpdateProductAsync(CartProductDTO cartProductDTO)
     {
         var cartProduct = await _context.CartProducts
-            .Include(cp => cp.Product) 
+            .Include(cp => cp.Product)
             .FirstOrDefaultAsync(cp => cp.CartId == cartProductDTO.CartId && cp.ProductId == cartProductDTO.ProductId);
 
         if (cartProduct == null)
         {
-            return new NotFoundObjectResult("Product not found in cart");
-        }
-        if (cartProductDTO.Quantity > cartProduct.Product.Stock)
-        {
-            return new BadRequestObjectResult("Not enough stock available for this quantity.");
+            throw new Exception("Producto no encontrado en el carrito"); 
         }
 
+        if (cartProductDTO.Quantity > cartProduct.Product.Stock)
+        {
+            throw new Exception("No hay suficiente stock para la cantidad solicitada");
+        }
+
+        if (cartProductDTO.Quantity <= 0)
+        {
+            throw new Exception("La cantidad debe ser mayor a 0");
+        }
         cartProduct.Quantity = cartProductDTO.Quantity;
 
         cartProduct.TotalPriceObject = cartProduct.Quantity * (cartProduct.Product.Original_Price ?? 0.0);
@@ -129,21 +134,14 @@ public class CartRepository : ICartRepository
 
         if (cart == null)
         {
-            return new NotFoundObjectResult("Cart not found");
+            throw new Exception("El carrito no encontrado");
         }
 
         cart.TotalPrice = cart.CartProducts.Sum(cp => cp.TotalPriceObject ?? 0.0);
 
         await _context.SaveChangesAsync();
-
-        return new OkObjectResult(new
-        {
-            message = "Product updated successfully",
-            cartId = cartProductDTO.CartId,
-            productId = cartProductDTO.ProductId,
-            quantity = cartProductDTO.Quantity
-        });
     }
+
 
 
 

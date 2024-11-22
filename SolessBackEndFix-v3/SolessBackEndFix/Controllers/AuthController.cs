@@ -34,14 +34,11 @@ namespace SolessBackend.Controllers
         {
             string hashedPassword = _passwordHash.Hash(model.Password);
 
-            // Buscar el usuario en la base de datos
             var user = await _context.Users
                 .FirstOrDefaultAsync(u => u.Email == model.Email && u.Password == hashedPassword);
 
-            // Validar si el usuario existe
             if (user != null)
             {
-                // Creamos el token en caso de que exista.
                 var tokenDescriptor = new SecurityTokenDescriptor
                 {
                     Claims = new Dictionary<string, object>

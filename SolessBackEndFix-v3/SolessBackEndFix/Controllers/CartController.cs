@@ -157,7 +157,7 @@ namespace SolessBackEndFix.Controllers
 
                 return Ok(new
                 {
-                    message = "Product updated successfully",
+                    message = "Product actualizado correctamente",
                     cartId = cartProductDTO.CartId,
                     productId = cartProductDTO.ProductId,
                     quantity = cartProductDTO.Quantity
@@ -168,5 +168,6 @@ namespace SolessBackEndFix.Controllers
                 return BadRequest(new { message = ex.Message });
             }
         }
+
     }
 }
