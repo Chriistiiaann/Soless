@@ -161,7 +161,7 @@ function Register() {
 					{passwordError && <p>{passwordError}</p>}
 					{promesaError && <p>{promesaError}</p>}
 					{isLoading && <p>Cargando...</p>}
-					<button className="primary-button">Crear</button>
+					<button className="big-button primary-button">Crear</button>
 					<div>
 						¿Ya tienes una cuenta?<Link to={"/Login"}> Entrar</Link>
 					</div>

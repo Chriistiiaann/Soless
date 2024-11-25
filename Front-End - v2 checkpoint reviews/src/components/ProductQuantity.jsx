@@ -1,12 +1,18 @@
-import { useState } from "react";
 import "./styles/Module.ProductQuantity.css";
 import PropTypes from "prop-types";
 
-function ProductQuantity({ initialValue = 1 }) { // Valor predeterminado de 1
-    const [counter, setCounter] = useState(initialValue);
+function ProductQuantity({ counter, setCounter, onQuantityChange }) {
+    const increase = () => {
+        const newCounter = counter + 1;
+        setCounter(newCounter);
+        onQuantityChange && onQuantityChange(newCounter); // Notifica el cambio
+    };
 
-    const increase = () => setCounter(prevCounter => prevCounter + 1);
-    const decrease = () => setCounter(prevCounter => (prevCounter > 1 ? prevCounter - 1 : 1)); // Evitar que baje de 1
+    const decrease = () => {
+        const newCounter = counter > 0 ? counter - 1 : 0;
+        setCounter(newCounter);
+        onQuantityChange && onQuantityChange(newCounter); // Notifica el cambio
+    };
 
     return (
         <div className="product-quantity">
@@ -14,7 +20,7 @@ function ProductQuantity({ initialValue = 1 }) { // Valor predeterminado de 1
             <input
                 className="product-quantity-input"
                 type="number"
-                min="1"
+                min="0"
                 step="1"
                 value={counter}
                 readOnly
@@ -24,10 +30,11 @@ function ProductQuantity({ initialValue = 1 }) { // Valor predeterminado de 1
     );
 }
 
+
 ProductQuantity.propTypes = {
-    initialValue: PropTypes.number,
+    counter: PropTypes.number.isRequired,
+    setCounter: PropTypes.func.isRequired,
+    onQuantityChange: PropTypes.func
 };
 
 export default ProductQuantity;
-
-

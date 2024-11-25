@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr; /* Dos columnas para imagen + producto */
   grid-template-rows: auto auto 1fr; /* Tres filas: contenido + reseñas */
-  gap: 30px;
+  gap: 50px;
   padding: 20px;
   width: 80%;
   max-width: 1200px;
@@ -24,12 +24,21 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-bottom: 120px; /* Añadido para que el botón no se solape */
+  padding-bottom: 120px;
+  gap: 20px;
 }
 
 .product p {
   margin: 0;
   font-size: 1rem;
+}
+
+.brand{
+  background-color: var(--secondary-color);
+  padding: 5px;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .product h1 {
@@ -54,12 +63,22 @@
   margin-top: 30px;
 }
 
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  margin-top: 50px;
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .buttons .add {
   padding: 10px 20px;
-  font-size: 1rem;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
 }
 
 .counter-group {

@@ -1,5 +1,6 @@
 .card{
     width: 250px;
+    height: 400px;
     margin: 48px auto;
     border: 2px solid #222;
     border-radius: 15px;
@@ -7,6 +8,9 @@
     background-color: var(--background-color);
     box-shadow: -5px 5px 0px 2px var(--shadow-color);
     transition: transform 0.4s ease;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .card:hover {
@@ -15,8 +19,8 @@
 }
 
 .card-offer{
-    width: 90%;
-    max-width: 300px;
+    width: 350px;
+    height: 500px;
     margin: 48px auto; 
     border: 2px solid #222;
     border-radius: 15px;
@@ -55,4 +59,8 @@ h3{
     align-items: center;
 }
 
+.imgCard{
+    object-fit: cover;
+    object-position: center;
+}
 

@@ -1,7 +1,8 @@
 .shoe-size-selector select{
     width: fit-content;
+    height: 30px;
     background-color: none;
     border: 2px solid var(--border-color);
-    
+    border-radius: 10px;
 }
 

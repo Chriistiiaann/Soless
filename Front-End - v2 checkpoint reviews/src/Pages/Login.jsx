@@ -122,7 +122,7 @@ function Login() {
                     <div>
                         <a href="/Register">¿Has olvidado tu contraseña?</a>
                     </div>
-                    <button onClick={handleSubmit} disabled={isLoading} className="primary-button">
+                    <button onClick={handleSubmit} disabled={isLoading} className="big-button primary-button">
                         {isLoading ? "Cargando..." : "Entrar"}
                     </button>
                     {promesaError && <p>{promesaError}</p>}

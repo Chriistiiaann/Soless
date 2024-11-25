@@ -6,22 +6,23 @@ import NavBar from './NavBar';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context_providers/AuthProvider';
 import { useState, useEffect } from 'react';
-
 import { useCartContext } from '../context_providers/CartProvider';
+import { URL_IMAGES } from '../config';
 
 function Header() {
   const { user, isAuthenticated, logout } = useAuth() || {};
+  const { cart, totalPrice, inicializarCarrito, removeFromCart, fetchCart } = useCartContext();
   const [showUserMenu, setShowUserMenu] = useState(false);
   const [showCartModal, setShowCartModal] = useState(false); // Estado para el modal del carrito
 
-  const cart = useCartContext();
+  const userId = user?.id;
 
+  // Sincroniza el carrito al cambiar el estado de autenticación
   useEffect(() => {
-    const storedUser = JSON.parse(localStorage.getItem("user"));
-    if (storedUser && !isAuthenticated) {
-      console.log("Usuario sincronizado desde localStorage");
+    if (userId) {
+      inicializarCarrito(isAuthenticated, userId);
     }
-  }, [isAuthenticated]);
+  }, [isAuthenticated, userId, inicializarCarrito]);
 
   const toggleUserMenu = () => {
     setShowUserMenu(!showUserMenu);
@@ -29,6 +30,10 @@ function Header() {
 
   const handleCartHover = (isHovering) => {
     setShowCartModal(isHovering);
+  };
+
+  const handleRemoveItem = (productId) => {
+    removeFromCart(productId); // Llama a la función del CartProvider
   };
 
   return (
@@ -67,6 +72,7 @@ function Header() {
             )}
           </div>
 
+          {/* Ícono del carrito */}
           <div
             className="carrito-icon-container"
             onMouseEnter={() => handleCartHover(true)}
@@ -78,22 +84,34 @@ function Header() {
                 <h3>Tu Carrito</h3>
 
                 <ul className="cart-items">
-                  {cart.cart.map((item) => (
-                    <li key={item.name}>
+                  {cart.map((item) => (
+                    <li key={item.productId}>
                       <div className="cart-item">
-                        <img className="cart-item-image-modal" src={item.image} alt={item.name} />
-                        <h4>{item.name}</h4>
-                        <p>{item.price}€</p>
+                        <img
+                          className="cart-item-image-modal"
+                          src={URL_IMAGES + item.productImage}
+                          alt={item.productName}
+                        />
+                        <h4>{item.productName}</h4>
+                        <p>Ud. {item.productPrice}€</p>
+                        <p>Total: {item.totalPriceObject}€</p>
                         <p>Cantidad: {item.quantity}</p>
-                        <p style={{ cursor: 'pointer', color: 'red' }}>X</p>
+                        <p
+                          style={{ cursor: 'pointer', color: 'red' }}
+                          onClick={() => handleRemoveItem(item.productId)} // Llamar a la función para eliminar el producto
+                        >
+                          X
+                        </p>
                       </div>
                     </li>
                   ))}
                 </ul>
-                <p>Total: {cart.totalPrice}€</p>
-                <Link to="/Carrito" className="checkout-button">
-                  Ir al carrito
-                </Link>
+                <div className="cart-total">
+                  <p>Total: {totalPrice}€</p>
+                  <Link to="/Carrito" className="checkout-button">
+                    Ir al carrito
+                  </Link>
+                </div>
               </div>
             )}
           </div>

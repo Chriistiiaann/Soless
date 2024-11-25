@@ -9,10 +9,10 @@
 
 .about-us-title {
     text-align: left;
-    font-size: 7em;
+    font-size: 7rem;
     font-weight: bold;
     color: var(--text-color);
-    margin: 20px 0;
+    margin: 30px 0;
     height: 80vh;
     display: flex;
     align-items: center;
@@ -24,8 +24,10 @@
     color: var(--accent-color);
 }
 
+
+
 .about-us-description {
-    margin: auto;
+    margin: 0 auto;
     padding: 0 40px 50px;
     font-size: 2em;
     letter-spacing: 0.1em;
@@ -150,3 +152,14 @@
     line-height: 1.6;
 }
 
+@media (max-width: 1200px) {
+    .about-us-title {
+        font-size: 4rem;
+        height: auto;
+    }
+
+    .about-us-description {
+        font-size: 1.2rem;
+        height: auto;
+    }
+}

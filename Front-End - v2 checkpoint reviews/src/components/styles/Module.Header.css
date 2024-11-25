@@ -67,17 +67,19 @@
   position: absolute;
   top: 100%; /* Muestra el modal justo debajo del ícono */
   right: 0;
-  background-color: white;
-  border: 1px solid var(--border-color);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 15px;
-  width: 450px;
+  width: 500px;
   border-radius: 8px;
   z-index: 100;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: right; /* Asegura que esté sobre otros elementos */
+  border: 2px solid #222;
+  border-radius: 15px;
+  padding-bottom: 5px;
+  background-color: var(--background-color);
+  
 }
 
 .cart-modal h3 {
@@ -98,7 +100,7 @@
 .checkout-button {
   display: block;
   text-align: center;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: white;
   padding: 10px;
   border-radius: 5px;
@@ -118,6 +120,14 @@
 
 .cart-item-image-modal{
   width: 50px;
+}
+
+.cart-total{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 20px;
+  margin: 10px 0;
 }
 
 @media (max-width: 600px) {
