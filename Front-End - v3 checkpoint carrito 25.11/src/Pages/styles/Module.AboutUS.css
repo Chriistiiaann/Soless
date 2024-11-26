@@ -1,0 +1,165 @@
+
+.about-us-content {
+    margin: 0 auto;
+    padding: 0;
+    color: var(--text-color);
+    letter-spacing: 0.1em;
+
+}
+
+.about-us-title {
+    text-align: left;
+    font-size: 7rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 30px 0;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+
+}
+
+.about-us-title span {
+    color: var(--accent-color);
+}
+
+
+
+.about-us-description {
+    margin: 0 auto;
+    padding: 0 40px 50px;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    max-width: 60vw;
+    text-align: justify;
+    line-height: 2;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.developers-section {
+    background-color: var(--secondary-color);
+    width: 100%;
+    padding: 20px;
+}
+
+.developers-container{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 70vw;
+}
+
+.title_developers {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.title_developers h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.title_developers .logo {
+    width: 60px;
+}
+
+.list-developers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.mv {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 40px; 
+    margin: 40px auto;
+    width: 60%;
+}
+
+.mision, .vision {
+    padding: 20px;
+    margin: 0 auto; 
+    border: 2px solid #222;
+    border-radius: 15px;
+    background-color: var(--background-color);
+    box-shadow: -5px 5px 0px 2px var(--shadow-color);
+}
+
+.mision h2 {
+    text-align: left; 
+    font-family: var(--font-family-title);
+    margin-bottom: 10px;
+}
+
+.vision h2 {
+    text-align: right; 
+    font-family: var(--font-family-title);
+    margin-bottom: 10px;
+}
+
+.mision p, .vision p {
+    text-align: justify; 
+}
+
+.valores {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 0;
+    background-color: var(--accent-color-hover);
+
+}
+
+.valores h2 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 0;
+}
+
+.valor-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 2px solid #222;
+    border-radius: 15px;
+    background-color: var(--background-color);
+    box-shadow: -5px 5px 0px 2px var(--shadow-color);
+    width: 60%;
+    margin: 0 auto;
+}
+
+.valor-item h3 {
+    font-size: 1.3em;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.valor-item p {
+    font-size: 1em;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+@media (max-width: 1200px) {
+    .about-us-title {
+        font-size: 4rem;
+        height: auto;
+    }
+
+    .about-us-description {
+        font-size: 1.2rem;
+        height: auto;
+    }
+}

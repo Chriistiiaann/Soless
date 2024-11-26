@@ -1,0 +1,76 @@
+footer {
+    background-color: #684a92;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    color: #ffffff;
+}
+
+.logo {
+    font-family: var(--font-family-title);
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.center {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.apartado .section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.apartado .desarrollo p {
+    margin: 5px 0;
+    color: #dcdcdc;
+}
+
+.right p {
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+}
+
+.icon {
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: #ffcc00;
+}
+
+@media (max-width: 600px) {
+    footer {
+        grid-template-columns: 1fr; /* Cambia la disposición a una columna */
+        text-align: center; /* Centra el contenido */
+        gap: 15px; /* Ajusta el espacio entre los elementos */
+    }
+
+    .center {
+        grid-template-columns: 1fr; /* Ajusta las secciones internas a una columna */
+        gap: 10px; /* Ajusta el espaciado */
+    }
+
+    .right {
+        text-align: center; /* Asegúrate de centrar el texto */
+    }
+
+    .icons {
+        justify-content: center; /* Centra los íconos */
+    }
+}
