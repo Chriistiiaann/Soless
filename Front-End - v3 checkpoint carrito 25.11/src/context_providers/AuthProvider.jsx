@@ -6,12 +6,14 @@ const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
     const [user, setUser] = useState(null);
+    const [token, setToken] = useState(null);
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     const navigate = useNavigate();
 
     const login = (userData, token) => {
         setUser(userData);  
         setIsAuthenticated(true); 
+        setToken(token);
         localStorage.setItem("authToken", token); 
         localStorage.setItem("user", JSON.stringify(userData));
         navigate("/"); 
@@ -20,6 +22,7 @@ export function AuthProvider({ children }) {
     const logout = () => {
         setUser(null);
         setIsAuthenticated(false);
+        setToken(null);
         localStorage.removeItem("authToken");  
         localStorage.removeItem("user");  
         navigate("/login"); 
@@ -30,7 +33,9 @@ export function AuthProvider({ children }) {
         const storedUser = localStorage.getItem("user");
         const token = localStorage.getItem("authToken");
 
-        // Si ambos existen, cargar los datos
+        
+
+        // Si los 2 existen, cargar los datos
         if (token && storedUser) {
             try {
                 const parsedUser = JSON.parse(storedUser);
@@ -45,7 +50,7 @@ export function AuthProvider({ children }) {
     }, []); // Solo se ejecuta al montar el componente
 
     return (
-        <AuthContext.Provider value={{ user, isAuthenticated, login, logout }}>
+        <AuthContext.Provider value={{ user, isAuthenticated, login, logout, token }}>
             {children}
         </AuthContext.Provider>
     );

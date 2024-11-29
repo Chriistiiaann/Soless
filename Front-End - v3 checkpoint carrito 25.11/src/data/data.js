@@ -129,11 +129,12 @@ export const proximamente = [
 
 //Image Slides Carousel
 
-import slide1 from '../img/foto2.jpg';
-import slide2 from '../img/foto1.jpg';
-import slide3 from '../img/foto3.jpg';
+import slide2 from '../img/slider1.jpg';
+import slide1 from '../img/slider2.jpg';
+import slide3 from '../img/slider3.jpg';
+import slide4 from '../img/slider4.jpg';
 
-export const images = [slide1, slide2, slide3];
+export const images = [slide1, slide2, slide3, slide4];
 
 //Informacion pagina sobre nosotros
 

@@ -11,7 +11,7 @@ import { URL_IMAGES } from '../config';
 
 function Header() {
   const { user, isAuthenticated, logout } = useAuth() || {};
-  const { cart, totalPrice, inicializarCarrito, removeFromCart, fetchCart } = useCartContext();
+  const { cart, totalPrice, inicializarCarrito, removeFromCart, numItems } = useCartContext();
   const [showUserMenu, setShowUserMenu] = useState(false);
   const [showCartModal, setShowCartModal] = useState(false); // Estado para el modal del carrito
 
@@ -32,6 +32,10 @@ function Header() {
     setShowCartModal(isHovering);
   };
 
+  const handleUserHover = (isHovering) => {
+    setShowUserMenu(isHovering);
+  };
+
   const handleRemoveItem = (productId) => {
     removeFromCart(productId); // Llama a la función del CartProvider
   };
@@ -47,7 +51,11 @@ function Header() {
         </Link>
         <div className="iconos">
           {/* Ícono de usuario */}
-          <div className="usuario-icon-container">
+          <div
+            className="usuario-icon-container"
+            onMouseEnter={() => handleUserHover(true)}
+            onMouseLeave={() => handleUserHover(false)}
+          >
             {isAuthenticated ? (
               <div className="user-info">
                 <img
@@ -57,11 +65,17 @@ function Header() {
                   onClick={toggleUserMenu}
                 />
                 {showUserMenu && (
-                  <div className="user-menu">
-                    <p>
-                      <strong>Bienvenido, {user?.name}</strong>
-                    </p>
-                    <button onClick={logout}>Cerrar sesión</button>
+                  <div className="user-modal">
+                    <h3>Bienvenido, {user?.name}</h3>
+                    <ul>
+                      <li><Link to="/perfil">Ver Perfil</Link></li>
+                      <li><Link to="/pedidos">Mis Pedidos</Link></li>
+                      <li>
+                        <button className="logout-button" onClick={logout}>
+                          Cerrar sesión
+                        </button>
+                      </li>
+                    </ul>
                   </div>
                 )}
               </div>
@@ -79,6 +93,11 @@ function Header() {
             onMouseLeave={() => handleCartHover(false)}
           >
             <img src={carritoIcon} alt="Carrito" className="icono" />
+            {numItems > 0 && (
+              <div className="items-counter">
+                {numItems}
+              </div>
+            )}
             {showCartModal && (
               <div className="cart-modal">
                 <h3>Tu Carrito</h3>
@@ -96,12 +115,6 @@ function Header() {
                         <p>Ud. {item.productPrice}€</p>
                         <p>Total: {item.totalPriceObject}€</p>
                         <p>Cantidad: {item.quantity}</p>
-                        <p
-                          style={{ cursor: 'pointer', color: 'red' }}
-                          onClick={() => handleRemoveItem(item.productId)} // Llamar a la función para eliminar el producto
-                        >
-                          X
-                        </p>
                       </div>
                     </li>
                   ))}

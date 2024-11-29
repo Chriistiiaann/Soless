@@ -71,7 +71,7 @@ function Catalogo(){
             "sortField": filter.sortField,
             "sortOrder": filter.sortOrder,
             "page": pagination.pagination.currentPage || 1,
-            "limit": itemsPerPage.itemsPerPage // Corregido aquí
+            "limit": itemsPerPage.itemsPerPage
         };
         connectToApi(GET_SHOES_ENDPOINT, objetoBackend);
     }, [itemsPerPage.itemsPerPage, pagination.pagination.currentPage]);
