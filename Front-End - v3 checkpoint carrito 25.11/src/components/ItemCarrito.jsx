@@ -2,43 +2,47 @@ import ProductQuantity from "./ProductQuantity"
 import ShoeSizeSelector from "./ShoeSizeSelector"
 import Button from "./Button"
 import { useState } from "react"
-import PropTypes, { func } from "prop-types"
+import PropTypes from "prop-types"
 import "./styles/Module.ItemCarrito.css"
 import { URL_IMAGES } from '../config';
 import { useCartContext } from "../context_providers/CartProvider";
 import { useAuth } from "../context_providers/AuthProvider";
 
-function ItemCarrito({productId ,productName, productImage, productPrice, totalPriceObject, quantity}) {
-
-    const cart = useCartContext();
-    const { user } = useAuth() || {};
+function ItemCarrito({ productId, productName, productImage, productPrice, totalPriceObject, quantity }) {
+    const { cart, setCart, setTotalPrice } = useCartContext();
+    const { user, isAuthenticated } = useAuth() || {}; 
     const [counter, setCounter] = useState(quantity);
 
-    const userId = user.id
+    const userId = user?.id || null;
+
+    // Función para guardar el carrito actualizado en localStorage
+    const saveCartToLocalStorage = (updatedCart) => {
+        localStorage.setItem("carrito", JSON.stringify(updatedCart));
+        setCart(updatedCart);  // Actualiza el estado local
+        setTotalPrice(updatedCart.reduce((total, item) => total + item.totalPriceObject, 0));  // Actualiza el precio total
+    };
 
     /*------------------------------------------------------------*/
 
+    // Actualiza la cantidad de un producto en el carrito (cuando el usuario está autenticado)
     const updateProductQuantity = async (userId, productId, quantity) => {
         try {
-            const response = await fetch(
-                `https://localhost:7200/api/Cart/update-product`,
-                {
-                    method: 'PUT',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ 
-                        cartId: userId,   
-                        productId: productId,   
-                        quantity: quantity, 
-                    }),
-                }
-            );
-    
+            const response = await fetch(`https://localhost:7200/api/Cart/update-product`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    cartId: userId,
+                    productId: productId,
+                    quantity: quantity,
+                }),
+            });
+
             if (!response.ok) {
                 throw new Error("Error al actualizar la cantidad del producto.");
             }
-    
+
             // Recargar el carrito actualizado desde la API
             fetchCart();
             console.log("Cantidad actualizada exitosamente");
@@ -46,58 +50,70 @@ function ItemCarrito({productId ,productName, productImage, productPrice, totalP
             console.error("Error al actualizar la cantidad del producto:", error);
         }
     };
-    
+
+    // Actualiza la cantidad cuando se cambia
     const handleQuantityChange = (newQuantity) => {
         setCounter(newQuantity);
-    
+
         if (newQuantity > 0) {
-            updateProductQuantity(userId, productId, newQuantity);
+            if (isAuthenticated) {
+                // Si está autenticado, actualizar en el backend
+                updateProductQuantity(userId, productId, newQuantity);
+            } else {
+                // Si no está autenticado, actualizar en el carrito local
+                const updatedCart = cart.map(item =>
+                    item.productId === productId ? { ...item, quantity: newQuantity, totalPriceObject: newQuantity * productPrice } : item
+                );
+                saveCartToLocalStorage(updatedCart);
+            }
         } else {
-            // Si la cantidad es 0, elimina el producto del carrito.
-            deleteProductFromCart(userId, productId);
+            // Si la cantidad es 0, elimina el producto del carrito
+            deleteProductFromCart(productId);
         }
     };
-    
 
+    // Función para cargar el carrito desde el servidor (solo si está autenticado)
     const fetchCart = async () => {
+        if (!isAuthenticated) return;
         try {
             const response = await fetch(`https://localhost:7200/api/Cart/GetCart/${user.id}`);
             const data = await response.json();
-            cart.setCart(data.cartProducts);
-            cart.setTotalPrice(data.totalPrice);
-            console.log(data);
-            console.log(data.cartProducts);
+            setCart(data.cartProducts);
+            setTotalPrice(data.totalPrice);
         } catch (error) {
             console.error("Error al cargar los datos del carrito:", error);
         }
     };
 
-    const deleteProductFromCart = async (userId, productId) => {
-        try {
-            const response = await fetch(
-                `https://localhost:7200/api/Cart/cart/${userId}/product/${productId}`,
-                {
+    // Elimina el producto del carrito
+    const deleteProductFromCart = async (productId) => {
+        if (isAuthenticated) {
+            try {
+                const response = await fetch(`https://localhost:7200/api/Cart/cart/${userId}/product/${productId}`, {
                     method: 'DELETE',
-                }
-            );
+                });
 
-            fetchCart();
-    
-            const data = await response.json();
-            console.log("Producto eliminado exitosamente:", data);
-    
-            // Puedes agregar aquí lógica adicional para actualizar la interfaz.
-        } catch (error) {
-            console.error("Error al eliminar el producto del carrito:", error);
+                if (!response.ok) {
+                    throw new Error("Error al eliminar el producto del carrito.");
+                }
+
+                // Recargar el carrito actualizado desde la API
+                fetchCart();
+                console.log("Producto eliminado exitosamente");
+            } catch (error) {
+                console.error("Error al eliminar el producto del carrito:", error);
+            }
+        } else {
+            // Si no está autenticado, eliminar el producto del carrito en localStorage
+            const updatedCart = cart.filter(item => item.productId !== productId);
+            saveCartToLocalStorage(updatedCart);
         }
     };
-    
-    function deleteItem() {
-        deleteProductFromCart(userId, productId);
-        console.log("Nuevo carrito", cart.cart);
-    }
-    
 
+    // Función para eliminar un item del carrito
+    function deleteItem() {
+        deleteProductFromCart(productId);
+    }
 
     /*------------------------------------------------------------*/
 
@@ -111,7 +127,7 @@ function ItemCarrito({productId ,productName, productImage, productPrice, totalP
                         <p className="productPrice">Ud. {productPrice}€</p>
                         <p className="productTotal">Total: {totalPriceObject}€</p>
                     </div>
-                    <Button className="close-button" text="X" onClick={deleteItem}/>
+                    <Button className="close-button" text="X" onClick={deleteItem} />
                 </div>
                 <div className="bottom-div">
                     <ProductQuantity
@@ -120,13 +136,11 @@ function ItemCarrito({productId ,productName, productImage, productPrice, totalP
                         onQuantityChange={(newQuantity) => handleQuantityChange(newQuantity)}
                     />
                     <ShoeSizeSelector />
-                    <Button className="big-button" text="Comprar Ya" onClick={() => {}}/>
+                    <Button className="big-button" text="Comprar Ya" onClick={() => { }} />
                 </div>
             </div>
-            
         </div>
-    )
-
+    );
 }
 
 ItemCarrito.propTypes = {
@@ -136,6 +150,6 @@ ItemCarrito.propTypes = {
     productPrice: PropTypes.number.isRequired,
     totalPriceObject: PropTypes.number.isRequired,
     quantity: PropTypes.number.isRequired
-}
+};
 
-export default ItemCarrito
+export default ItemCarrito;

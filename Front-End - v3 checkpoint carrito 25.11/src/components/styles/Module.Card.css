@@ -19,13 +19,22 @@
 }
 
 .card-offer{
-    width: 350px;
-    height: 500px;
-    margin: 48px auto; 
+    width: 300px;
+    height: 400px;
+    margin: 48px auto;
     border: 2px solid #222;
     border-radius: 15px;
     padding-bottom: 5px;
     background-color: var(--background-color);
+    box-shadow: -5px 5px 0px 2px var(--shadow-color);
+    transition: transform 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-offer:hover {
+    transform: translateY(-5px);
+    box-shadow: -5px 5px 0px 2px var(--accent-color-hover);
 }
 
 h3{
@@ -44,7 +53,14 @@ h3{
 
 .old-price{
     text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.435);
     padding-right: 5px;
+}
+
+.new-price{
+    font-weight: bold;
+    padding-right: 5px;
+    font-size: 1.2rem;
 }
 
 .img-container{

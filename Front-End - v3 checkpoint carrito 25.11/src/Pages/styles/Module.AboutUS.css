@@ -163,3 +163,16 @@
         height: auto;
     }
 }
+
+@media (max-width: 1400px) { 
+    .about-us-title {
+        font-size: 5rem;
+        height: auto;
+    }
+
+    .about-us-description {
+        font-size: 1.3rem;
+        height: auto;
+        padding: 40px 0;
+    }
+}

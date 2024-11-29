@@ -6,12 +6,21 @@ import { useAuth } from "../context_providers/AuthProvider";
 import { useEffect } from "react";
 
 function Carrito() {
-    const { cart, totalPrice, inicializarCarrito } = useCartContext();
+    const { cart, totalPrice, inicializarCarrito, getCartFromLocalStorage, setCart, mergeCarts } = useCartContext();
     const { user, isAuthenticated } = useAuth() || {};
 
+    // Usamos un useEffect para cargar el carrito dependiendo del estado de autenticación
     useEffect(() => {
-        if (user) {
+        if (isAuthenticated && user) {
+            // Si está autenticado, inicializar carrito desde el servidor
+            console.log("Cargando carrito desde el servidor...");
+            // mergeCarts(user.id);
             inicializarCarrito(isAuthenticated, user.id);
+        } else {
+            // Si no está autenticado, cargar carrito desde localStorage
+            const localCart = getCartFromLocalStorage();
+            console.log("Cargando carrito desde localStorage:", localCart);
+            setCart(localCart);  // Actualiza el estado del carrito
         }
     }, [isAuthenticated, user]);
 
@@ -23,7 +32,7 @@ function Carrito() {
                 ) : (
                     cart.map((item) => (
                         <ItemCarrito
-                            key={item.productName}
+                            key={item.productId}  // Usamos productId para evitar problemas con claves duplicadas
                             productId={item.productId}
                             productName={item.productName}
                             productImage={item.productImage}

@@ -7,7 +7,7 @@ function ImageSlider({ images }) {
 
 
     const sliderContainerStyles = {
-        height: '100vh',
+        height: '50vh',
         width: '95vw',
         position: 'relative',
         margin: '5vh auto',

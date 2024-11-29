@@ -33,6 +33,65 @@
   width: 40px; 
 }
 
+.usuario-icon-container {
+  position: relative;
+}
+
+.user-modal {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 10;
+  width: 200px;
+  border: 2px solid #222;
+  border-radius: 15px;
+  background-color: var(--background-color);
+}
+
+.user-modal h3 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.user-modal ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-modal ul li {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.user-modal ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 14px;
+}
+
+.user-modal ul li a:hover {
+  text-decoration: underline;
+}
+
+.logout-button {
+  background-color: var(--secondary-color);
+  font-weight: bold;
+  border: 0px solid #222;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: var(--primary-color);
+}
+
 .titulo {
   flex-grow: 1; 
   text-align: center;
@@ -61,6 +120,23 @@
 
 .carrito-icon-container {
   position: relative; /* Necesario para posicionar el modal */
+}
+
+.items-counter {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: var(--accent-color-hover);
+  color: var(--text-color);
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .cart-modal {
@@ -100,8 +176,8 @@
 .checkout-button {
   display: block;
   text-align: center;
-  background-color: var(--secondary-color);
-  color: white;
+  background-color: var(--accent-color-hover);
+  color: var(--text-color);
   padding: 10px;
   border-radius: 5px;
   text-decoration: none;
