@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\kylian\\onedrive\\escritorio\\solessback 29.11\\solessbackendfix\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\kylian\\onedrive\\escritorio\\solessback 29.11\\solessbackendfix\\repositories\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\repositories\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReviewRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\Repositories\\ReviewRepository.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\Repositories\\ReviewRepository.cs",
+              "ToolTip": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\Repositories\\ReviewRepository.cs",
+              "RelativeToolTip": "SolessBackEndFix\\Repositories\\ReviewRepository.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAywAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T16:34:09.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReviewController.cs",
+              "DocumentMoniker": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\Controllers\\ReviewController.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\Controllers\\ReviewController.cs",
+              "ToolTip": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\Controllers\\ReviewController.cs",
+              "RelativeToolTip": "SolessBackEndFix\\Controllers\\ReviewController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAIwEMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T16:24:41.336Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
