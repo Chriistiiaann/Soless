@@ -1,0 +1,119 @@
+/*Montserrat Alternates*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
+/*Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+h2 {
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  font-family: "Montserrat Alternates";
+}
+
+a {
+  font-weight: 800;
+  color: #000000;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #9341c6;
+}
+
+
+input {
+  border-radius: 15px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: inherit;
+  background-color: #F3EBFD;
+  color: rgba(0, 0, 0, 0.476);
+}
+
+.container-reg{
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+	justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.left-panel {
+	background-color: #BFE83F;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+.right-panel{
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.container-log{
+	display: flex;
+	min-height: 100vh;
+	width: 100vw;
+	flex-direction: row;
+}
+
+.left-panel-log {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.right-panel-log{
+	
+	background-color: #9C70DB;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.logoRegistro{
+	width: 25%;
+	transform: rotate(-25deg);
+}
+
+.logoLogin{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+}
+
+.logo1{
+	width: 200px;
+	margin-top: -128px;
+	margin-left: 264px;
+	transform: rotate(25deg);
+}
+.logo2{
+	width: 120px;
+	margin-top: -32px;
+	margin-right: 128px;
+	transform: rotate(-20deg);
+}
+.logo3{
+	width: 64px;
+	margin-top: 64px;
+	transform: rotate(15deg);
+}

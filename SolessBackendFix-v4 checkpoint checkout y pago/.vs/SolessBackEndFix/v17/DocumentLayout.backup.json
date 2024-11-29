@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v4 checkpoint checkout y pago\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v4 checkpoint checkout y pago\\solessbackendfix\\repositories\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\repositories\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v4 checkpoint checkout y pago\\solessbackendfix\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReviewRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v4 checkpoint checkout y pago\\SolessBackEndFix\\Repositories\\ReviewRepository.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\Repositories\\ReviewRepository.cs",
+              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v4 checkpoint checkout y pago\\SolessBackEndFix\\Repositories\\ReviewRepository.cs",
+              "RelativeToolTip": "SolessBackEndFix\\Repositories\\ReviewRepository.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T16:34:09.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReviewController.cs",
+              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v4 checkpoint checkout y pago\\SolessBackEndFix\\Controllers\\ReviewController.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\Controllers\\ReviewController.cs",
+              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v4 checkpoint checkout y pago\\SolessBackEndFix\\Controllers\\ReviewController.cs",
+              "RelativeToolTip": "SolessBackEndFix\\Controllers\\ReviewController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAIwEMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T16:24:41.336Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+.Input-Container h2 {
+  margin-bottom: 10px; 
+}
+
+.Input-Container input {
+  margin-top: 5px;
+  margin-bottom: 15px; 
+}
+
+.Input-Container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
