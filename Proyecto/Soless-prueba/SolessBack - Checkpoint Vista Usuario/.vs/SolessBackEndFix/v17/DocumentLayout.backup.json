@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Juanjo\\Desktop\\Soless\\Proyecto\\Soless-prueba\\SolessBack - Checkpoint Vista Usuario\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\juanjo\\desktop\\soless\\proyecto\\soless-prueba\\solessback - checkpoint vista usuario\\solessbackendfix\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\juanjo\\desktop\\soless\\proyecto\\soless-prueba\\solessback - checkpoint vista usuario\\solessbackendfix\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -23,15 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Juanjo\\Desktop\\Soless\\Proyecto\\Soless-prueba\\SolessBack - Checkpoint Vista Usuario\\SolessBackEndFix\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Juanjo\\Desktop\\Soless\\Proyecto\\Soless-prueba\\SolessBack - Checkpoint Vista Usuario\\SolessBackEndFix\\Controllers\\ProductController.cs*",
+              "RelativeToolTip": "SolessBackEndFix\\Controllers\\ProductController.cs*",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAWwI8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T17:06:17.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\Juanjo\\Desktop\\Soless\\Proyecto\\Soless-prueba\\SolessBack - Checkpoint Vista Usuario\\SolessBackEndFix\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "SolessBackEndFix\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\Juanjo\\Desktop\\Soless\\Proyecto\\Soless-prueba\\SolessBack - Checkpoint Vista Usuario\\SolessBackEndFix\\Controllers\\UserController.cs*",
-              "RelativeToolTip": "SolessBackEndFix\\Controllers\\UserController.cs*",
-              "ViewState": "AgIAAKIAAAAAAAAAAAAiwLQAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Juanjo\\Desktop\\Soless\\Proyecto\\Soless-prueba\\SolessBack - Checkpoint Vista Usuario\\SolessBackEndFix\\Controllers\\UserController.cs",
+              "RelativeToolTip": "SolessBackEndFix\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAiwL4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T18:11:51.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-03T18:11:51.413Z"
             }
           ]
         }

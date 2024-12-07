@@ -18,8 +18,12 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,14 +32,10 @@
               "RelativeDocumentMoniker": "SolessBackEndFix\\Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\Juanjo\\Desktop\\Soless\\Proyecto\\Soless-prueba\\SolessBack - Checkpoint Vista Usuario\\SolessBackEndFix\\Controllers\\ProductController.cs",
               "RelativeToolTip": "SolessBackEndFix\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAWwI0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAWwI8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T17:06:17.539Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
             },
             {
               "$type": "Document",
@@ -47,8 +47,7 @@
               "RelativeToolTip": "SolessBackEndFix\\Controllers\\UserController.cs",
               "ViewState": "AgIAAKIAAAAAAAAAAAAiwL4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T18:11:51.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-03T18:11:51.413Z"
             }
           ]
         }

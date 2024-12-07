@@ -6,4 +6,5 @@ export const GET_SHOES_ENDPOINT = "https://localhost:7200/api/SmartSearch/Search
 export const GET_CART_ENDPOINT = "https://localhost:7200/api/Cart/GetCart/"
 export const POST_ORDERS = "https://localhost:7200/api/orders"
 export const ORDERS_BY_USER = "https://localhost:7200/api/Orders/user/"
-export const ADD_PRODUCT_ENDPOINT = "https://localhost:7200/api/Product/AddProducts"
+export const ADD_PRODUCT_ENDPOINT = "http://localhost:7200/api/Product/AddProducts";
+export const PUT_SHOES_ENDPOINT = "http://localhost:7200/api/Product/UpdateProducts"; 
