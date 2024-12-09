@@ -1,7 +1,5 @@
 using Examples.WebApi.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -111,14 +109,7 @@ namespace SolessBackend
                 }
             }
 
-            //Database initialization
-            //using (IServiceScope scope = app.Services.CreateScope())
-            //{
-            //    DataBaseContext dbcontext = scope.ServiceProvider.GetService<DataBaseContext>();
-            //    dbcontext.Database.EnsureCreated();
-            //}
-
-            // Habilitar Swagger y CORS para desarrollo o producci�n
+            
             if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
             {
                 app.UseSwagger();
@@ -127,7 +118,7 @@ namespace SolessBackend
 
            
             app.UseCors("AllowAllOrigins"); // Aplica la pol�tica de CORS
-            
+            app.UseStaticFiles();
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();

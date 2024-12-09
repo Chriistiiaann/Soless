@@ -161,9 +161,54 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "productToAdd",
-        "Type": "SolessBackEndFix.Models.Product",
-        "IsRequired": true
+        "Name": "Id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Brand",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Model",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Original_Price",
+        "Type": "System.Nullable\u00601[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Discount_Price",
+        "Type": "System.Nullable\u00601[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Stock",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Img_Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Composition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -255,9 +300,54 @@
         "IsRequired": true
       },
       {
-        "Name": "product",
-        "Type": "SolessBackEndFix.Models.Product",
-        "IsRequired": true
+        "Name": "Id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Brand",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Model",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Original_Price",
+        "Type": "System.Nullable\u00601[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Discount_Price",
+        "Type": "System.Nullable\u00601[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Stock",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Img_Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Composition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

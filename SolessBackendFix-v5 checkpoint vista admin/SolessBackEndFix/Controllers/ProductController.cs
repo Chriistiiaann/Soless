@@ -11,7 +11,7 @@ namespace SolessBackEndFix.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-        // Inyecciones
+        
         private readonly IProductRepository _productRepository;
         private readonly ProductMapper _mapper;
 
@@ -43,7 +43,7 @@ namespace SolessBackEndFix.Controllers
 
                 if (products == null || !products.Any())
                 {
-                    return NotFound("No products found.");
+                    return NotFound("No se encontró ningún producto.");
                 }
 
                 int totalItems = await _productRepository.GetTotalProductCountAsync();
@@ -69,7 +69,7 @@ namespace SolessBackEndFix.Controllers
         }
 
         [HttpPost("AddProduct")]
-        public async Task<IActionResult> AddProductAsync([FromBody] Product productToAdd)
+        public async Task<IActionResult> AddProductAsync([FromForm] ProductDTO productToAdd)
         {
             if (productToAdd == null)
             {
@@ -81,23 +81,16 @@ namespace SolessBackEndFix.Controllers
                 return BadRequest(ModelState);
             }
 
-            // Verificar si el producto ya existe
-            var existingProduct = await _productRepository.GetProductByModel(productToAdd.Model);
-            if (existingProduct != null)
-            {
-                return Conflict("A Product with this model already exists.");
-            }
-
             try
             {
                 await _productRepository.AddProductAsync(productToAdd);
+
+                return Ok(new { message = "Producto registrado con éxito" });
             }
             catch (Exception ex)
             {
                 return StatusCode(500, "Internal server error: " + ex.Message);
             }
-
-            return Ok(new { message = "Producto registrado con éxito" });
         }
 
         [HttpPost("AddProducts")]
@@ -173,16 +166,16 @@ namespace SolessBackEndFix.Controllers
         }
 
         [HttpPut("UpdateProduct/{id}")]
-        public async Task<IActionResult> UpdateProductAsync(long id, [FromBody] Product product)
+        public async Task<IActionResult> UpdateProductAsync(long id, [FromForm] ProductDTO productToAdd)
         {
-            if (id != product.Id)
+            if (id != productToAdd.Id)
             {
                 return BadRequest("El ID del producto en la URL no coincide con el ID en el cuerpo de la solicitud.");
             }
 
             try
             {
-                await _productRepository.UpdateAllAsync(product);
+                await _productRepository.UpdateAllAsync(productToAdd);
                 return Ok("Producto actualizado correctamente.");
             }
             catch (Exception ex)

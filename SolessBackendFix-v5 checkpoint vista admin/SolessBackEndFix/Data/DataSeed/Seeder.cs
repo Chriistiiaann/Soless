@@ -27,41 +27,61 @@ namespace SolessBackEndFix.Data.Seeder
             User[] users =
             {
                 new User
-                {
-                    Id = 0,
-                    Name = "Christian",
-                    Email = "christian@gmail.com",
-                    Password = passwordHashedChristian,
-                    Role = "admin",
-                    Address = "Calle Christian"
-                },
+                    {
+                        Id = 0,
+                        Name = "Christian",
+                        Email = "christian@gmail.com",
+                        Password = passwordHashedChristian,
+                        Role = "admin",
+                        Address = "Calle Christian",
+                        Cart = new Cart
+                        {
+                            Id = 0, // Si el ID se genera automáticamente, puedes omitir esto
+                            UserId = 0 // Relaciona el carrito con el ID del usuario
+                        }
+                    },
                 new User
-                {
-                    Id = 0,
-                    Name = "Kilian",
-                    Email = "kilian@gmail.com",
-                    Password = passwordHashedKilian,
-                    Role = "admin",
-                    Address = "Calle Kilian"
-                },
-                new User 
-                {
-                    Id = 0,
-                    Name = "Josemi",
-                    Email = "josemi@gmail.com",
-                    Password = passwordHashedJosemi,
-                    Role = "admin",
-                    Address = "Calle Josemi"
-                },
+                    {
+                        Id = 0,
+                        Name = "Kilian",
+                        Email = "kilian@gmail.com",
+                        Password = passwordHashedKilian,
+                        Role = "admin",
+                        Address = "Calle Kilian",
+                        Cart = new Cart
+                        {
+                            Id = 0, // Si el ID se genera automáticamente, puedes omitir esto
+                            UserId = 0 // Relaciona el carrito con el ID del usuario
+                        }
+                    },
                 new User
-                {
-                    Id = 0,
-                    Name = "Juanjo",
-                    Email = "juanjo@gmail.com",
-                    Password = passwordHashedJuanjo,
-                    Role = "admin",
-                    Address = "Calle Juanjo"
-                }
+                    {
+                        Id = 0,
+                        Name = "Josemi",
+                        Email = "josemi@gmail.com",
+                        Password = passwordHashedJosemi,
+                        Role = "admin",
+                        Address = "Calle Josemi",
+                        Cart = new Cart
+                        {
+                            Id = 0, // Si el ID se genera automáticamente, puedes omitir esto
+                            UserId = 0 // Relaciona el carrito con el ID del usuario
+                        }
+                    },
+                new User
+                    {
+                        Id = 0,
+                        Name = "Juanjo",
+                        Email = "juanjo@gmail.com",
+                        Password = passwordHashedJuanjo,
+                        Role = "admin",
+                        Address = "Calle Juanjo",
+                        Cart = new Cart
+                        {
+                            Id = 0, // Si el ID se genera automáticamente, puedes omitir esto
+                            UserId = 0 // Relaciona el carrito con el ID del usuario
+                        }
+                    }
             };
 
             Product[] products = 

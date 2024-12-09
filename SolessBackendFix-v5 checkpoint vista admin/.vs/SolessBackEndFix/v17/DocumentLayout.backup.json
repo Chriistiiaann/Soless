@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v5 checkpoint vista admin\\solessbackendfix\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v5 checkpoint vista admin\\solessbackendfix\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v5 checkpoint vista admin\\solessbackendfix\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,28 +11,32 @@
       "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v5 checkpoint vista admin\\solessbackendfix\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v5 checkpoint vista admin\\solessbackendfix\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v5 checkpoint vista admin\\solessbackendfix\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v5 checkpoint vista admin\\solessbackendfix\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v5 checkpoint vista admin\\solessbackendfix\\dto\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\dto\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v5 checkpoint vista admin\\solessbackendfix\\data\\dataseed\\seeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\data\\dataseed\\seeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v5 checkpoint vista admin\\solessbackendfix\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v5 checkpoint vista admin\\solessbackendfix\\helpers\\filehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\helpers\\filehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v5 checkpoint vista admin\\solessbackendfix\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v5 checkpoint vista admin\\solessbackendfix\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\chrro\\onedrive\\escritorio\\soless\\solessbackendfix-v5 checkpoint vista admin\\solessbackendfix\\datamappers\\productmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\datamappers\\productmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,137 +46,116 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "SolessBackEndFix\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "SolessBackEndFix\\Controllers\\OrderController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwC8AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T11:36:48.34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "SolessBackEndFix\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "SolessBackEndFix\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAowL8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T11:36:23.358Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Interfaces\\IProductRepository.cs",
-              "RelativeDocumentMoniker": "SolessBackEndFix\\Interfaces\\IProductRepository.cs",
-              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Interfaces\\IProductRepository.cs",
-              "RelativeToolTip": "SolessBackEndFix\\Interfaces\\IProductRepository.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAkwBgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T11:34:22.416Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Repositories\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "SolessBackEndFix\\Repositories\\ProductRepository.cs",
-              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Repositories\\ProductRepository.cs",
-              "RelativeToolTip": "SolessBackEndFix\\Repositories\\ProductRepository.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAuwF4AAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T11:31:52.949Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "SolessBackEndFix\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Controllers\\UserController.cs",
-              "RelativeToolTip": "SolessBackEndFix\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAKkAAAAAAAAAAAAkwKoAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T11:29:19.939Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Interfaces\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "SolessBackEndFix\\Interfaces\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Interfaces\\IUserRepository.cs",
-              "RelativeToolTip": "SolessBackEndFix\\Interfaces\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T11:28:03.08Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "SolessBackEndFix\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "SolessBackEndFix\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAkwG8AAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T16:48:40.443Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Program.cs",
-              "RelativeDocumentMoniker": "SolessBackEndFix\\Program.cs",
-              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Program.cs",
-              "RelativeToolTip": "SolessBackEndFix\\Program.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAADgv18AAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T15:09:03.847Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Seeder.cs",
               "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Data\\DataSeed\\Seeder.cs",
               "RelativeDocumentMoniker": "SolessBackEndFix\\Data\\DataSeed\\Seeder.cs",
               "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Data\\DataSeed\\Seeder.cs",
               "RelativeToolTip": "SolessBackEndFix\\Data\\DataSeed\\Seeder.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAzwBQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T15:05:32.511Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T18:53:44.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "SolessBackEndFix\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAswEcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T11:29:33.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FileHelper.cs",
+              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Helpers\\FileHelper.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\Helpers\\FileHelper.cs",
+              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Helpers\\FileHelper.cs",
+              "RelativeToolTip": "SolessBackEndFix\\Helpers\\FileHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T16:36:21.88Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\appsettings.json",
-              "RelativeDocumentMoniker": "SolessBackEndFix\\appsettings.json",
-              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\appsettings.json",
-              "RelativeToolTip": "SolessBackEndFix\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-04T14:55:32.859Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Program.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\Program.cs",
+              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Program.cs",
+              "RelativeToolTip": "SolessBackEndFix\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T16:26:38.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductMapper.cs",
+              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\DataMappers\\ProductMapper.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\DataMappers\\ProductMapper.cs",
+              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\DataMappers\\ProductMapper.cs",
+              "RelativeToolTip": "SolessBackEndFix\\DataMappers\\ProductMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T16:16:53.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Interfaces\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\Interfaces\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Interfaces\\IProductRepository.cs",
+              "RelativeToolTip": "SolessBackEndFix\\Interfaces\\IProductRepository.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T16:12:36.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "SolessBackEndFix\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAiwCcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T16:11:06.38Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "SolessBackEndFix\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAIAwwK8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T16:10:13.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductDTO.cs",
+              "DocumentMoniker": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\DTO\\ProductDTO.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\DTO\\ProductDTO.cs",
+              "ToolTip": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\DTO\\ProductDTO.cs",
+              "RelativeToolTip": "SolessBackEndFix\\DTO\\ProductDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T16:07:44.072Z"
             }
           ]
         }

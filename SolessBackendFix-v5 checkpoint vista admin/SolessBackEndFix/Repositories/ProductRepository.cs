@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SolessBackend.Data;
+using SolessBackend.Models;
 using SolessBackEndFix.DTO;
 using SolessBackEndFix.Interfaces;
 using SolessBackEndFix.Models;
@@ -33,11 +34,61 @@ namespace SolessBackEndFix.Repositories
                 .ToListAsync();
         }
 
-        public async Task AddProductAsync(Product product)
+        public async Task<string> StoreImageAsync(IFormFile file, string modelName)
         {
-            _context.Products.Add(product);
+            string fileExtension = Path.GetExtension(file.FileName);
+            string fileName = modelName + fileExtension;
+
+            string imagesFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
+
+            string filePath = Path.Combine(imagesFolder, fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await file.CopyToAsync(stream);
+            }
+
+            return fileName;
+        }
+
+        public async Task AddProductAsync(ProductDTO productDto)
+        {
+            var existingProduct = await _context.Products
+                .FirstOrDefaultAsync(p => p.Model == productDto.Model);
+
+            if (existingProduct != null)
+            {
+                throw new Exception("A product with this model already exists.");
+            }
+
+            var product = new Product
+            {
+                Brand = productDto.Brand,
+                Model = productDto.Model,
+                Original_Price = productDto.Original_Price,
+                Discount_Price = productDto.Discount_Price,
+                Stock = productDto.Stock,
+                Description = productDto.Description,
+                Composition = productDto.Composition
+            };
+
+            if (productDto.File != null)
+            {
+                try
+                {
+                    product.Img_Name = await StoreImageAsync(productDto.File, productDto.Model);
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al guardar la imagen: " + ex.Message);
+                }
+            }
+
+            await _context.Products.AddAsync(product);
+
             await _context.SaveChangesAsync();
         }
+
         public async Task AddProductsAsync(IEnumerable<Product> products)
         {
             _context.Products.AddRange(products);
@@ -99,36 +150,88 @@ namespace SolessBackEndFix.Repositories
 
             _context.SaveChanges();
         }
-        public async Task UpdateAllAsync(Product product)
+        public async Task UpdateAllAsync(ProductDTO product)
         {
-            var productVariado = _context.Products.FirstOrDefault(p => p.Id == product.Id);
+            // Obtener el producto de la base de datos
+            var productVariado = await _context.Products.FirstOrDefaultAsync(p => p.Id == product.Id);
 
             if (productVariado == null)
             {
-                throw new Exception("La variación del producto no existe.");
+                throw new KeyNotFoundException("La variación del producto no existe.");
             }
 
+            // Validaciones iniciales
             if (product.Stock < 0)
             {
-                throw new Exception("No se puede poner menos de 0 de stock");
+                throw new ArgumentException("No se puede poner menos de 0 de stock.");
             }
 
             if (product.Original_Price < 0 || product.Discount_Price < 0)
             {
-                throw new Exception("No puede costar menos de 0 euros");
+                throw new ArgumentException("El precio no puede ser negativo.");
             }
 
-            productVariado.Brand = product.Brand;
-            productVariado.Model = product.Model;
-            productVariado.Original_Price = product.Original_Price;
-            productVariado.Discount_Price = product.Discount_Price;
-            productVariado.Stock = product.Stock;
-            productVariado.Img_Name = product.Img_Name;
-            productVariado.Description = product.Description;
-            productVariado.Composition = product.Composition;
+            // Actualización de campos si los valores son válidos
+            if (!string.IsNullOrWhiteSpace(product.Brand) && product.Brand != "string")
+            {
+                productVariado.Brand = product.Brand.Trim();
+            }
 
+            if (!string.IsNullOrWhiteSpace(product.Model) && product.Model != "string")
+            {
+                productVariado.Model = product.Model.Trim();
+            }
+
+            if (product.Original_Price > 0)
+            {
+                productVariado.Original_Price = product.Original_Price;
+            }
+
+            if (product.Discount_Price >= 0)
+            {
+                productVariado.Discount_Price = product.Discount_Price;
+            }
+
+            if (product.Stock > 0)
+            {
+                productVariado.Stock = product.Stock;
+            }
+
+            if (!string.IsNullOrWhiteSpace(product.Description) && product.Description != "string")
+            {
+                productVariado.Description = product.Description.Trim();
+            }
+
+            if (!string.IsNullOrWhiteSpace(product.Composition) && product.Composition != "string")
+            {
+                productVariado.Composition = product.Composition.Trim();
+            }
+
+            // Procesar y almacenar imagen 
+            if (product.File != null)
+            {
+                try
+                {
+                    var modelImage = !string.IsNullOrWhiteSpace(product.Model) && product.Model != "string"
+                        ? product.Model
+                        : productVariado.Model;
+
+                    productVariado.Img_Name = await StoreImageAsync(product.File, modelImage);
+                }
+                catch (Exception ex)
+                {
+                    throw new InvalidOperationException("Error al guardar la imagen.", ex);
+                }
+            }
+            else if (!string.IsNullOrWhiteSpace(product.Img_Name) && product.Img_Name != "string")
+            {
+                productVariado.Img_Name = product.Img_Name.Trim();
+            }
+
+            // Guardar cambios en la base de datos
             _context.Products.Update(productVariado);
             await _context.SaveChangesAsync();
         }
+
     }
 }
