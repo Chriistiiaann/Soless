@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./styles/Module.TablaAdmin.css";
 import { useShoesContext } from "../context_providers/ShoesProvider";
-import { GET_SHOES_ENDPOINT, ADD_PRODUCT_ENDPOINT, PUT_SHOES_ENDPOINT } from "../config";
+import { GET_SHOES_ENDPOINT } from "../config";
 import { URL_IMAGES } from "../config";
+import { ADD_PRODUCT_ENDPOINT, PUT_SHOES_ENDPOINT } from "../config";
 
-function TablaAdmin(URL_IMAGES) {
+function TablaAdmin() {
     const shoes = useShoesContext(); 
     const [isModalOpen, setModalOpen] = useState(false); 
     const [isAddModalOpen, setAddModalOpen] = useState(false); 
@@ -93,32 +94,28 @@ function TablaAdmin(URL_IMAGES) {
                 console.error("Error al actualizar el zapato:", response.status, errorDetails);
             } else {
                 console.log("Zapato actualizado con éxito.");
-                window.location.reload();
+                fetchShoes(); // Recarga los productos después de la actualización
+                setModalOpen(false); // Cierra el modal
             }
         } catch (error) {
             console.error("Error al conectar con el backend:", error);
         }
     };
-    
 
     // Función para agregar un nuevo producto
     const handleAddProduct = async (e) => {
-        e.preventDefault(); 
+        e.preventDefault();
     
+        const formData = new FormData(e.target);
         const newShoe = {
-            model: e.target.model.value,
-            description: e.target.description.value,
-            stock: parseInt(e.target.stock.value, 10),
-            price: parseFloat(e.target.price.value),
-            composition: e.target.composition.value,
-            brand: e.target.brand.value,
-            image: e.target.image.value,
+            model: formData.get("model"),
+            description: formData.get("description"),
+            stock: parseInt(formData.get("stock"), 10),
+            price: parseFloat(formData.get("price")),
+            composition: formData.get("composition"),
+            brand: formData.get("brand"),
+            image: formData.get("image"),
         };
-    
-        if (!newShoe.model || !newShoe.description || !newShoe.stock || !newShoe.price || !newShoe.composition || !newShoe.brand || !newShoe.image) {
-            console.error("Todos los campos son necesarios.");
-            return; 
-        }
     
         try {
             const response = await fetch(ADD_PRODUCT_ENDPOINT, {
@@ -126,15 +123,16 @@ function TablaAdmin(URL_IMAGES) {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ productsToAdd: [newShoe] }),
+                body: JSON.stringify(newShoe),
             });
     
-            if (response.ok) {
-                console.log("Producto agregado correctamente");
-                window.location.reload(); 
+            if (!response.ok) {
+                const errorText = await response.text();
+                console.error(`Error en el servidor: ${response.status}`, errorText);
             } else {
-                const errorData = await response.json();
-                console.error("Error al agregar el zapato:", errorData);
+                console.log("Producto agregado con éxito.");
+                fetchShoes(); // Recarga los productos después de agregar uno nuevo
+                setAddModalOpen(false); // Cierra el modal
             }
         } catch (error) {
             console.error("Error al conectar con el backend:", error);
@@ -179,6 +177,7 @@ function TablaAdmin(URL_IMAGES) {
                 </tbody>
             </table>
 
+            {/* Modal de edición */}
             {isModalOpen && (
                 <div className="modal-overlay">
                     <div className="modal-content">
@@ -224,6 +223,7 @@ function TablaAdmin(URL_IMAGES) {
                 </div>
             )}
 
+            {/* Modal de agregar producto */}
             {isAddModalOpen && (
                 <div className="modal-overlay">
                     <div className="modal-content">
@@ -252,6 +252,10 @@ function TablaAdmin(URL_IMAGES) {
                             <label>
                                 Marca:
                                 <input name="brand" type="text" />
+                            </label>
+                            <label>
+                                Imagen URL:
+                                <input name="image" type="text" />
                             </label>
                             <div className="modal-actions">
                                 <button
