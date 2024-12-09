@@ -1,0 +1,23 @@
+.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  height: 85vh;           
+  width: 100%;   
+  background-color: var(--secondary-color);          
+}
+
+.container-confirmacion {
+  text-align: center; 
+  padding: 50px;
+  background-color: var(--background-color);
+  border: 2px solid #222;
+  border-radius: 15px; 
+  box-shadow: -5px 5px 0px 2px var(--shadow-color);
+  width: 100%;
+  max-width: 400px; 
+
+  display: flex;
+  flex-direction: column; 
+  gap: 15px;
+}

@@ -3298,11 +3298,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jmtor\\Documents\\Solessdevelop\\SolessBack\\SolessBackEndFix\\SolessBackEndFix.csproj",
+      "projectUniqueName": "C:\\Users\\jmtor\\Documents\\Soless\\SolessBack - Checkpoint Vista Usuario\\SolessBackEndFix\\SolessBackEndFix.csproj",
       "projectName": "SolessBackEndFix",
-      "projectPath": "C:\\Users\\jmtor\\Documents\\Solessdevelop\\SolessBack\\SolessBackEndFix\\SolessBackEndFix.csproj",
+      "projectPath": "C:\\Users\\jmtor\\Documents\\Soless\\SolessBack - Checkpoint Vista Usuario\\SolessBackEndFix\\SolessBackEndFix.csproj",
       "packagesPath": "C:\\Users\\jmtor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jmtor\\Documents\\Solessdevelop\\SolessBack\\SolessBackEndFix\\obj\\",
+      "outputPath": "C:\\Users\\jmtor\\Documents\\Soless\\SolessBack - Checkpoint Vista Usuario\\SolessBackEndFix\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jmtor\\AppData\\Roaming\\NuGet\\NuGet.Config",

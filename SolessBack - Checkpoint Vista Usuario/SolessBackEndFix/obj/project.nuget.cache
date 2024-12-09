@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qkLRZswSjds=",
+  "dgSpecHash": "Y6TDI87KLLM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jmtor\\Documents\\Solessdevelop\\SolessBack\\SolessBackEndFix\\SolessBackEndFix.csproj",
+  "projectFilePath": "C:\\Users\\jmtor\\Documents\\Soless\\SolessBack - Checkpoint Vista Usuario\\SolessBackEndFix\\SolessBackEndFix.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jmtor\\.nuget\\packages\\f23.stringsimilarity\\6.0.0\\f23.stringsimilarity.6.0.0.nupkg.sha512",
     "C:\\Users\\jmtor\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

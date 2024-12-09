@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jmtor\\Documents\\Solessdevelop\\SolessBack\\",
+  "WorkspaceRootPath": "C:\\Users\\jmtor\\Documents\\Soless\\SolessBack - Checkpoint Vista Usuario\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\jmtor\\documents\\solessdevelop\\solessback\\solessbackendfix\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|c:\\users\\jmtor\\documents\\soless\\solessback - checkpoint vista usuario\\solessbackendfix\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F094D68-C995-4652-80C4-2F22BDB1EC23}|SolessBackEndFix\\SolessBackEndFix.csproj|solutionrelative:solessbackendfix\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\jmtor\\Documents\\Solessdevelop\\SolessBack\\SolessBackEndFix\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "SolessBackEndFix\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\jmtor\\Documents\\Solessdevelop\\SolessBack\\SolessBackEndFix\\Controllers\\UserController.cs",
-              "RelativeToolTip": "SolessBackEndFix\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAKMAAAAAAAAAAAAiwLMAAAAAAAAAAAAAAA==",
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\Documents\\Soless\\SolessBack - Checkpoint Vista Usuario\\SolessBackEndFix\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "SolessBackEndFix\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\jmtor\\Documents\\Soless\\SolessBack - Checkpoint Vista Usuario\\SolessBackEndFix\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "SolessBackEndFix\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T18:11:51.413Z",
+              "WhenOpened": "2024-12-04T16:29:57.798Z",
               "EditorCaption": ""
             }
           ]

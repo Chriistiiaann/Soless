@@ -82,7 +82,15 @@ namespace SolessBackend.Repositories
                 throw new Exception("La variación del user no existe.");
             }
 
-            usuarioVariado.Role = user.Role;
+            if (user.Role == "none" || user.Role == "admin")
+            {
+                usuarioVariado.Role = user.Role;
+            }
+            else
+            {
+                throw new Exception("El rol tiene que ser admin o none.");
+            }
+
 
             _context.Users.Update(usuarioVariado);
             await _context.SaveChangesAsync();
