@@ -6,11 +6,12 @@ footer {
     grid-template-columns: 1fr 2fr 1fr;
     gap: 20px;
     color: #ffffff;
+    font-size: 1.5rem;
 }
 
 .logo {
     font-family: var(--font-family-title);
-    font-size: 36px;
+    font-size: 4rem;
     font-weight: 700;
     color: #ffffff;
 }
@@ -22,7 +23,7 @@ footer {
 }
 
 .apartado .section-title {
-    font-size: 18px;
+    font-size: 1.7rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -30,6 +31,10 @@ footer {
 .apartado .desarrollo p {
     margin: 5px 0;
     color: #dcdcdc;
+}
+
+.right {
+    width: fit-content;
 }
 
 .right p {
@@ -45,7 +50,7 @@ footer {
 
 .icon {
     color: #ffffff;
-    font-size: 24px;
+    font-size: 2.4rem;
     cursor: pointer;
     transition: color 0.3s;
 }
@@ -56,21 +61,21 @@ footer {
 
 @media (max-width: 600px) {
     footer {
-        grid-template-columns: 1fr; /* Cambia la disposición a una columna */
-        text-align: center; /* Centra el contenido */
-        gap: 15px; /* Ajusta el espacio entre los elementos */
+        grid-template-columns: 1fr; 
+        text-align: center; 
+        gap: 15px; 
     }
 
     .center {
-        grid-template-columns: 1fr; /* Ajusta las secciones internas a una columna */
-        gap: 10px; /* Ajusta el espaciado */
+        grid-template-columns: 1fr; 
+        gap: 10px; 
     }
 
     .right {
-        text-align: center; /* Asegúrate de centrar el texto */
+        text-align: center; 
     }
 
     .icons {
-        justify-content: center; /* Centra los íconos */
+        justify-content: center;
     }
 }

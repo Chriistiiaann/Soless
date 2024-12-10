@@ -1,5 +1,6 @@
 import { useState, useEffect, createContext, useContext } from "react";
 import propTypes from "prop-types";
+import	{ GET_CART_ENDPOINT, ADD_TO_CART_ENDPOINT, GET_SHOE_BY_ID_ENDPOINT } from "../config";
 
 const CartContext = createContext();
 export function useCartContext() {
@@ -14,13 +15,13 @@ function CartProvider({ children }) {
     const [totalPrice, setTotalPrice] = useState(0);
     const numItems = cart.reduce((total, item) => total + item.quantity, 0);
 
-    // useEffect(() => {
-    //     const storedCart = JSON.parse(localStorage.getItem("carrito"));
-    //     if (JSON.stringify(storedCart) !== JSON.stringify(cart)) {
-    //         console.log("Actualizando localStorage con carrito:", cart);
-    //         localStorage.setItem("carrito", JSON.stringify(cart));
-    //     }
-    // }, [cart]);
+    useEffect(() => {
+        const storedCart = JSON.parse(localStorage.getItem("carrito"));
+        if (JSON.stringify(storedCart) !== JSON.stringify(cart)) {
+            console.log("Actualizando localStorage con carrito:", cart);
+            localStorage.setItem("carrito", JSON.stringify(cart));
+        }
+    }, [cart]);
     
 
     const inicializarCarrito = (isAuthenticated, userId) => {
@@ -46,7 +47,7 @@ function CartProvider({ children }) {
 
     const fetchCart = async (userId) => {
         try {
-            const response = await fetch(`https://localhost:7200/api/Cart/GetCart/${userId}`);
+            const response = await fetch(`${GET_CART_ENDPOINT}${userId}`);
             const data = await response.json();
             setCart(data.cartProducts);
             setTotalPrice(data.totalPrice);
@@ -58,7 +59,7 @@ function CartProvider({ children }) {
     const addProductToCart = async (userId, productId, quantity) => {
         if (userId) {
             try {
-                const response = await fetch(`https://localhost:7200/api/Cart/AddToCart`, {
+                const response = await fetch(`${ADD_TO_CART_ENDPOINT}`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
@@ -83,7 +84,7 @@ function CartProvider({ children }) {
 
     const getItemFromDatabase = async (productId, quantity) => {
         try {
-            const response = await fetch(`https://localhost:7200/api/Product/id?id=${productId}`);
+            const response = await fetch(`${GET_SHOE_BY_ID_ENDPOINT}${productId}`);
             const data = await response.json();
             console.log("item del back", data);
 
@@ -121,9 +122,11 @@ function CartProvider({ children }) {
                         : item
                 )
             );
+            localStorage.setItem("carrito", JSON.stringify(cart));
         } else {
             console.log("El producto no existe en el carrito. Agregando desde la base de datos...");
             getItemFromDatabase(productId, quantity);
+            localStorage.setItem("carrito", JSON.stringify(cart));
         }
     };
 

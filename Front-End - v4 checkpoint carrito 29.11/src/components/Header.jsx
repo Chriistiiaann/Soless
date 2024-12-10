@@ -11,7 +11,7 @@ import { URL_IMAGES } from '../config';
 
 function Header() {
   const { user, isAuthenticated, logout } = useAuth() || {};
-  const { cart, totalPrice, inicializarCarrito, removeFromCart, numItems } = useCartContext();
+  const { cart, totalPrice, inicializarCarrito, numItems } = useCartContext();
   const [showUserMenu, setShowUserMenu] = useState(false);
   const [showCartModal, setShowCartModal] = useState(false); // Estado para el modal del carrito
 
@@ -34,10 +34,6 @@ function Header() {
 
   const handleUserHover = (isHovering) => {
     setShowUserMenu(isHovering);
-  };
-
-  const handleRemoveItem = (productId) => {
-    removeFromCart(productId); // Llama a la función del CartProvider
   };
 
   return (
@@ -70,6 +66,7 @@ function Header() {
                     <ul>
                       <li><Link to="/perfil">Ver Perfil</Link></li>
                       <li><Link to="/pedidos">Mis Pedidos</Link></li>
+                      {user?.role === "admin" && <li><Link to="/Admin">Dashboard</Link></li>}
                       <li>
                         <button className="logout-button" onClick={logout}>
                           Cerrar sesión
@@ -101,24 +98,27 @@ function Header() {
             {showCartModal && (
               <div className="cart-modal">
                 <h3>Tu Carrito</h3>
-
-                <ul className="cart-items">
-                  {cart.map((item) => (
-                    <li key={item.productId}>
-                      <div className="cart-item">
-                        <img
-                          className="cart-item-image-modal"
-                          src={URL_IMAGES + item.productImage}
-                          alt={item.productName}
-                        />
-                        <h4>{item.productName}</h4>
-                        <p>Ud. {item.productPrice}€</p>
-                        <p>Total: {item.totalPriceObject}€</p>
-                        <p>Cantidad: {item.quantity}</p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
+                {cart.length === 0 ? (
+                  <p>Carrito vacío</p>
+                ) : (
+                  <ul className="cart-items">
+                    {cart.map((item) => (
+                      <li key={item.productId}>
+                        <div className="cart-item">
+                          <img
+                            className="cart-item-image-modal"
+                            src={URL_IMAGES + item.productImage}
+                            alt={item.productName}
+                          />
+                          <h4>{item.productName}</h4>
+                          <p>Ud. {item.productPrice}€</p>
+                          <p>Total: {item.totalPriceObject}€</p>
+                          <p>Cantidad: {item.quantity}</p>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                )}
                 <div className="cart-total">
                   <p>Total: {totalPrice}€</p>
                   <Link to="/Carrito" className="checkout-button">

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FIvhLDmyNJPMQo08wJdPOsEQDc5AhRSE+A24oqBX37E=",
+  "Hash": "xJS4UefsjPAP7tN7XXo5xIhvxArei4FI9Ock3xMbLXk=",
   "Source": "SolessBackEndFix",
   "BasePath": "_content/SolessBackEndFix",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "SolessBackEndFix\\wwwroot",
       "Source": "SolessBackEndFix",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\sandalias con logo en relieve de BALENCIAGA x Crocs.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\sandalias con logo en relieve de BALENCIAGA x Crocs.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/sandalias con logo en relieve de BALENCIAGA x Crocs.jpg",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sandalias con logo en relieve de BALENCIAGA x Crocs.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\sandalias mules Classic Clog de MCM x Crocs.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\sandalias mules Classic Clog de MCM x Crocs.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/sandalias mules Classic Clog de MCM x Crocs.jpg",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sandalias mules Classic Clog de MCM x Crocs.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas 1 de Nike x Cactus Plant Flea Market.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas 1 de Nike x Cactus Plant Flea Market.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas 1 de Nike x Cactus Plant Flea Market.jpg",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas 1 de Nike x Cactus Plant Flea Market.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Air Force 1 '07 PRM 3.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Air Force 1 '07 PRM 3.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas Air Force 1 '07 PRM 3.jpg",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas Air Force 1 '07 PRM 3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Air Jordan 4 Retro FK sneakers.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Air Jordan 4 Retro FK sneakers.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas Air Jordan 4 Retro FK sneakers.jpg",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas Air Jordan 4 Retro FK sneakers.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Air Jordan 4 Retro Military Black.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Air Jordan 4 Retro Military Black.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas Air Jordan 4 Retro Military Black.jpg",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas Air Jordan 4 Retro Military Black.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Air Max 1 Sketch Schematic sneakers.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Air Max 1 Sketch Schematic sneakers.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas Air Max 1 Sketch Schematic sneakers.jpg",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas Air Max 1 Sketch Schematic sneakers.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas altas Converse x Off-White Chuck 70.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas altas Converse x Off-White Chuck 70.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas altas Converse x Off-White Chuck 70.jpg",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas altas Converse x Off-White Chuck 70.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas bajas Match con cordones.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas bajas Match con cordones.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas bajas Match con cordones.jpg",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas bajas Match con cordones.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Ballstar con parche de estrella.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Ballstar con parche de estrella.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas Ballstar con parche de estrella.jpg",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas Ballstar con parche de estrella.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Campus con cordones de adidas x Bad Bunny.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Campus con cordones de adidas x Bad Bunny.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas Campus con cordones de adidas x Bad Bunny.jpg",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas Campus con cordones de adidas x Bad Bunny.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Chuck 70 Hi de Converse x Isabel Marant.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Chuck 70 Hi de Converse x Isabel Marant.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas Chuck 70 Hi de Converse x Isabel Marant.jpg",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas Chuck 70 Hi de Converse x Isabel Marant.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Forum Low CL The Simpsons - Living Room.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Forum Low CL The Simpsons - Living Room.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas Forum Low CL The Simpsons - Living Room.jpg",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas Forum Low CL The Simpsons - Living Room.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas MA-1.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas MA-1.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas MA-1.jpg",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas MA-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Match sneakers.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Match sneakers.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas Match sneakers.jpg",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas Match sneakers.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Match.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Match.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas Match.jpg",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas Match.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Out Of Office For Walking.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Out Of Office For Walking.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas Out Of Office For Walking.jpg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas Out Of Office For Walking.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas SB Dunk Low de Nike x Grateful Dead.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas SB Dunk Low de Nike x Grateful Dead.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas SB Dunk Low de Nike x Grateful Dead.jpg",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas SB Dunk Low de Nike x Grateful Dead.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas SB Dunk Low Verdy Visty.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas SB Dunk Low Verdy Visty.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas SB Dunk Low Verdy Visty.jpg",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas SB Dunk Low Verdy Visty.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas SB Dunk Travis Scott Special Box.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas SB Dunk Travis Scott Special Box.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas SB Dunk Travis Scott Special Box.jpg",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas SB Dunk Travis Scott Special Box.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Skel-Top sneakers.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Skel-Top sneakers.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas Skel-Top sneakers.jpg",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas Skel-Top sneakers.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Slim Out Of Office.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Slim Out Of Office.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas Slim Out Of Office.jpg",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas Slim Out Of Office.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Super-Star V2.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Super-Star V2.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas Super-Star V2.jpg",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas Super-Star V2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Super-Star.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Super-Star.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas Super-Star.jpg",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas Super-Star.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas The 10 Air Jordan 1 de Nike x Off-White.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas The 10 Air Jordan 1 de Nike x Off-White.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas The 10 Air Jordan 1 de Nike x Off-White.jpg",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas The 10 Air Jordan 1 de Nike x Off-White.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas The Ball.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas The Ball.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas The Ball.jpg",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas The Ball.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas x Bad Bunny x Lionel Messi Gazelle Indoor Cardboard sneakers.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas x Bad Bunny x Lionel Messi Gazelle Indoor Cardboard sneakers.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas x Bad Bunny x Lionel Messi Gazelle Indoor Cardboard sneakers.jpg",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas x Bad Bunny x Lionel Messi Gazelle Indoor Cardboard sneakers.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Yeezy 500 Utility Black.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Yeezy 500 Utility Black.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas Yeezy 500 Utility Black.jpg",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas Yeezy 500 Utility Black.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas YEEZY Boost 350 V2 Bone.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas YEEZY Boost 350 V2 Bone.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas YEEZY Boost 350 V2 Bone.jpg",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\images\\zapatillas YEEZY Boost 350 V2 Bone.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Yeezy Boost 350 V2 Zebra - 2018-2019 Release.jpg",
+      "Identity": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\images\\zapatillas Yeezy Boost 350 V2 Zebra - 2018-2019 Release.jpg",
       "SourceId": "SolessBackEndFix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\wwwroot\\",
       "BasePath": "_content/SolessBackEndFix",
       "RelativePath": "images/zapatillas Yeezy Boost 350 V2 Zebra - 2018-2019 Release.jpg",
       "AssetKind": "All",

@@ -7,6 +7,7 @@
   width: 80%;
   max-width: 1200px;
   margin: 40px auto;
+  font-size: 2rem;
 }
 
 .imageDetails {
@@ -26,11 +27,12 @@
   position: relative;
   padding-bottom: 120px;
   gap: 20px;
+  font-size: 2rem;
 }
 
 .product p {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .brand{
@@ -38,11 +40,10 @@
   padding: 5px;
   border-radius: var(--border-radius);
   font-weight: bold;
-  font-size: 1.2rem;
 }
 
 .product h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   margin: 10px 0;
 }

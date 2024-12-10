@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useCartContext } from "../context_providers/CartProvider";
 import { useAuth } from "../context_providers/AuthProvider";
 import { useNavigate } from "react-router-dom";
-import { POST_ORDERS } from "../config"
+import { POST_ORDERS_ENDPOINT } from "../config"
 
 function Formulario_Pago() {
   const cart = useCartContext();
@@ -30,7 +30,7 @@ function Formulario_Pago() {
     };
 
     try {
-      const response = await fetch(POST_ORDERS, {
+      const response = await fetch(POST_ORDERS_ENDPOINT, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -1,4 +1,3 @@
-import React from "react";
 import { useCartContext } from "../context_providers/CartProvider";
 import { useAuth } from "../context_providers/AuthProvider"; // Asegúrate de importar useAuth correctamente
 import ItemCheckOut from "../components/ItemCheckOut";

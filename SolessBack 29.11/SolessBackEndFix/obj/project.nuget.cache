@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1JisNGKvLtw=",
+  "dgSpecHash": "NXpNFrRiiC8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kylian\\OneDrive\\Escritorio\\SolessBack 29.11\\SolessBackEndFix\\SolessBackEndFix.csproj",
+  "projectFilePath": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBack 29.11\\SolessBackEndFix\\SolessBackEndFix.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kylian\\.nuget\\packages\\f23.stringsimilarity\\6.0.0\\f23.stringsimilarity.6.0.0.nupkg.sha512",
     "C:\\Users\\Kylian\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

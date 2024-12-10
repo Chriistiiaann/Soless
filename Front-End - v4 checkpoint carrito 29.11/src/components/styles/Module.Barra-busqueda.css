@@ -56,3 +56,9 @@
     box-shadow: -5px 5px 0px 0px var(--shadow-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+@media (max-width: 30em) {
+    .search-form{
+        flex-direction: column;
+    }
+}

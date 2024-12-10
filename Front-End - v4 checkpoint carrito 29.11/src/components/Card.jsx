@@ -10,55 +10,60 @@ function Card({id, brand, discount_Price, original_Price, img_Name, model, stock
 
     if (offer) {
         return (
-            <Link to={`/Catalogo/${id}`}>
+            <Link to={`/Catalogo/${id}`} className='link'>
             <div className="card-offer" id={id}>
                 <div className='img-container'>
-                    <img className="imgCard" src={img_URL} />
+                    <img className="img-offer" src={img_URL} />
                 </div>
                 <hr/>
                 <div className="product-info">
-                    <div className='naming'>
-                        <h3>{brand}</h3>
-                        <p>{model}</p>
+                    <div className='product-info-top'>
+                        <div className='naming'>
+                            <h3>{brand}</h3>
+                            <p>{model}</p>
+                        </div>
+                        <div className="reviews">
+                            <p>{stock}</p> 
+                            <p>🙂</p>
+                        </div>
                     </div>
-                    <div className="reviews">
-                        <p>12</p> 
-                        <p>🙂</p>
+                    <div className='product-info-bottom'>
+                        <p>{stock}</p>
+                        <span>
+                            <span className="old-price">{original_Price}€</span>
+                            <span className="new-price">{discount_Price}€</span>
+                        </span>
                     </div>
-                    
                 </div>
-                <div className="product-info">
-                    <p>{stock}</p>
-                    <span>
-                        <span className="old-price">{original_Price}€</span>
-                        <span className="new-price">{discount_Price}€</span>
-                    </span>
-                </div>
+                
             </div>
             </Link>
         );
     } else {
         return (
-            <Link to={`/Catalogo/${id}`}>
+            <Link to={`/Catalogo/${id}`} className='link'>
             <div className="card" id={id}>
                 <div className='img-container'>
                     <img className="img" src={img_URL} />
                 </div>
                 <hr/>
                 <div className="product-info">
-                    <div className='naming'>
-                        <h3>{brand}</h3>
-                        <p>{model}</p>
+                    <div className='product-info-top'>
+                        <div className='naming'>
+                            <h3>{brand}</h3>
+                            <p>{model}</p>
+                        </div>
+                        <div className="reviews">
+                            <p>{stock}</p> 
+                            <p>🙂</p>
+                        </div>
                     </div>
-                    <div className="reviews">
-                        <p>{stock}</p> 
-                        <p>🙂</p>
+                    <div className='product-info-bottom'>
+                        <p>{stock}</p>
+                        <p>{original_Price}€</p>
                     </div>
                 </div>
-                <div className="product-info">
-                    <p>{stock}</p>
-                    <p>{original_Price}€</p>
-                </div>
+                
             </div>
             </Link>
         );

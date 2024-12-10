@@ -1,7 +1,8 @@
 .card{
-    width: 250px;
-    height: 400px;
-    margin: 48px auto;
+    width: 30rem;
+    height: 45rem;
+    margin: 0;
+    font-size: 1.5rem;
     border: 2px solid #222;
     border-radius: 15px;
     padding-bottom: 5px;
@@ -11,6 +12,7 @@
     display: flex;
     flex-direction: column;
 
+
 }
 
 .card:hover {
@@ -19,9 +21,10 @@
 }
 
 .card-offer{
-    width: 300px;
-    height: 400px;
-    margin: 48px auto;
+    width: 35rem;
+    height: 50rem;
+    margin: 0;
+    font-size: 1.5rem;
     border: 2px solid #222;
     border-radius: 15px;
     padding-bottom: 5px;
@@ -41,14 +44,34 @@ h3{
     font-size: var(--font-size-base);
 }
 
-.imgCard{
+.img{
     width: 80%;
+    object-fit: contain;
+}
+
+.img-offer{
+    width: 80%;
+    object-fit: contain;
 }
 
 .product-info{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin: 5px;
+}
+
+.product-info-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 5px;
+}
+
+.product-info-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
 }
 
 .old-price{
@@ -80,3 +103,120 @@ h3{
     object-position: center;
 }
 
+.link{
+    width: fit-content;
+    height: fit-content;
+    justify-self: center;
+    gap: 0;
+    margin: 20px;
+    padding: 0;
+}
+
+.naming{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    font-size: 1.2rem;
+}
+
+
+/*(100em = 1600px) */
+@media (max-width: 100em) { 
+    .card {
+        width: 270px;
+        height: 400px;
+    }
+    .card-offer {
+        width: 300px;
+        height: 450px;
+    }
+}
+
+/*(87.5em = 1400px) */
+@media (max-width: 87.5em) { 
+    .card {
+        width: 220px;
+        height: 350px;
+    }
+    .card-offer {
+        width: 250px;
+        height: 400px;
+    }
+}
+
+/*(75em = 1200px) */
+@media (max-width: 75em) {
+    .card {
+        width: 200px;
+        height: 320px;
+    }
+    .card-offer {
+        width: 220px;
+        height: 350px;
+    }
+
+    .naming{
+        font-size: 1rem;
+    }
+}
+
+/*(62.5em = 1000px) */
+@media (max-width: 62.5em) {
+    .card {
+        width: 180px;
+        height: 300px;
+    }
+    .card-offer {
+        width: 200px;
+        height: 320px;
+    }
+}
+
+/*(50em = 800px) */
+@media (max-width: 50em) {
+    .card {
+        width: 270px;
+        height: 370px;
+    }
+    .card-offer {
+        width: 300px;
+        height: 400px;
+    }
+
+    .naming{
+        width: 100%;         
+        max-width: 100%;     
+        overflow: hidden;
+    }
+    .naming p{
+        white-space: nowrap;        
+        overflow: hidden;           
+        text-overflow: ellipsis;    
+        display: block;
+    }
+}
+
+/*(40em = 640px) */
+@media (max-width: 40em) {
+    .card {
+        width: 200px;
+        height: 300px;
+    }
+    .card-offer {
+        width: 220px;
+        height: 320px;
+    }
+}
+
+/* Para pantallas extremadamente pequeñas (30em = 480px) */
+@media (max-width: 30em) {
+    .card {
+        width: 300px;
+        height: 400px;
+    }
+    .card-offer {
+        width: 330px;
+        height: 430px;
+    }
+}

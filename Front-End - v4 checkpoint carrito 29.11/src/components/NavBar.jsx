@@ -6,7 +6,7 @@ function NavBar() {
         <>
             <nav className="nav">
                 <Link to="/Catalogo">Productos</Link>
-                <a href="#Proximamente">Próximamente...</a>
+                <Link to="/Proximamente">Proximamente</Link>
                 <Link to="/AboutUs">Sobre Nosotros</Link>
                 <a href="#Contacto">Contacto</a>
             </nav>

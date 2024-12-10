@@ -8,14 +8,19 @@ export function AuthProvider({ children }) {
     const [user, setUser] = useState(null);
     const [token, setToken] = useState(null);
     const [isAuthenticated, setIsAuthenticated] = useState(false);
+    const [isAdmin, setIsAdmin] = useState(false);
     const navigate = useNavigate();
 
     const login = (userData, token) => {
         setUser(userData);  
         setIsAuthenticated(true); 
         setToken(token);
+        console.log("token", token);
         localStorage.setItem("authToken", token); 
         localStorage.setItem("user", JSON.stringify(userData));
+        if (userData.role === "admin") {
+            setIsAdmin(true);
+        }
         navigate("/"); 
     };
 
@@ -28,18 +33,22 @@ export function AuthProvider({ children }) {
         navigate("/login"); 
     };
 
+    const updateUserData = (updatedUser) => {
+        setUser(updatedUser);
+        localStorage.setItem("user", JSON.stringify(updatedUser));
+    };
+
     useEffect(() => {
         // Verificar si hay un token y un usuario almacenados en localStorage
         const storedUser = localStorage.getItem("user");
         const token = localStorage.getItem("authToken");
-
-        
 
         // Si los 2 existen, cargar los datos
         if (token && storedUser) {
             try {
                 const parsedUser = JSON.parse(storedUser);
                 setUser(parsedUser);
+                setToken(token);
                 setIsAuthenticated(true);
                 console.log("Usuario cargado desde localStorage:", parsedUser);
             } catch (error) {
@@ -50,7 +59,7 @@ export function AuthProvider({ children }) {
     }, []); // Solo se ejecuta al montar el componente
 
     return (
-        <AuthContext.Provider value={{ user, isAuthenticated, login, logout, token }}>
+        <AuthContext.Provider value={{ user, isAuthenticated, login, logout, token, isAdmin, updateUserData }}>
             {children}
         </AuthContext.Provider>
     );

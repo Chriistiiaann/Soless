@@ -10,7 +10,7 @@
 
 
 
-.img-container {
+.img-container-developer {
     padding: 0;
     margin: 0;  
     width: 100%;
@@ -22,7 +22,7 @@
 }
 
 
-.img {
+.img-developer {
     width: 100%;
     height: auto;
     border-radius: 15px 15px 0 0;
@@ -33,15 +33,8 @@
     padding: 10px;
 }
 
-.product-info h3 {
-    font-size: 1em;
-    color: #333;
-    margin: 0;
-    font-weight: 500;
-}
-
-.description {
-    font-size: 0.9em;
+.developer-description {
+    font-size: 1.4rem;
     margin-top: 8px;
     line-height: 1.4; 
 }

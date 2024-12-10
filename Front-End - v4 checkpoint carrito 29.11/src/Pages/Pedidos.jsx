@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import ListaPedidos from '../components/ListaPedidos';
-import  { ORDERS_BY_USER } from '../config';
+import  { ORDERS_BY_USER_ENDPOINT } from '../config';
 
 const Pedidos = () => {
     const [pedidos, setPedidos] = useState([]);
@@ -20,7 +20,7 @@ const Pedidos = () => {
         const userId = user.id;
 
         try {
-            const response = await fetch(ORDERS_BY_USER + userId, {
+            const response = await fetch(ORDERS_BY_USER_ENDPOINT + userId, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

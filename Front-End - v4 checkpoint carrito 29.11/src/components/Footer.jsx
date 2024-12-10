@@ -1,6 +1,6 @@
 import './styles/Module.Footer.css'
 import { FaInstagram, FaYoutube, FaTiktok, FaTwitter } from 'react-icons/fa';
-//instalar desde la terminnar react incons ---- npm install react-icons
+
 
 function Footer () {
     return (

@@ -1,3 +1,28 @@
+.carrito-container-general{
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.carrito-title{
+    margin: 20px;
+    position: sticky;
+    top: 10px;
+    text-align: center;
+    background-color: var(--accent-color-hover);
+    border: 2px solid var(--border-color);
+    box-shadow: -5px 5px 0px 2px var(--shadow-color);
+    width: 95%;
+    border-radius: 15px;
+    color: var(--text-color);
+    padding: 10px;
+    font-size: 2.5rem;
+}
+
 .carrito-container{
     display: flex;
     flex-direction: row;
@@ -26,11 +51,12 @@
     border: 2px solid var(--border-color);
     border-radius: 15px;
     width: 60%;
+    font-size: 2rem;
 }
 
 .empty{
     align-items: center;
-    height: 300px;
+    height: 500px;
 }
 
 .totalAndBuy{
@@ -47,12 +73,19 @@
     transition: transform 0.4s ease;
     border: 2px solid var(--border-color);
     border-radius: 15px;
+    font-size: 2rem;
 }
 
 .empty-cart-message {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--text-color);
     font-weight: bold;
     text-align: center;
     padding: 20px;
+}
+
+@media (max-width: 31.25em) {
+    .carrito-items{
+        width: 90%;
+    }
 }

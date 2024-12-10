@@ -1,11 +1,12 @@
 .checkout-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   padding: 50px;
   background-color: var(--secondary-color);
   gap: 20px;
+  font-size: 1.5rem;
 }
 
 .checkout-column-left {
@@ -13,6 +14,7 @@
   flex-direction: column;
   gap: 20px; 
   width: 60%;
+
 }
 
 .titulo-resumen-compra {
@@ -42,7 +44,7 @@
   flex-direction: column;
   align-items: start;
   justify-content: flex-start;
-  padding: 10px;
+  padding: 30px;
   background-color: var(--background-color);
   box-shadow: -5px 5px 0px 2px var(--shadow-color);
   border: 2px solid var(--border-color);
@@ -70,4 +72,24 @@
 .message-container h1 {
   font-size: 1.5rem;
   color: var(--text-color); 
+}
+
+@media (max-width: 50em) {
+  .checkout-total-pay {
+    width: 500px;
+  }
+}
+
+@media (max-width: 41.25em) {
+  .checkout-container {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+  .checkout-column-left {
+    width: 100%;
+  }
+  .checkout-total-pay {
+    width: 100%;
+  }
 }

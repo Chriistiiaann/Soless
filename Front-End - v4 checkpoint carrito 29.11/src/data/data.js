@@ -1,132 +1,3 @@
-//Ofertas
-
-import oimg1 from "../img/zapatillas altas Converse x Off-White Chuck 70.webp"
-import oimg2 from "../img/zapatillas Chuck 70 Hi de Converse x Isabel Marant.webp"
-import oimg4 from "../img/zapatillas Run Star Motion WhiteBlackGum.jpg"
-
-
-export const ofertas = [
-    {
-        name: "Converse x Off-White",
-        reviews: 9,
-        reviewsImg: "🙂",
-        image: oimg1,              
-        stock: "Disponible",
-        originalPrice: "2570",
-        discountPrice: "2225",
-    },
-    {
-        name: "Chuck 70 Hi Converse",
-        reviews: 9,
-        reviewsImg: "🙂",
-        image: oimg2,              
-        stock: "Disponible",
-        originalPrice: "152",
-        discountPrice: "120",
-    },
-    {
-        name: "Run Star Motion",
-        reviews: 9,
-        reviewsImg: "🙂",
-        image: oimg4,              
-        stock: "Disponible",
-        originalPrice: "168",
-        discountPrice: "143",
-    },
-];
-
-//Productos
-
-import pimg1 from "../img/zapatillas bajas SB Dunk de Nike x Travis Scott 01.webp"
-import pimg2 from "../img/zapatillas Air Force 1 de Nike x Louis Vuitton 01.webp"
-import pimg3 from "../img/zapatillas Air Max 1-97 VF de Nike x Sean Wotherspoon 01.webp"
-import pimg4 from "../img/zapatillas SB Dunk Low de Nike x Grateful Dead 01.jpg"
-
-export const productos = [
-    {
-        name: "Dunk Travis",
-        reviews: 9,
-        reviewsImg: "🙂",
-        image: pimg1, // Asegúrate de importar img1 correctamente
-        stock: "Disponible",
-        originalPrice: "2850",
-        discountPrice: "2850", // Si no hay descuento, usa el mismo precio
-    },
-    {
-        name: "AF1 LV",
-        reviews: 9,
-        reviewsImg: "🙂",
-        image: pimg2, // Asegúrate de importar img2 correctamente
-        stock: "Disponible",
-        originalPrice: "13785",
-        discountPrice: "13785", // Si no hay descuento, usa el mismo precio
-    },
-    {
-        name: "Air Max 1/97",
-        reviews: 9,
-        reviewsImg: "🙂",
-        image: pimg3, // Asegúrate de importar img3 correctamente
-        stock: "Disponible",
-        originalPrice: "2205",
-        discountPrice: "2205", // Si no hay descuento, usa el mismo precio
-    },
-    {
-        name: "Dunk Low SB",
-        reviews: 9,
-        reviewsImg: "🙂",
-        image: pimg4, // Asegúrate de importar img4 correctamente
-        stock: "Disponible",
-        originalPrice: "1175",
-        discountPrice: "1175", // Si no hay descuento, usa el mismo precio
-    }
-];
-
-//Proximamente
-
-import proximg1 from "../img/zapatillas altas Converse x Off-White Chuck 70.webp"
-import proximg2 from "../img/zapatillas Chuck 70 Hi de Converse x Isabel Marant.webp"
-import proximg3 from "../img/zapatillas Air Max 1-97 VF de Nike x Sean Wotherspoon 01.webp"
-import proximg4 from "../img/zapatillas Run Star Motion WhiteBlackGum.jpg"
-
-export const proximamente = [
-    {
-        name: "Dunk Travis",
-        reviews: 9,
-        reviewsImg: "🙂",
-        image: proximg1, // Asegúrate de importar img1 correctamente
-        stock: "Disponible",
-        originalPrice: "1850",
-        discountPrice: "1850", // Si no hay descuento, usa el mismo precio
-    },
-    {
-        name: "Dunk Travis",
-        reviews: 9,
-        reviewsImg: "🙂",
-        image: proximg2, // Asegúrate de importar img2 correctamente
-        stock: "Disponible",
-        originalPrice: "1850",
-        discountPrice: "1850", // Si no hay descuento, usa el mismo precio
-    },
-    {
-        name: "Dunk Travis",
-        reviews: 9,
-        reviewsImg: "🙂",
-        image: proximg3, // Asegúrate de importar img3 correctamente
-        stock: "Disponible",
-        originalPrice: "1850",
-        discountPrice: "1850", // Si no hay descuento, usa el mismo precio
-    },
-    {
-        name: "Dunk Travis",
-        reviews: 9,
-        reviewsImg: "🙂",
-        image: proximg4, // Asegúrate de importar img4 correctamente
-        stock: "Disponible",
-        originalPrice: "1850",
-        discountPrice: "1850", // Si no hay descuento, usa el mismo precio
-    }
-];
-
 //Image Slides Carousel
 
 import slide2 from '../img/slider1.jpg';
@@ -190,44 +61,69 @@ export const developers = [
     }
 ];
 
-/*----------------------------placeholder carrito--------------------------------------- */
+/* Proximamente big imgs */
 
-import cartItemImg1 from "../img/zapatillas altas Converse x Off-White Chuck 70.webp"
-import cartItemImg2 from "../img/zapatillas Chuck 70 Hi de Converse x Isabel Marant.webp"
-import cartItemImg3 from "../img/zapatillas Air Max 1-97 VF de Nike x Sean Wotherspoon 01.webp"
-import cartItemImg4 from "../img/zapatillas Run Star Motion WhiteBlackGum.jpg"
+import caribean from "../img/caribean.jpg";
+import grass from "../img/grass.jpg";
+import studio from "../img/studio.jpg";
 
-export const itemsCarrito = [
+export const bigImgs = [ 
     {
-        id: 1,
-        name: "Item Cart 1",
-        image: cartItemImg1, // Asegúrate de importar img1 correctamente
-        price: "1850",
-        quantity: 2 // Si no hay descuento, usa el mismo precio
-    },
+        image: caribean,
+        alt: "caribean",
+        name: "caribean"
+    }, 
     {
-        id: 2,
-        name: "Item Cart 2",
-        image: cartItemImg2, // Asegúrate de importar img2 correctamente
-        price: "1850",
-        quantity: 2  // Si no hay descuento, usa el mismo precio
-    },
+        image: grass,
+        alt: "grass",
+        name: "grass"
+    }, 
     {
-        id: 3,
-        name: "Item Cart 3",
-        image: cartItemImg3, // Asegúrate de importar img3 correctamente
-        price: "1850",
-        quantity: 2  // Si no hay descuento, usa el mismo precio
-    },
-    {
-        id: 4,
-        name: "Item Cart 4",
-        image: cartItemImg4, // Asegúrate de importar img4 correctamente
-        price: "1850",
-        quantity: 2  // Si no hay descuento, usa el mismo precio
+        image: studio,
+        alt: "studio",
+        name: "studio"
     }
 ];
 
-export const totalprice = 10000
+/* Proximamente products */
+
+import next1 from "../img/next1.jpg";
+import next2 from "../img/next2.jpg";
+import next3 from "../img/next3.jpg";
+
+export const nextProducts = [
+    {
+        id : 1,
+        brand: "",
+        discount_Price: 0,
+        original_Price: 0,
+        img_Name: next1,
+        model: "",
+        stock: 0,
+        offer: false
+    },
+    {
+        id : 2,
+        brand: "",
+        discount_Price: 0,
+        original_Price: 0,
+        img_Name: next2,
+        model: "",
+        stock: 0,
+        offer: false
+    },    
+    {
+        id : 3,
+        brand: "",
+        discount_Price: 0,
+        original_Price: 0,
+        img_Name: next3,
+        model: "",
+        stock: 0,
+        offer: false
+    }
+];
+
+
 
 

@@ -142,7 +142,7 @@ namespace SolessBackend.Controllers
 
 
         [Authorize(Roles = "admin")]
-        [HttpDelete("{id}")]
+        [HttpDelete("delete/{id}")]
         public async Task<IActionResult> DeleteUserAsync(long id)
         {
             // Buscar el usuario por su ID

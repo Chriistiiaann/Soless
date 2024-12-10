@@ -12,6 +12,12 @@ import { AuthProvider } from "./context_providers/AuthProvider"
 import Pedidos from "./Pages/Pedidos";
 import CheckOut from "./Pages/CheckOut"
 import ConfirmacionCompra from "./Pages/ConfirmacionCompra"
+import Admin from "./Pages/Admin"
+import Perfil from "./Pages/Perfil"
+import Proximamente from "./Pages/Proximamente"
+
+import ProtectedRoutes from "./utils/ProtectedRoutes"
+import AdminRoute from "./utils/AdminRoute"
 
 function App() {
     return(
@@ -23,9 +29,18 @@ function App() {
                         <Route path="/Catalogo/:id" element={<ProductDetails />} />
                         <Route path="/AboutUs" element={<AboutUs />} />
                         <Route path="/Carrito" element={<Carrito />} />
-                        <Route path="/Pedidos" element={<Pedidos />}/>
-                        <Route path="/Checkout" element={<CheckOut />}/> 
-                        <Route path="/ConfirmacionCompra" element={<ConfirmacionCompra />}/>
+                        <Route path="/Proximamente" element={<Proximamente />} />
+                        
+                        <Route element={<AdminRoute />}>
+                            <Route path="/Admin" element={<Admin />} />
+                        </Route>
+
+                        <Route element={<ProtectedRoutes />}>
+                            <Route path="/Pedidos" element={<Pedidos />}/>
+                            <Route path="/Perfil" element={<Perfil />} />
+                            <Route path="/Checkout" element={<CheckOut />}/> 
+                            <Route path="/ConfirmacionCompra" element={<ConfirmacionCompra />}/>
+                        </Route>
                     </Route>
                     <Route path="/Login" element={<Login />} />
                     <Route path="/Register" element={<Register />} />

@@ -1,0 +1,39 @@
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    width: 100%; 
+    font-size: 2rem;
+    min-height: 60vh;
+}
+
+.admin-container h1 {
+    text-align: center;
+    margin: 20px 0;
+    background-color: var(--accent-color);
+    width: 95%;
+    border-radius: 15px;
+    color: var(--text-color);
+    box-shadow: -5px 5px 0px 2px var(--shadow-color);
+    padding: 10px;
+    position: sticky;
+    top: 10px;
+}
+
+.users-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%; 
+}
+
+@media (max-width: 31.25em) {
+    .users-container {
+        width: fit-content;
+        margin: 20px;
+    }
+}

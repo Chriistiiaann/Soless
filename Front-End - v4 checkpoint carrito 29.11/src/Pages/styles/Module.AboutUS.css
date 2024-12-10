@@ -4,7 +4,7 @@
     padding: 0;
     color: var(--text-color);
     letter-spacing: 0.1em;
-
+    font-size: 2rem;
 }
 
 .about-us-title {
@@ -29,7 +29,7 @@
 .about-us-description {
     margin: 0 auto;
     padding: 0 40px 50px;
-    font-size: 2em;
+    font-size: 2rem;
     letter-spacing: 0.1em;
     max-width: 60vw;
     text-align: justify;
@@ -43,6 +43,8 @@
     background-color: var(--secondary-color);
     width: 100%;
     padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
 }
 
 .developers-container{
@@ -152,19 +154,8 @@
     line-height: 1.6;
 }
 
-@media (max-width: 1200px) {
-    .about-us-title {
-        font-size: 4rem;
-        height: auto;
-    }
 
-    .about-us-description {
-        font-size: 1.2rem;
-        height: auto;
-    }
-}
-
-@media (max-width: 1400px) { 
+@media (max-width: 87.5em) { 
     .about-us-title {
         font-size: 5rem;
         height: auto;
@@ -174,5 +165,41 @@
         font-size: 1.3rem;
         height: auto;
         padding: 40px 0;
+    }
+
+    .list-developers {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 75em) {
+    .about-us-title {
+        font-size: 4rem;
+        height: auto;
+    }
+
+    .about-us-description {
+        font-size: 1.2rem;
+        height: auto;
+    }
+    .mision, .vision, .valor-item {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .list-developers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 56.25em) {
+    .list-developers {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
     }
 }

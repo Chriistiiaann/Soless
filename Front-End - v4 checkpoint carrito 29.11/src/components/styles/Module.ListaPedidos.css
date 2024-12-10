@@ -1,9 +1,12 @@
 .container {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 2rem;
   background-color: var(--secondary-color);
   width: 100%; 
+  font-size: 1.5rem;
 }
 
 .titulo-lista-pedidos {
@@ -12,55 +15,45 @@
   border: 2px solid var(--border-color);
   border-radius: 15px;
   padding: 20px;
-  text-align: center;
-  width: 25%; 
-  max-width: 800px; 
+  text-align: center; 
 }
 
 .titulo-lista-pedidos h2 {
   margin: 0;
 }
 
-.pedido {
-  align-items: start;
-  padding: 1rem;
-  width: 100%;
-  max-width: 800px; 
-}
-
-.listaPedido {
+.container-pedidos{
+  width: 80%;
   display: flex;
-  align-items: start;
   flex-direction: column;
-  gap: 2rem;
-  list-style: none;
-}
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+} 
 
-.infoPedido {
+.pedido {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: start;
-  padding: 1rem;
-  border: 2px solid #222;
-  border-radius: 15px;
+  justify-content: center;
   background-color: var(--background-color);
+  border: 2px solid var(--border-color);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
   box-shadow: -5px 5px 0px 2px var(--shadow-color);
+  width: 100%; 
+  gap: 20px;
 }
 
-.infoPedido p {
-  padding: 0 1rem;
-  flex: 1;
-  text-align: left;
-}
-
-.infoPedido strong {
-  color: #555;
-}
-
-.pedidos-imagen {
-  max-width: 150px;
+.img-pedido {
+  width: 100px;
   height: auto;
-  object-fit: contain;
+}
+
+.modelo {
+  max-width: 100px;
+  text-wrap: normal;
 }
 
 .sin-pedidos {
@@ -79,15 +72,41 @@
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
-  .infoPedido {
+@media (max-width: 41.25em) {
+  .pedido {
     flex-direction: column;
-    text-align: center;
-    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
   }
+  .img-pedido {
+    width: 200px;
+    height: auto;
+  }
+}
 
-  .infoPedido p {
-    text-align: center;
-    padding: 0;
+@media (max-width: 37.5em) {
+  .pedido {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+  }
+  .img-pedido {
+    width: 200px;
+    height: auto;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .pedido {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+  }
+  .img-pedido {
+    width: 200px;
+    height: auto;
   }
 }

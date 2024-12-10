@@ -14,9 +14,9 @@ function ConfirmacionCompra() {
   };
 
   return (
-    <div class="centrado">
-    <div class="container-confirmacion">
-      <h1 class="titulo">Pedido Confirmado</h1>
+    <div className="centrado">
+    <div className="container-confirmacion">
+      <h1 className="titulo">Pedido Confirmado</h1>
       <Button
         text="Volver a Inicio"
         onClick={handleClickButton2}

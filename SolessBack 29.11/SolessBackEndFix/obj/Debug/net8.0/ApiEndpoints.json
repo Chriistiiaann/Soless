@@ -416,7 +416,7 @@
   {
     "ContainingType": "SolessBackend.Controllers.UserController",
     "Method": "DeleteUserAsync",
-    "RelativePath": "api/User/{id}",
+    "RelativePath": "api/User/delete/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

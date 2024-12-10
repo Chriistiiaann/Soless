@@ -127,7 +127,6 @@ function ItemCarrito({ productId, productName, productImage, productPrice, total
                         <p className="productPrice">Ud. {productPrice}€</p>
                         <p className="productTotal">Total: {totalPriceObject}€</p>
                     </div>
-                    <Button className="close-button" text="X" onClick={deleteItem} />
                 </div>
                 <div className="bottom-div">
                     <ProductQuantity
@@ -135,10 +134,10 @@ function ItemCarrito({ productId, productName, productImage, productPrice, total
                         setCounter={handleQuantityChange}
                         onQuantityChange={(newQuantity) => handleQuantityChange(newQuantity)}
                     />
-                    <ShoeSizeSelector />
                     <Button className="big-button" text="Comprar Ya" onClick={() => { }} />
                 </div>
             </div>
+            <Button className="close-button" text="X" onClick={deleteItem} />
         </div>
     );
 }

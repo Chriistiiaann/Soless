@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useCartContext } from "../context_providers/CartProvider";
 import { useAuth } from "../context_providers/AuthProvider";
-import { URL_IMAGES } from "../config";
+import { URL_IMAGES, GET_SHOE_BY_ID_ENDPOINT } from "../config";
 import "./styles/Module.ProductDetails.css";
 import ProductQuantity from "../components/ProductQuantity";
 import ShoeSizeSelector from "../components/ShoeSizeSelector";
@@ -15,7 +15,6 @@ function ProductDetails() {
     const [shoeDetails, setShoeDetails] = useState(null);
     const [counter, setCounter] = useState(1);
 
-    // const [user, setUser] = useState(() => JSON.parse(localStorage.getItem("user")));
     const { user } = useAuth(); 
 
     id = Number(id);
@@ -23,7 +22,7 @@ function ProductDetails() {
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const response = await fetch(`https://localhost:7200/api/Product/id?id=${id}`);
+                const response = await fetch(`${GET_SHOE_BY_ID_ENDPOINT}${id}`);
                 const data = await response.json();
                 setShoeDetails(data);
                 console.log(data);

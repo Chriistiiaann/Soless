@@ -1,16 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 100%;
   width: 100%;
 }
 
@@ -39,7 +34,8 @@
 
 .user-modal {
   position: absolute;
-  top: 40px;
+  top: 100%;
+  font-size: 1.5rem;
   right: 0;
   border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -143,6 +139,7 @@
   position: absolute;
   top: 100%; /* Muestra el modal justo debajo del ícono */
   right: 0;
+  font-size: 1.5rem;
   padding: 15px;
   width: 500px;
   border-radius: 8px;
@@ -206,7 +203,7 @@
   margin: 10px 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 60rem) {
 
   .barra {
     text-align: left;

@@ -14,20 +14,21 @@ const ListaPedidos = ({ pedidos }) => {
   return (
     <div className='container'>
       <div className='titulo-lista-pedidos'>
-        <h2>Mis Pedidos</h2>
+        <h2>Mis Pedidos 📦</h2>
       </div>
+      <div className="container-pedidos">
       {pedidos.length > 0 ? (
         pedidos.map((pedido, index) => (
-          <div key={index} className='pedido'>
-            <ul className='listaPedido'>
+          <div key={index}>
+            <ul className="lista-pedidos">
               {pedido.orderItems.map((item, idx) => (
-                <li key={idx} className='infoPedido'>
-                  <img className='pedidos-imagen' src={URL_IMAGES + item.img_Name} alt={item.model}></img>
-                  <p> <strong>Producto:</strong><br />{item.model} </p>
+                <li key={idx} className="pedido">
+                  <img className="img-pedido" src={URL_IMAGES + item.img_Name} alt={item.model}></img>
+                  <p className="modelo"> <strong>Producto:</strong><br />{item.model} </p>
                   <p> <strong>Cantidad:</strong><br />{item.quantity} </p>
                   <p> <strong>Precio:</strong><br />{item.price / item.quantity}€</p>
-                  <p> <strong>Subtotal:</strong>{' '}{item.price}€</p>
-                  <p><strong>Pedido realizado el:</strong>{' '}{new Date(pedido.orderDate).toLocaleDateString()}</p>
+                  <p> <strong>Subtotal:</strong><br />{' '}{item.price}€</p>
+                  <p><strong>Pedido realizado el:</strong><br />{' '}{new Date(pedido.orderDate).toLocaleDateString()}</p>
                 </li>
               ))}
             </ul>
@@ -35,9 +36,10 @@ const ListaPedidos = ({ pedidos }) => {
         ))
       ) : (
         <div className='sin-pedidos'>
-          <p>No tienes pedidos aún.</p>
+          <p>No tienes pedidos.</p>
         </div>
       )}
+      </div>
       <Button
         text="Catálogo"
         onClick={handleNavigate}

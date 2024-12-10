@@ -32,30 +32,33 @@ function Carrito() {
 
 
     return (
-        <div className="carrito-container">
-            <div className={`carrito-items ${cart.length === 0 ? "empty" : ""}`}>
-                {cart.length === 0 ? (
-                    <p className="empty-cart-message">Tu carrito está vacío 🛒😒</p>
-                ) : (
-                    cart.map((item) => (
-                        <ItemCarrito
-                            key={item.productId}  // Usamos productId para evitar problemas con claves duplicadas
-                            productId={item.productId}
-                            productName={item.productName}
-                            productImage={item.productImage}
-                            productPrice={item.productPrice}
-                            quantity={item.quantity}
-                            totalPriceObject={item.totalPriceObject}
-                        />
-                    ))
+        <div className="carrito-container-general">
+            <h3 className="carrito-title">Carrito 🛒</h3>
+            <div className="carrito-container">
+                <div className={`carrito-items ${cart.length === 0 ? "empty" : ""}`}>
+                    {cart.length === 0 ? (
+                        <p className="empty-cart-message">Tu carrito está vacío 🛒😒</p>
+                    ) : (
+                        cart.map((item) => (
+                            <ItemCarrito
+                                key={item.productId}  // Usamos productId para evitar problemas con claves duplicadas
+                                productId={item.productId}
+                                productName={item.productName}
+                                productImage={item.productImage}
+                                productPrice={item.productPrice}
+                                quantity={item.quantity}
+                                totalPriceObject={item.totalPriceObject}
+                            />
+                        ))
+                    )}
+                </div>
+                {cart.length > 0 && (
+                    <div className="totalAndBuy">
+                        <h2>Subtotal: {totalPrice}€</h2>
+                        <Button className="big-button primary-button" text="Finalizar compra" onClick={handleNavigate} />
+                    </div>
                 )}
             </div>
-            {cart.length > 0 && (
-                <div className="totalAndBuy">
-                    <h2>Subtotal: {totalPrice}€</h2>
-                    <Button className="big-button primary-button" text="Finalizar compra" onClick={handleNavigate} />
-                </div>
-            )}
         </div>
     );
 }

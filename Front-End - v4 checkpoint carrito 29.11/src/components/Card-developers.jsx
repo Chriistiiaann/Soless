@@ -5,12 +5,12 @@ function Card({image, name, description}) {
 
         return (
             <div className="card-developer">
-                <div className='img-container'>
-                    <img className="img" src={image} alt="photo"/>
+                <div className='img-container-developer'>
+                    <img className="img-developer" src={image} alt="photo"/>
                 </div>
                 <div className="developer-info">
                     <h3>{name}</h3>
-                    <p className="description">{description}</p>
+                    <p className="developer-description">{description}</p>
                 </div>
             </div>
         )

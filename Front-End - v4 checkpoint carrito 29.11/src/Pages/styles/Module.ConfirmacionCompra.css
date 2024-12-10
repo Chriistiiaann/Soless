@@ -4,7 +4,8 @@
   align-items: center;     
   height: 85vh;           
   width: 100%;   
-  background-color: var(--secondary-color);          
+  background-color: var(--secondary-color); 
+  font-size: 2rem;         
 }
 
 .container-confirmacion {
@@ -20,4 +21,11 @@
   display: flex;
   flex-direction: column; 
   gap: 15px;
+}
+
+@media (max-width: 50em) {
+  .container-confirmacion {
+    font-size: 1.5rem;
+    width: 90%;
+  }
 }

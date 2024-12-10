@@ -76,6 +76,7 @@ function Login() {
                         name: decodedToken.Name,
                         email: decodedToken.Email,
                         role: decodedToken.role,
+                        address: decodedToken.Address
                     };
 
                     login(userInfo, token);
