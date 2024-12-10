@@ -3376,11 +3376,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kylian\\OneDrive\\Documentos\\webdev\\DawCopiaSeguridad\\Back\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\SolessBackEndFix.csproj",
+      "projectUniqueName": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBackendFix-v6 checkpoint vista final\\SolessBackEndFix\\SolessBackEndFix.csproj",
       "projectName": "SolessBackEndFix",
-      "projectPath": "C:\\Users\\Kylian\\OneDrive\\Documentos\\webdev\\DawCopiaSeguridad\\Back\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\SolessBackEndFix.csproj",
+      "projectPath": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBackendFix-v6 checkpoint vista final\\SolessBackEndFix\\SolessBackEndFix.csproj",
       "packagesPath": "C:\\Users\\Kylian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kylian\\OneDrive\\Documentos\\webdev\\DawCopiaSeguridad\\Back\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\obj\\",
+      "outputPath": "C:\\Users\\Kylian\\OneDrive\\Documentos\\GitHub\\SolessNewTeam\\SolessBackendFix-v6 checkpoint vista final\\SolessBackEndFix\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kylian\\AppData\\Roaming\\NuGet\\NuGet.Config",
