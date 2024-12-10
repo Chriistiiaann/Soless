@@ -12,4 +12,5 @@ public interface ICartRepository
     Task AddCartToUserAsync(Cart cart);
     Task<string> RemoveProductFromCartAsync(long cartId, long productId);
     Task<IActionResult> UpdateProductAsync(CartProductDTO cartProductDTO);
+    Task TransferTemporaryCartToUserAsync(string sessionId, object id);
 }

@@ -145,7 +145,8 @@ public class CartRepository : ICartRepository
         });
     }
 
-
-
-
+    public Task TransferTemporaryCartToUserAsync(string sessionId, object id)
+    {
+        throw new NotImplementedException();
+    }
 }

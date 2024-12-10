@@ -14,35 +14,48 @@ function CartProvider({ children }) {
     const [totalPrice, setTotalPrice] = useState(0);
     const numItems = cart.reduce((total, item) => total + item.quantity, 0);
 
-    // useEffect(() => {
-    //     const storedCart = JSON.parse(localStorage.getItem("carrito"));
-    //     if (JSON.stringify(storedCart) !== JSON.stringify(cart)) {
-    //         console.log("Actualizando localStorage con carrito:", cart);
-    //         localStorage.setItem("carrito", JSON.stringify(cart));
-    //     }
-    // }, [cart]);
-    
+    useEffect(() => {
+        localStorage.setItem("carrito", JSON.stringify(cart));
+    }, [cart]);
 
     const inicializarCarrito = (isAuthenticated, userId) => {
         if (isAuthenticated) {
             fetchCart(userId);
         } else {
-            const cartFromLocalStorage = JSON.parse(localStorage.getItem('carrito')) || [];
+            const cartFromLocalStorage = JSON.parse(localStorage.getItem("carrito")) || [];
             setCart(cartFromLocalStorage);
             setTotalPrice(cartFromLocalStorage.reduce((total, item) => total + item.totalPriceObject, 0));
         }
     };
 
-    const mergeCarts = (userId) => {
-        const cartFromLocalStorage = JSON.parse(localStorage.getItem('carrito')) || [];
-            if (cartFromLocalStorage.length > 0) {
-                console.log("Items en local storage detectados", cartFromLocalStorage);
-                cartFromLocalStorage.forEach((item) => {
-                    console.log("Agregando item:", item);
-                    addProductToCart(userId, item.productId, item.quantity);
-                })
+    const mergeCarts = async (userId) => {
+        const cartFromLocalStorage = JSON.parse(localStorage.getItem("carrito")) || [];
+        if (cartFromLocalStorage.length === 0) return;
+    
+        try {
+            const response = await fetch(`https://localhost:7200/api/Cart/GetCart/${userId}`);
+            const { cartProducts } = await response.json();
+    
+            // Filtra los productos que ya están en el carrito remoto para evitar duplicados
+            const productsToAdd = cartFromLocalStorage.filter(localItem =>
+                !cartProducts.some(serverItem => serverItem.productId === localItem.productId)
+            );
+    
+            // Añadir productos que no estén en el carrito remoto
+            for (const item of productsToAdd) {
+                await addProductToCart(userId, item.productId, item.quantity);
             }
+    
+            // Después de añadir los productos, elimina el carrito del localStorage y recarga el carrito desde el servidor
+            localStorage.removeItem("carrito");
+            await fetchCart(userId);
+        } catch (error) {
+            console.error("Error durante la sincronización del carrito:", error);
+        }
     };
+    
+    
+    
 
     const fetchCart = async (userId) => {
         try {
@@ -78,7 +91,7 @@ function CartProvider({ children }) {
             } catch (error) {
                 console.error("Error al añadir producto al carrito:", error);
             }
-        } 
+        }
     };
 
     const getItemFromDatabase = async (productId, quantity) => {
@@ -114,10 +127,10 @@ function CartProvider({ children }) {
                 prevCart.map((item) =>
                     Number(item.productId) === Number(productId)
                         ? {
-                                ...item,
-                                quantity: item.quantity + quantity,
-                                totalPriceObject: item.totalPriceObject + item.productPrice * quantity,
-                        }
+                              ...item,
+                              quantity: item.quantity + quantity,
+                              totalPriceObject: item.totalPriceObject + item.productPrice * quantity,
+                          }
                         : item
                 )
             );
@@ -125,11 +138,6 @@ function CartProvider({ children }) {
             console.log("El producto no existe en el carrito. Agregando desde la base de datos...");
             getItemFromDatabase(productId, quantity);
         }
-    };
-
-    const getCartFromLocalStorage = () => {
-        const storedCart = localStorage.getItem("carrito");
-        return storedCart ? JSON.parse(storedCart) : [];
     };
 
     const removeProductFromCart = (productId) => {
@@ -148,6 +156,28 @@ function CartProvider({ children }) {
         );
     };
 
+    const handleUserLogin = async (credentials) => {
+        try {
+            const response = await fetch("https://localhost:7200/api/Auth/Login", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(credentials),
+            });
+            if (!response.ok) throw new Error("Error during login");
+    
+            const { user, token } = await response.json();
+            setUser(user); // Guarda la información del usuario autenticado
+            setIsAuthenticated(true); // Actualiza el estado de autenticación
+            localStorage.setItem("token", token); // Opcional: guarda el token si lo necesitas
+    
+            // Fusiona los carritos después de iniciar sesión
+            mergeCarts(user.id);
+        } catch (error) {
+            console.error("Error al iniciar sesión:", error);
+        }
+    };
+    
+
     return (
         <CartContext.Provider
             value={{
@@ -163,7 +193,7 @@ function CartProvider({ children }) {
                 addProductToCartNoUser,
                 removeProductFromCart,
                 updateCartItemQuantity,
-                getCartFromLocalStorage
+                handleUserLogin,
             }}
         >
             {children}
