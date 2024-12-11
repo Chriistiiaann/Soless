@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
+
+/* Variables globales */
+:root {
+    /* Colores */
+    --primary-color: #9C70DB;
+    --secondary-color: #e6d6fb;
+    --accent-color: #BFE83F;
+    --accent-color-hover: #e3ffa2;
+    --background-color: #ffffff;
+    --border-color: #222;
+    --text-color: #333;
+    --shadow-color: rgb(45, 45, 45);
+
+    /* Tipografía */
+    --font-family-base: "Montserrat", Arial, Helvetica, sans-serif;
+    --font-family-title: "Montserrat Alternates", Arial, Helvetica, sans-serif;
+    --font-size-base: 16px;
+    --font-size-large: 1.25rem;
+
+    /* Buttons */
+
+    --button-color-primary: #bee83faa;
+    --button-color-primary-hover: #BFE83F;
+    --button-color-secondary-hover: #e6d6fb;
+
+
+    /* Espaciados */
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+
+    /* Bordes */
+    --border-radius: 5px;
+}
+
+html {
+    font-size: 62.5%;;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.big-button{
+
+    align-self: center;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 800;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    color: black;
+}
+
+.big-button:hover {
+    background-color: var(--button-color-secondary-hover);
+}
+
+.primary-button{
+    background-color: var(--button-color-primary);
+}
+
+.primary-button:hover{
+    background-color: var(--button-color-primary-hover);
+}

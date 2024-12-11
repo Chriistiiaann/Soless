@@ -1,0 +1,71 @@
+/* Estilo general */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #9a60d5;
+    padding: 10px 20px;
+    box-shadow: 0px 5px 0px 0px var(--shadow-color);
+    position: relative;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+.nav a:hover {
+    background-color: var(--accent-color-hover);
+    color: var(--text-color);
+    border-radius: var(--border-radius);
+    box-shadow: -5px 5px 0px 0px var(--shadow-color);
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@media (max-width: 37.5em) {
+    .hamburger {
+        display: block;
+        z-index: 2; 
+    }
+
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 50px; 
+        right: 0;
+        background-color: #9a60d5;
+        width: 100%;
+        padding: 10px 0;
+        z-index: 2;
+    }
+
+    .nav-links.open {
+        display: flex; 
+    }
+
+    .nav a {
+        font-size: 1.2rem; 
+        padding: 10px;
+    }
+}

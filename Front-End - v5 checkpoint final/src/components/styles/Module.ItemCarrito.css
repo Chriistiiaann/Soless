@@ -1,0 +1,131 @@
+.itemCarrito{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.cartItemImage{
+    width: auto;
+    height: 150px;
+    border-radius: 15px;
+}
+
+.productInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 0px;
+    width: 100%;
+    max-width: 400px;
+    gap: 20px;
+}
+
+.top-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    gap: 40px;
+}
+
+.price-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-align: center;
+    justify-content: end;
+    align-items: end;
+    width: fit-content;
+    padding: 0 10px;
+}
+
+.bottom-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.close-button{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    font-size: 2.5rem;
+    font-weight: semibold;
+    border-radius: 10px;
+    border: 2px solid var(--border-color);
+    background-color: var(--background-color);
+}
+
+.close-button:hover{
+    color: rgb(248, 62, 62);
+}
+
+@media (max-width: 75em) {
+    .itemCarrito{
+        font-size: 1.2rem;
+    }
+    .productName{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 56.25em) {
+    .itemCarrito{
+        font-size: 1rem;
+    }
+    .top-div{
+        overflow: hidden;
+        max-width: 250px;
+    }
+    .productName{
+        font-size: 1.2rem;
+        white-space: nowrap;        /* Mantén el texto en una sola línea */
+        overflow: hidden;           /* Oculta el texto que se desborda */
+        text-overflow: ellipsis;    /* Agrega "..." para indicar el truncado */
+        display: block;
+    }
+}
+@media (max-width: 52.5em) {
+    .itemCarrito{
+        flex-direction: column;
+        margin: 10px auto;
+        font-size: 1.4rem;
+    }
+    .top-div{
+        overflow: hidden;
+        max-width: 500px;
+        font-size: 1.4rem;
+    }
+    .productName{
+        font-size: 1.4rem;
+        white-space: nowrap;        /* Mantén el texto en una sola línea */
+        overflow: hidden;           /* Oculta el texto que se desborda */
+        text-overflow: ellipsis;    /* Agrega "..." para indicar el truncado */
+        display: block;
+    }
+    .close-button{
+        position: relative;
+        order: -1;
+        align-self: flex-end;
+    }
+}
+
+@media (max-width: 37.5em) {
+    .top-div{
+        flex-direction: column;
+        overflow: visible;
+    }
+    .productName{
+        white-space: inherit;
+    }
+    .bottom-div{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}

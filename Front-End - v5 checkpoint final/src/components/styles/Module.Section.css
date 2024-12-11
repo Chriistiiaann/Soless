@@ -1,0 +1,51 @@
+.sectionOfertas{
+    padding-top: 10px;
+    background-color: #e6d6fb;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 50px;
+}
+hr{
+    width: 93%;
+    margin: auto;
+    border: 2px solid #222;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) { 
+    .cards{
+        gap: 0px;
+    }
+}
+
+@media (max-width: 768px) { 
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
+    }
+}
+
+@media (max-width: 480px) { 
+    .cards{
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+    .title{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
