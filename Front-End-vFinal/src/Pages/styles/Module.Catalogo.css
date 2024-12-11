@@ -1,25 +1,25 @@
 .catalogo {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 elementos por fila */
-    gap: 20px; /* Espacio entre los elementos */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     padding: 20px;
 }
 
 @media (max-width: 64em) {
     .catalogo {
-        grid-template-columns: repeat(3, 1fr); /* 3 elementos por fila en tablets */
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 48em) {
     .catalogo {
-        grid-template-columns: repeat(2, 1fr); /* 2 elementos por fila en móviles */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 30em) {
     .catalogo {
-        grid-template-columns: 1fr; /* 1 elemento por fila en pantallas muy pequeñas */
+        grid-template-columns: 1fr;
     }
 }
 
