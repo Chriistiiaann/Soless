@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EtZrrJZbRoI=",
+  "dgSpecHash": "m4FYn3mIDYY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\chrro\\OneDrive\\Documentos\\solessCopiaSeguridad\\Subir Al Main\\SolessBackend- vFinal\\SolessBackEndFix\\SolessBackEndFix.csproj",
+  "projectFilePath": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackend- vFinal\\SolessBackEndFix\\SolessBackEndFix.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chrro\\.nuget\\packages\\f23.stringsimilarity\\6.0.0\\f23.stringsimilarity.6.0.0.nupkg.sha512",
     "C:\\Users\\chrro\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
