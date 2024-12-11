@@ -3376,11 +3376,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\SolessBackEndFix.csproj",
+      "projectUniqueName": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackend- vFinal\\SolessBackEndFix\\SolessBackEndFix.csproj",
       "projectName": "SolessBackEndFix",
-      "projectPath": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\SolessBackEndFix.csproj",
+      "projectPath": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackend- vFinal\\SolessBackEndFix\\SolessBackEndFix.csproj",
       "packagesPath": "C:\\Users\\chrro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackendFix-v5 checkpoint vista admin\\SolessBackEndFix\\obj\\",
+      "outputPath": "C:\\Users\\chrro\\OneDrive\\Escritorio\\Soless\\SolessBackend- vFinal\\SolessBackEndFix\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\chrro\\AppData\\Roaming\\NuGet\\NuGet.Config",
