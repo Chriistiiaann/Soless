@@ -10,7 +10,7 @@ function TablaAdmin() {
     const [isAddModalOpen, setAddModalOpen] = useState(false); 
     const [selectedShoe, setSelectedShoe] = useState(null);
 
-    // Función para obtener todos los productos
+
     async function fetchShoes() {
         try {
             const response = await fetch(GET_SHOES_ENDPOINT, {
@@ -36,34 +36,33 @@ function TablaAdmin() {
         }
     }
 
-    // Llamar al backend cuando se carga el componente
     useEffect(() => {
         fetchShoes();
     }, []);
 
-    // Abrir el modal de edición
+
     const handleEditClick = (shoe) => {
         setSelectedShoe(shoe); 
         setModalOpen(true);
     };
 
-    // Cerrar modal de edición
+
     const handleCloseModal = () => {
         setModalOpen(false);
         setSelectedShoe(null);
     };
 
-    // Abrir modal para agregar nuevo producto
+
     const handleAddProductClick = () => {
         setAddModalOpen(true); 
     };
 
-    // Cerrar modal de agregar producto
+
     const handleCloseAddModal = () => {
         setAddModalOpen(false); 
     };
 
-    // Función para guardar cambios en el producto editado
+
     const handleSave = async (e) => {
         e.preventDefault();
     
@@ -72,18 +71,6 @@ function TablaAdmin() {
             return;
         }
     
-        //COMENTAR PARA ACTUALIZAR Y RECOGER ARCHIVO
-
-        // const updatedShoe = {
-        //     id: selectedShoe.id,
-        //     brand: e.target.brand.value,
-        //     model: e.target.model.value,
-        //     description: e.target.description.value,
-        //     composition: e.target.composition.value,
-        //     original_Price: parseFloat(e.target.price.value),
-        //     discount_Price: parseFloat(e.target.discount_price.value),
-        //     stock: parseInt(e.target.stock.value, 10),
-        // };
 
         const formData = new FormData();
         formData.append("id", selectedShoe.id);
@@ -121,22 +108,10 @@ function TablaAdmin() {
     };
     
 
-    // Función para agregar un nuevo producto
+
     const handleAddProduct = async (e) => {
         e.preventDefault(); 
     
-        //COMENTAR PARA ACTUALIZAR Y RECOGER ARCHIVO
-        // const newShoe = {
-        //     id: 0,
-        //     brand: e.target.brand.value,
-        //     model: e.target.model.value,
-        //     description: e.target.description.value,
-        //     composition: e.target.composition.value,
-        //     img_Name: e.target.image.value,
-        //     original_Price: parseFloat(e.target.price.value),
-        //     discount_Price: parseFloat(e.target.discount_price.value),
-        //     stock: parseInt(e.target.stock.value, 10),
-        // };
 
         const formData = new FormData();
         formData.append("id", 0);
@@ -155,10 +130,6 @@ function TablaAdmin() {
         }
     
         console.log(formData);
-        // if (!formData.model || !formData.description || !formData.stock || !formData.original_Price || !formData.composition || !formData.brand || !formData.file || !formData.discount_Price) {
-        //     console.error("Todos los campos son necesarios.");
-        //     return; 
-        // }
     
         try {
             const response = await fetch(ADD_PRODUCT_ENDPOINT, {
