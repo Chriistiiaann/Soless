@@ -5,7 +5,6 @@ import { useAuth } from "../context_providers/AuthProvider";
 import { URL_IMAGES, GET_SHOE_BY_ID_ENDPOINT } from "../config";
 import "./styles/Module.ProductDetails.css";
 import ProductQuantity from "../components/ProductQuantity";
-import ShoeSizeSelector from "../components/ShoeSizeSelector";
 import ProductReviews from "../components/ProductReviews";
 
 

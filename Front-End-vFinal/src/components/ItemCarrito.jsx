@@ -8,7 +8,6 @@ import { useCartContext } from "../context_providers/CartProvider";
 import { useAuth } from "../context_providers/AuthProvider";
 import { PUT_CART_ENDPOINT, GET_CART_ENDPOINT, UPDATE_CART_PRODUCT_ENDPOINT} from '../config';
 
-
 function ItemCarrito({ productId, productName, productImage, productPrice, totalPriceObject, quantity }) {
     const { cart, setCart, setTotalPrice } = useCartContext();
     const { user, isAuthenticated } = useAuth() || {}; 
