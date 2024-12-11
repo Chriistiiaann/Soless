@@ -63,6 +63,7 @@ function Login() {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
+                    "Access-Control-Allow-Origin": "https://soless.vercel.app"
                 },
                 body: JSON.stringify(data),
             });

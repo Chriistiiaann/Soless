@@ -1,12 +1,12 @@
 import "./styles/Module.Formulario-Pago.css";
 import { useState } from "react";
-import { useCartContext } from "../context_providers/CartProvider";
 import { useAuth } from "../context_providers/AuthProvider";
 import { useNavigate } from "react-router-dom";
 import { POST_ORDERS_ENDPOINT } from "../config"
-
+import { useCartContext } from "../context_providers/CartProvider";
 function Formulario_Pago() {
   const cart = useCartContext();
+  const {resetearCarrito} = useCartContext();
   const { user } = useAuth();
   const navigate = useNavigate();
 
@@ -41,7 +41,9 @@ function Formulario_Pago() {
       if (response.ok) {
         const result = await response.json();
         console.log("Orden realizada con éxito:", result);
+        resetearCarrito();
         navigate("/ConfirmacionCompra");
+        
       } else {
         console.error("Error al realizar la orden:", response.statusText);
         alert("Hubo un error al procesar tu orden.");

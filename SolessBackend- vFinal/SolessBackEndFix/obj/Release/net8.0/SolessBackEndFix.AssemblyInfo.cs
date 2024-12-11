@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SolessBackEndFix")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbc8bacd0e1cf40cde10264d881ea0a91ccd2e35")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f46780a212c580a6792dfad1dce79192fb43547b")]
 [assembly: System.Reflection.AssemblyProductAttribute("SolessBackEndFix")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SolessBackEndFix")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

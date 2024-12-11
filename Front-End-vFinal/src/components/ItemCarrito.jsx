@@ -55,7 +55,7 @@ function ItemCarrito({ productId, productName, productImage, productPrice, total
     // Actualiza la cantidad cuando se cambia
     const handleQuantityChange = (newQuantity) => {
         setCounter(newQuantity);
-
+        
         if (newQuantity > 0) {
             if (isAuthenticated) {
                 // Si está autenticado, actualizar en el backend

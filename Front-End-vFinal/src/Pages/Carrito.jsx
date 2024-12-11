@@ -30,7 +30,6 @@ function Carrito() {
         navigate('/checkout');  
     };
 
-
     return (
         <div className="carrito-container-general">
             <h3 className="carrito-title">Carrito 🛒</h3>
