@@ -108,7 +108,8 @@ namespace SolessBackend
                 }
             }
 
-            
+            app.UseCors("AllowSpecificOrigin");
+
             if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
             {
                 app.UseSwagger();
@@ -116,7 +117,7 @@ namespace SolessBackend
             }
 
 
-            app.UseCors("AllowSpecificOrigin");
+            //app.UseCors("AllowSpecificOrigin");
             app.UseStaticFiles();
             app.UseHttpsRedirection();
             app.UseAuthentication();
