@@ -1,0 +1,282 @@
+.containerDetails {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto 1fr;
+  gap: 50px;
+  padding: 20px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 40px auto;
+  font-size: 2rem;
+}
+
+.imageDetails {
+  position: relative;
+}
+
+.imageDetails img {
+  width: 100%;
+  max-width: 400px;
+  min-width: 100px;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 20px;
+  font-size: 2rem;
+}
+
+.brand{
+  background-color: var(--secondary-color);
+  padding: 5px;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  width: 100%;
+}
+
+.product h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 1.7rem;
+}
+
+.composition {
+  white-space: pre-line;
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+
+.price-and-stock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  margin-top: 0px;
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttons .add {
+  padding: 10px 20px;
+}
+
+.counter-group {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  gap: 10px;
+}
+
+.counter-group button {
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  background-color: var(--button-color-primary);
+  border: 1px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.counter-group input {
+  width: 50px;
+  padding: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+  border: 1px;
+  border-color: var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.counter-group button:hover {
+  background-color: var(--button-color-primary-hover);
+}
+
+.reviews-section {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding-top: 30px;
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.reviews-section.no-form {
+  grid-template-columns: 1fr;
+}
+
+.reviews-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  grid-column: span 1;
+}
+
+.reviews-list {
+  grid-column: 2;
+  overflow-y: auto;
+}
+
+.reviews-list, .add-review {
+  grid-column: span 1;
+}
+
+.add-review {
+  grid-column: 1;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: var(--border-radius);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-review form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-review label {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.add-review select,
+.add-review textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+.add-review button {
+  padding: 10px 20px;
+  background-color: var(--button-color-primary);
+  color: var(--text-color);
+  font-size: 1rem;
+  border: var(--border-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  align-self: flex-start; 
+}
+
+.add-review button:hover {
+  background-color: var(--button-color-primary-hover);
+}
+
+.review {
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.review p {
+  margin: 5px 0;
+}
+
+.review strong {
+  font-weight: bold;
+}
+
+.review .rating {
+  color: gold;
+}
+
+@media (max-width: 40.625em) {
+  .containerDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 0;
+  }
+
+  .brand {
+    order: 0;
+    text-align: center;
+  }
+
+  .imageDetails {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .imageDetails img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: var(--border-radius);
+  }
+
+  .product {
+    order: 3;
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .product h1 {
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .price-and-stock,
+  .description,
+  .composition,
+  .buttons {
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+  }
+
+  .reviews-section {
+    order: 4;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 31.25em) { 
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.2rem;
+  }
+  
+}

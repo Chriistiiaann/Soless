@@ -1,0 +1,236 @@
+.card{
+    width: 30rem;
+    height: 45rem;
+    margin: 0;
+    font-size: 1.5rem;
+    border: 2px solid #222;
+    border-radius: 15px;
+    padding-bottom: 5px;
+    background-color: var(--background-color);
+    box-shadow: -5px 5px 0px 2px var(--shadow-color);
+    transition: transform 0.4s ease;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: -5px 5px 0px 2px var(--accent-color-hover);
+}
+
+.card-offer{
+    width: 35rem;
+    height: 50rem;
+    margin: 0;
+    font-size: 1.5rem;
+    border: 2px solid #222;
+    border-radius: 15px;
+    padding-bottom: 5px;
+    background-color: var(--background-color);
+    box-shadow: -5px 5px 0px 2px var(--shadow-color);
+    transition: transform 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-offer:hover {
+    transform: translateY(-5px);
+    box-shadow: -5px 5px 0px 2px var(--accent-color-hover);
+}
+
+h3{
+    font-size: var(--font-size-base);
+}
+
+.img{
+    width: 80%;
+    object-fit: contain;
+}
+
+.img-offer{
+    width: 80%;
+    object-fit: contain;
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.product-info-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 5px;
+}
+
+.product-info-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.old-price{
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.435);
+    padding-right: 5px;
+}
+
+.new-price{
+    font-weight: bold;
+    padding-right: 5px;
+    font-size: 1.2rem;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.reviews{
+    display: flex;
+    align-items: center;
+}
+
+.imgCard{
+    object-fit: cover;
+    object-position: center;
+}
+
+.link{
+    width: fit-content;
+    height: fit-content;
+    justify-self: center;
+    gap: 0;
+    margin: 20px;
+    padding: 0;
+}
+
+.naming{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 100em) { 
+    .card {
+        width: 270px;
+        height: 400px;
+    }
+    .card-offer {
+        width: 300px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 87.5em) { 
+    .card {
+        width: 220px;
+        height: 350px;
+    }
+    .card-offer {
+        width: 250px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 75em) {
+    .card {
+        width: 200px;
+        height: 320px;
+    }
+    .card-offer {
+        width: 220px;
+        height: 350px;
+    }
+
+    .naming{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 62.5em) {
+    .card {
+        width: 180px;
+        height: 300px;
+    }
+    .card-offer {
+        width: 200px;
+        height: 320px;
+    }
+}
+
+@media (max-width: 57.5em) {
+    .card {
+        width: 160px;
+        height: 280px;
+    }
+    .card-offer {
+        width: 180px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 52.5em) {
+    .card {
+        width: 150px;
+        height: 270px;
+    }
+    .card-offer {
+        width: 170px;
+        height: 290px;
+    }
+}
+
+@media (max-width: 50em) {
+    .card {
+        width: 270px;
+        height: 370px;
+    }
+    .card-offer {
+        width: 300px;
+        height: 400px;
+    }
+
+    .naming{
+        width: 100%;         
+        max-width: 100%;     
+        overflow: hidden;
+    }
+    .naming p{
+        white-space: nowrap;        
+        overflow: hidden;           
+        text-overflow: ellipsis;    
+        display: block;
+    }
+}
+
+@media (max-width: 40em) {
+    .card {
+        width: 200px;
+        height: 300px;
+    }
+    .card-offer {
+        width: 220px;
+        height: 320px;
+    }
+}
+
+@media (max-width: 30em) {
+    .card {
+        width: 300px;
+        height: 400px;
+    }
+    .card-offer {
+        width: 300px;
+        height: 430px;
+    }
+}
