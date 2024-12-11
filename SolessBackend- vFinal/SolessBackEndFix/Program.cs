@@ -30,11 +30,11 @@ namespace SolessBackend
             // Agregar CORS
             builder.Services.AddCors(options =>
             {
-                options.AddPolicy("AllowAllOrigins", builder =>
+                options.AddPolicy("AllowSpecificOrigin", builder =>
                 {
-                    builder.AllowAnyOrigin()    // Permite cualquier origen (incluyendo todos los puertos de localhost)
-                           .AllowAnyHeader()    // Permite cualquier encabezado
-                           .AllowAnyMethod();   // Permite cualquier m�todo (GET, POST, etc.)
+                    builder.WithOrigins("https://soless.vercel.app", "http://localhost:7200")
+                           .AllowAnyHeader() 
+                           .AllowAnyMethod(); 
                 });
             });
 
@@ -101,7 +101,6 @@ namespace SolessBackend
                 using DataBaseContext dbContext = scope.ServiceProvider.GetService<DataBaseContext>();
                 IPasswordHasher passwordHasher = scope.ServiceProvider.GetService<IPasswordHasher>();
 
-                // Si no existe la base de datos entonces la creamos y ejecutamos el seeder
                 if (dbContext.Database.EnsureCreated())
                 {
                     Seeder seeder = new Seeder(dbContext, passwordHasher);
@@ -116,8 +115,8 @@ namespace SolessBackend
                 app.UseSwaggerUI();
             }
 
-           
-            app.UseCors("AllowAllOrigins"); // Aplica la pol�tica de CORS
+
+            app.UseCors("AllowSpecificOrigin");
             app.UseStaticFiles();
             app.UseHttpsRedirection();
             app.UseAuthentication();
