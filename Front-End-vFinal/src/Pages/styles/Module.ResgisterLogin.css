@@ -102,17 +102,17 @@ form{
 	flex-direction: column;
 	gap: 20px;
 	align-items: center;
-	position: relative; /* Ayuda a controlar el flujo de las imágenes */
+	position: relative; 
 }
 
 .logo1,
 .logo2,
 .logo3 {
-	width: 100%; /* Ajusta el tamaño relativo al contenedor */
-	max-width: 200px; /* Evita que sean más grandes que un límite razonable */
-	height: auto; /* Mantén la proporción */
-	transform: none; /* Elimina la transformación predeterminada */
-	margin: 0 auto; /* Centra las imágenes */
+	width: 100%; 
+	max-width: 200px; 
+	height: auto; 
+	transform: none; 
+	margin: 0 auto; 
 }
 
 .logo1{
@@ -136,16 +136,16 @@ form{
 @media (max-width: 31.25em) {
 
 	.logoLogin {
-		gap: 10px; /* Reduce el espacio entre imágenes */
-		align-items: center; /* Mantén el centrado */
+		gap: 10px; 
+		align-items: center; 
 	}
 
 	.logo1,
 	.logo2,
 	.logo3 {
-		max-width: 150px; /* Reduce el tamaño de las imágenes en pantallas pequeñas */
-		transform: none; /* Evita rotaciones en pantallas pequeñas */
-		margin: 0; /* Asegúrate de eliminar márgenes que puedan desbordar */
+		max-width: 150px; 
+		transform: none; 
+		margin: 0; 
 	}
 
 	.container-reg{
