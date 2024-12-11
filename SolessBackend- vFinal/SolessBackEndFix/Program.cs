@@ -32,13 +32,12 @@ namespace SolessBackend
             {
                 options.AddPolicy("AllowSpecificOrigin", builder =>
                 {
-                    builder.WithOrigins("https://soless.vercel.app", "http://localhost:7200")
+                    builder.WithOrigins("https://soless.vercel.app", "http://localhost:5173")
                            .AllowAnyHeader() 
                            .AllowAnyMethod(); 
                 });
             });
 
-            // Add services to the container.
             builder.Services.AddControllers();
             builder.Services.AddScoped<DataBaseContext>();
             builder.Services.AddScoped<IUserRepository, UserRepository>();

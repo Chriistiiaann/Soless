@@ -16,6 +16,7 @@ import Admin from "./Pages/Admin"
 import Perfil from "./Pages/Perfil"
 import Proximamente from "./Pages/Proximamente"
 import Contacto from "./Pages/Contacto"
+import NotFound from "./Pages/NotFound"
 
 import ProtectedRoutes from "./utils/ProtectedRoutes"
 import AdminRoute from "./utils/AdminRoute"
@@ -32,6 +33,7 @@ function App() {
                         <Route path="/Carrito" element={<Carrito />} />
                         <Route path="/Proximamente" element={<Proximamente />} />
                         <Route path="/Contacto" element={<Contacto />} />
+                        <Route path="*" element={<NotFound />} />
                         
                         <Route element={<AdminRoute />}>
                             <Route path="/Admin" element={<Admin />} />
